@@ -1,0 +1,26 @@
+{
+  "parent": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+  "scope": "Downstream owner-review drafts and static receipt verification only; no new runtime qualification or combined source.",
+  "files": [
+    {
+      "path": "docs/research/htap-owner-reviews-20261010/AUDIT.md",
+      "bytes": 4172,
+      "sha256": "43ebe2957cfa8ab32afeff3fe3b249cd6188adb877f93f683d08beaa1766204e"
+    },
+    {
+      "path": "docs/research/htap-owner-reviews-20261010/README.md",
+      "bytes": 7919,
+      "sha256": "631f1ecfbc90828243bed182518136a7d7c4a98440ce9e932b28e201864562a2"
+    },
+    {
+      "path": "docs/research/htap-owner-reviews-20261010/audit-identity.json",
+      "bytes": 10210,
+      "sha256": "d32fe1371ee44aea649af45d3cd27f927b041cd523420149de726bc07eb865fd"
+    },
+    {
+      "path": "docs/research/htap-owner-reviews-20261010/receipts.json",
+      "bytes": 15206,
+      "sha256": "3d93ea8ab65bfd93e40d0b0d723801bd00c860f59bca63b91e98d84615c9a174"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "verification": "independent static local Git object and retained evidence audit; no API or execution",
+  "refs": {
+    "upstream_main": {
+      "commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+      "tree": "fb6387c85c3c22b026ca37602ac50bfd1a46a4be",
+      "matches": true
+    },
+    "fork_main": {
+      "commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+      "tree": "fb6387c85c3c22b026ca37602ac50bfd1a46a4be",
+      "matches": true
+    },
+    "group_source": {
+      "commit": "ec01f3a38f29e25fd24e8a29f8213916996074f8",
+      "tree": "0fc982e45d36f369689f003573f47d02ddffc7e8",
+      "matches": true
+    },
+    "group_receipt": {
+      "commit": "603b60470457472598d2022df60240b57c4da255",
+      "tree": "faecfb05baa0d139fc7023becdfd939f98a6bdee",
+      "matches": true
+    },
+    "partition_source": {
+      "commit": "e03823fc406f563fcad54fc0f751ebc047ce69ec",
+      "tree": "ada496d6b4480a48b57a2af760e2223c32afd236",
+      "matches": true
+    },
+    "partition_receipt": {
+      "commit": "aa6ec07fee0d08bc2cc253d28e017af3ee3eeb4f",
+      "tree": "c69168b64f0bdb0d0602f08547e4a97e398b1b7d",
+      "matches": true
+    }
+  },
+  "tree_identity": [
+    {
+      "local": "3b60e7586113ce8f733f6341f8ffea08e84c0ce8",
+      "public": "ec01f3a38f29e25fd24e8a29f8213916996074f8",
+      "tree": "0fc982e45d36f369689f003573f47d02ddffc7e8",
+      "equal": true,
+      "independent_match": true
+    },
+    {
+      "local": "8ab940a8e1912c8bcb71878508db7217a945584c",
+      "public": "e03823fc406f563fcad54fc0f751ebc047ce69ec",
+      "tree": "ada496d6b4480a48b57a2af760e2223c32afd236",
+      "equal": true,
+      "independent_match": true
+    },
+    {
+      "local": "9291740736c67075aa689f73b6fb8c6f6cfa695e",
+      "public": "f0f77e6b792286f449b4163db0802566975adf6e",
+      "tree": "1cc66f9df335e9ece0c480bd0319720d2af29712",
+      "equal": true,
+      "independent_match": true
+    },
+    {
+      "local": "4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2",
+      "public": "45b1da7aa629222ca3e993d5465122f35794b657",
+      "tree": "7c5ab63daec0ad97ad73aee3417d81919ce207ba",
+      "equal": true,
+      "independent_match": true
+    },
+    {
+      "local": "5483008b1c1fdb4f5ea15b4723743ee7afbe7af6",
+      "public": "7bd3b2a3863aa011d7aeb813d6dc055753511d70",
+      "tree": "b5918685cde1f4e15f62f516386c3ba85474acbd",
+      "equal": true,
+      "independent_match": true
+    }
+  ],
+  "files": [
+    {
+      "candidate": "group",
+      "path": "crates/okv-htap/src/streaming.rs",
+      "blob": "1992e1f46085808ba35ad123ef3533da96f09803",
+      "sha256": "138b3fb90775b8fa12ce78cb26d115fc065e2e4cb879ae28a691b11b48bdcfa8",
+      "source_equals_receipt": true,
+      "independent_match": true
+    },
+    {
+      "candidate": "group",
+      "path": "crates/okv-htap/src/streaming/tests/group_cap.rs",
+      "blob": "dfe428b2ee41de110ea82579165ec68a39ac269d",
+      "sha256": "da5354346882d4d8b42717bc5ea885baf27153ddcf3d0a27cdd6ea75c13a105d",
+      "source_equals_receipt": true,
+      "independent_match": true
+    },
+    {
+      "candidate": "partition",
+      "path": "crates/okv-htap/src/streaming.rs",
+      "blob": "c238fd4c2fb5efbc1b4b6c2323476d8483f6cade",
+      "sha256": "c2f920466635fa8084fb48a9421e2ba7fc504a8dd786f7177fad7064573f3a1d",
+      "source_equals_receipt": true,
+      "independent_match": true
+    },
+    {
+      "candidate": "partition",
+      "path": "crates/okv-htap/src/streaming/tests/input_partitions.rs",
+      "blob": "68fd71bf6e28bd122ef363d4ca5d165e9823eb1a",
+      "sha256": "1ad1cd83cfdca7d4ae9aeaddbaace32a3e450e353e15708ea83562c9a60b025c",
+      "source_equals_receipt": true,
+      "independent_match": true
+    }
+  ],
+  "group_source_to_receipt_paths": [
+    "docs/research/streaming-group-cap-early-receipt-2026-10-10.json"
+  ],
+  "partition_source_to_receipt_paths": [
+    "evidence/htap-input-partitions/README.md",
+    "evidence/htap-input-partitions/clippy-scoped.log",
+    "evidence/htap-input-partitions/clippy-workspace.log",
+    "evidence/htap-input-partitions/commands-and-profile.json",
+    "evidence/htap-input-partitions/final-eval-binary.sha256",
+    "evidence/htap-input-partitions/final-eval-revision.txt",
+    "evidence/htap-input-partitions/final-eval-source.d",
+    "evidence/htap-input-partitions/fmt-workspace.log",
+    "evidence/htap-input-partitions/green-binary.sha256",
+    "evidence/htap-input-partitions/green.log",
+    "evidence/htap-input-partitions/htap-tests.log",
+    "evidence/htap-input-partitions/independent/frozen-test.sha256",
+    "evidence/htap-input-partitions/independent/green-binary.sha256",
+    "evidence/htap-input-partitions/independent/green-profile.txt",
+    "evidence/htap-input-partitions/independent/green-source.d",
+    "evidence/htap-input-partitions/independent/green.exit",
+    "evidence/htap-input-partitions/independent/green.log",
+    "evidence/htap-input-partitions/independent/partition_shape_critic.rs",
+    "evidence/htap-input-partitions/independent/red-binary.sha256",
+    "evidence/htap-input-partitions/independent/red-profile.txt",
+    "evidence/htap-input-partitions/independent/red-source.d",
+    "evidence/htap-input-partitions/independent/red.exit",
+    "evidence/htap-input-partitions/independent/red.log",
+    "evidence/htap-input-partitions/initial-runtime-profile-observation.json",
+    "evidence/htap-input-partitions/lld-leaf.log",
+    "evidence/htap-input-partitions/machine.txt",
+    "evidence/htap-input-partitions/publication-map.json",
+    "evidence/htap-input-partitions/red-binary.sha256",
+    "evidence/htap-input-partitions/red.log",
+    "evidence/htap-input-partitions/smoke.log",
+    "evidence/htap-input-partitions/streaming-workload-summary.json",
+    "evidence/htap-input-partitions/tests-workspace.log",
+    "evidence/htap-input-partitions/workspace-test-totals.json"
+  ],
+  "partition_retained_results": [
+    {
+      "path": "red.log",
+      "results": [
+        "test result: FAILED. 1 passed; 6 failed; 0 ignored; 0 measured; 4 filtered out; finished in 0.02s"
+      ]
+    },
+    {
+      "path": "green.log",
+      "results": [
+        "test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 0.02s"
+      ]
+    },
+    {
+      "path": "independent/red.log",
+      "results": [
+        "test result: FAILED. 2 passed; 11 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.03s"
+      ]
+    },
+    {
+      "path": "independent/green.log",
+      "results": [
+        "test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 9 filtered out; finished in 0.02s"
+      ]
+    },
+    {
+      "path": "tests-workspace.log",
+      "results": [
+        "test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.26s",
+        "test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.42s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s",
+        "test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s",
+        "test result: ok. 24 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s",
+        "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.42s",
+        "test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.19s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 27 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.42s",
+        "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s",
+        "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s",
+        "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s",
+        "test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "group-published-receipt.json": {
+    "schema_version": 1,
+    "project": "objectKV",
+    "change": "Enforce the existing 16-row logical-ID group bound incrementally in StreamingMergeState::next_group.",
+    "upstream_base": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+    "reviewed_local_commit": "3b60e7586113ce8f733f6341f8ffea08e84c0ce8",
+    "reviewed_git_tree": "0fc982e45d36f369689f003573f47d02ddffc7e8",
+    "commit_sequence": [
+      {
+        "purpose": "Freeze regression tests before the fix",
+        "local_commit": "52d481a9ea9bcdd5fa1abcc7d3c3ba78be45a280"
+      },
+      {
+        "purpose": "Add the incremental source guard",
+        "local_commit": "6bccbd62d7b2ae9452e7f91f1de897d28d9340da"
+      },
+      {
+        "purpose": "Rename only test-local statistics bindings for strict lint",
+        "local_commit": "3b60e7586113ce8f733f6341f8ffea08e84c0ce8"
+      }
+    ],
+    "files": [
+      {
+        "path": "crates/okv-htap/src/streaming.rs",
+        "git_blob_sha": "1992e1f46085808ba35ad123ef3533da96f09803",
+        "sha256": "138b3fb90775b8fa12ce78cb26d115fc065e2e4cb879ae28a691b11b48bdcfa8"
+      },
+      {
+        "path": "crates/okv-htap/src/streaming/tests/group_cap.rs",
+        "git_blob_sha": "dfe428b2ee41de110ea82579165ec68a39ac269d",
+        "sha256": "da5354346882d4d8b42717bc5ea885baf27153ddcf3d0a27cdd6ea75c13a105d"
+      }
+    ],
+    "regression_proof": {
+      "inputs": "Real ordered cursors, one-row Arrow batches, and poll-count poison sentinels.",
+      "original_production_with_final_tests": {
+        "passed": 9,
+        "expected_failures": 4,
+        "failure": "Requests another row after the first known seventeenth contributing row."
+      },
+      "fixed_production_source_fresh_replay": {
+        "passed": 15,
+        "failed": 0
+      },
+      "coverage": [
+        "Base-only, tail-only, mixed 8+9 and mixed 16+1 lookahead overflow",
+        "Exactly 16 contributing rows and fresh bounds for the next logical ID",
+        "Visibility exclusions at/below the lower bound and after the target",
+        "Latest after-image and delete semantics",
+        "Duplicate-base and cross-batch ordering validation",
+        "Existing correct and poisoned physical/streaming contracts"
+      ]
+    },
+    "validation": {
+      "rustfmt": "pass",
+      "strict_workspace_all_target_clippy": "pass",
+      "workspace_tests": {
+        "passed": 192,
+        "failed": 0,
+        "test_and_doc_targets": 34
+      },
+      "smoke": "pass using verified official-toolchain LLD-linked executable",
+      "frozen_htap_suites": {
+        "validated": 3,
+        "workloads": 16,
+        "correct_keep": 3,
+        "poison_discard": 13
+      }
+    },
+    "environment": {
+      "architecture": "Linux x86_64",
+      "rustc": "1.88.0 (6b00bc388 2025-06-23)",
+      "cargo": "1.88.0 (873a06493 2025-05-10)",
+      "build_jobs": 2,
+      "dev_debug": 0,
+      "test_debug": 0,
+      "incremental": 0,
+      "cargo_lock_sha256": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0"
+    },
+    "linker_disclosure": {
+      "default_link": "Interrupted after no observed progress; no smoke executable ran in this attempt. This attempt is NOT_RUN, not a pass.",
+      "recovery": "Bounded leaf-only cargo rustc rebuild using rust-lld included with the official Rust 1.88 toolchain; verified fresh ELF before execution. No source or dependency-cache change.",
+      "leaf_command": "cargo rustc --locked --offline -p okv-eval --bin okv-eval -- -C link-arg=-fuse-ld=lld",
+      "deadline_seconds": 180,
+      "eval_binary_sha256": "da28eb9e1f7c59f902909c985dd8dad6e20be8c5a87fd0af229ef1405286e1bd"
+    },
+    "claim_boundary": "Only early row-count refusal for one logical-ID group using the existing contributing-row cap. This does not establish a whole-plan or retained-byte bound, a bound on arbitrary input batches/payloads, or a bound on cursor work scanning excluded versions. No spill behavior or performance improvement is claimed.",
+    "credit": "Wiley Jones: existing architecture, RFC-0013, streaming implementation, and frozen evaluation contract. Kevin Rajan: regression tests and incremental correctness fix.",
+    "publication": {
+      "repository": "kvnloo/objectKV",
+      "branch": "research/htap/group-cap-early",
+      "method": "GitHub Git-data API. Commit metadata differs from local review commits; each reviewed source-stage Git tree and parent chain is verified.",
+      "source_stage_commit": "ec01f3a38f29e25fd24e8a29f8213916996074f8",
+      "source_stage_url": "https://github.com/kvnloo/objectKV/commit/ec01f3a38f29e25fd24e8a29f8213916996074f8",
+      "source_stage_tree": "0fc982e45d36f369689f003573f47d02ddffc7e8",
+      "commit_mapping": [
+        {
+          "local_commit": "52d481a9ea9bcdd5fa1abcc7d3c3ba78be45a280",
+          "remote_commit": "216cf9b5f1135ee60acfda079e786e540544ae63",
+          "tree_sha": "b2a13d76e3f004c7cf234a1681c3bc477f7a073b",
+          "parent_remote_commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+          "url": "https://github.com/kvnloo/objectKV/commit/216cf9b5f1135ee60acfda079e786e540544ae63"
+        },
+        {
+          "local_commit": "6bccbd62d7b2ae9452e7f91f1de897d28d9340da",
+          "remote_commit": "295cdc39374e190fff4d8af15dbf7738476dd4f4",
+          "tree_sha": "62453675642af891b2ad6a496e6c53319f63c9c6",
+          "parent_remote_commit": "216cf9b5f1135ee60acfda079e786e540544ae63",
+          "url": "https://github.com/kvnloo/objectKV/commit/295cdc39374e190fff4d8af15dbf7738476dd4f4"
+        },
+        {
+          "local_commit": "3b60e7586113ce8f733f6341f8ffea08e84c0ce8",
+          "remote_commit": "ec01f3a38f29e25fd24e8a29f8213916996074f8",
+          "tree_sha": "0fc982e45d36f369689f003573f47d02ddffc7e8",
+          "parent_remote_commit": "295cdc39374e190fff4d8af15dbf7738476dd4f4",
+          "url": "https://github.com/kvnloo/objectKV/commit/ec01f3a38f29e25fd24e8a29f8213916996074f8"
+        }
+      ],
+      "receipt_path": "docs/research/streaming-group-cap-early-receipt-2026-10-10.json"
+    },
+    "strongest_evidence": "Exactly 16 contributing rows remain accepted. The first known seventeenth row triggers ResourcesExhausted without another source poll, including 16 fetched base rows plus an already-fetched same-ID tail row.",
+    "portable_validation_commands": [
+      "export CARGO_BUILD_JOBS=2 CARGO_PROFILE_DEV_DEBUG=0 CARGO_PROFILE_TEST_DEBUG=0 CARGO_INCREMENTAL=0 CARGO_TARGET_DIR=\"$PWD/target/group-cap\"",
+      "cargo +1.88.0 fmt --all -- --check",
+      "cargo +1.88.0 clippy --workspace --all-targets -- -D warnings",
+      "cargo +1.88.0 test --workspace",
+      "cargo +1.88.0 test -p okv-htap",
+      "mkdir -p \"$CARGO_TARGET_DIR/tools\"",
+      "ln -s \"$(rustc +1.88.0 --print sysroot)/lib/rustlib/x86_64-unknown-linux-gnu/bin/rust-lld\" \"$CARGO_TARGET_DIR/tools/ld.lld\"",
+      "PATH=\"$CARGO_TARGET_DIR/tools:$PATH\" timeout --signal=INT --kill-after=15s 180s cargo +1.88.0 rustc --locked --offline -p okv-eval --bin okv-eval -- -C link-arg=-fuse-ld=lld",
+      "file \"$CARGO_TARGET_DIR/debug/okv-eval\" && readelf -h \"$CARGO_TARGET_DIR/debug/okv-eval\"",
+      "\"$CARGO_TARGET_DIR/debug/okv-eval\" smoke",
+      "\"$CARGO_TARGET_DIR/debug/okv-eval\" validate-suite evals/suites/htap-contract.toml",
+      "\"$CARGO_TARGET_DIR/debug/okv-eval\" validate-suite evals/suites/htap-physical.toml",
+      "\"$CARGO_TARGET_DIR/debug/okv-eval\" validate-suite evals/suites/htap-streaming.toml"
+    ]
+  },
+  "ownership-read.json": {
+    "checked_at": "2026-10-10T12:55:03Z",
+    "upstream_open_prs": [
+      {
+        "number": 16,
+        "title": "object: test aligned range image against physical NVMe",
+        "url": "https://github.com/Doss-com/objectKV/pull/16"
+      },
+      {
+        "number": 15,
+        "title": "eval: freeze physical NVMe and RocksDB incumbent gate",
+        "url": "https://github.com/Doss-com/objectKV/pull/15"
+      },
+      {
+        "number": 14,
+        "title": "object: bound assigned-range image memory and file I/O",
+        "url": "https://github.com/Doss-com/objectKV/pull/14"
+      },
+      {
+        "number": 13,
+        "title": "eval: freeze bounded range-image I/O gate",
+        "url": "https://github.com/Doss-com/objectKV/pull/13"
+      },
+      {
+        "number": 12,
+        "title": "research: isolate provider-free assigned-range image",
+        "url": "https://github.com/Doss-com/objectKV/pull/12"
+      },
+      {
+        "number": 11,
+        "title": "eval: measure direct assigned-range placement",
+        "url": "https://github.com/Doss-com/objectKV/pull/11"
+      },
+      {
+        "number": 10,
+        "title": "eval: freeze assigned-range placement gate",
+        "url": "https://github.com/Doss-com/objectKV/pull/10"
+      },
+      {
+        "number": 9,
+        "title": "eval: reject infeasible cache locality targets",
+        "url": "https://github.com/Doss-com/objectKV/pull/9"
+      },
+      {
+        "number": 8,
+        "title": "eval: reject passive demand cache economics",
+        "url": "https://github.com/Doss-com/objectKV/pull/8"
+      },
+      {
+        "number": 7,
+        "title": "Run the provider-bound GCS gate in-region",
+        "url": "https://github.com/Doss-com/objectKV/pull/7"
+      }
+    ],
+    "fork_prs": [],
+    "exact_fork_branches": [
+      {
+        "branch": "research/htap/group-cap-early"
+      },
+      {
+        "branch": "research/htap/refuse-multipartition-inputs"
+      }
+    ],
+    "verified_owner": {
+      "login": "wileyjones",
+      "id": 13478833,
+      "source": "https://github.com/Doss-com/objectKV/pull/16",
+      "head_sha": "4cfc4a46ed5b7ae628dd44b99a22d4da470329be"
+    },
+    "query_note": "Blank-query PR searches returned empty and were not used as evidence. Explicit repo/is:pr searches used instead.",
+    "mutations": "none"
+  },
+  "partition-published-map.json": {
+    "repository": "kvnloo/objectKV",
+    "branch": "research/htap/refuse-multipartition-inputs",
+    "upstream_repository": "Doss-com/objectKV",
+    "upstream_commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+    "ownership_refreshed_at": "2026-10-10T05:08:00Z",
+    "phases": [
+      {
+        "name": "frozen_red",
+        "local_commit": "9291740736c67075aa689f73b6fb8c6f6cfa695e",
+        "public_commit": "f0f77e6b792286f449b4163db0802566975adf6e",
+        "complete_tree": "1cc66f9df335e9ece0c480bd0319720d2af29712"
+      },
+      {
+        "name": "minimal_implementation",
+        "local_commit": "8ab940a8e1912c8bcb71878508db7217a945584c",
+        "public_commit": "e03823fc406f563fcad54fc0f751ebc047ce69ec",
+        "complete_tree": "ada496d6b4480a48b57a2af760e2223c32afd236"
+      },
+      {
+        "name": "executed_source_checkpoint",
+        "local_commit": "4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2",
+        "public_commit": "45b1da7aa629222ca3e993d5465122f35794b657",
+        "complete_tree": "7c5ab63daec0ad97ad73aee3417d81919ce207ba"
+      },
+      {
+        "name": "complete_validation_receipt",
+        "local_commit": "5483008b1c1fdb4f5ea15b4723743ee7afbe7af6",
+        "public_commit": "7bd3b2a3863aa011d7aeb813d6dc055753511d70",
+        "complete_tree": "b5918685cde1f4e15f62f516386c3ba85474acbd"
+      }
+    ],
+    "source_blob": "c238fd4c2fb5efbc1b4b6c2323476d8483f6cade",
+    "primary_grader_blob": "68fd71bf6e28bd122ef363d4ca5d165e9823eb1a",
+    "primary_grader_sha256": "1ad1cd83cfdca7d4ae9aeaddbaace32a3e450e353e15708ea83562c9a60b025c",
+    "independent_grader_sha256": "2252818e1b2da06ffdb5c2f6b691a374e3ba33d313c2f110ebf05dced347c429",
+    "identity_note": "API-created public commits have different commit IDs, with complete source trees verified equal to the corresponding local build/evidence commits."
+  },
+  "verified-git-pins.json": {
+    "checked_at": "2026-10-10T12:53:00Z",
+    "method": "read-only git fetch, git object identity, published receipts; no new build or test execution",
+    "refs": {
+      "upstream_main": {
+        "commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+        "tree": "fb6387c85c3c22b026ca37602ac50bfd1a46a4be"
+      },
+      "fork_main": {
+        "commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+        "tree": "fb6387c85c3c22b026ca37602ac50bfd1a46a4be"
+      },
+      "group_source": {
+        "commit": "ec01f3a38f29e25fd24e8a29f8213916996074f8",
+        "tree": "0fc982e45d36f369689f003573f47d02ddffc7e8"
+      },
+      "group_receipt": {
+        "commit": "603b60470457472598d2022df60240b57c4da255",
+        "tree": "faecfb05baa0d139fc7023becdfd939f98a6bdee"
+      },
+      "partition_source": {
+        "commit": "e03823fc406f563fcad54fc0f751ebc047ce69ec",
+        "tree": "ada496d6b4480a48b57a2af760e2223c32afd236"
+      },
+      "partition_receipt": {
+        "commit": "aa6ec07fee0d08bc2cc253d28e017af3ee3eeb4f",
+        "tree": "c69168b64f0bdb0d0602f08547e4a97e398b1b7d"
+      }
+    },
+    "tree_identity": [
+      {
+        "local": "3b60e7586113ce8f733f6341f8ffea08e84c0ce8",
+        "public": "ec01f3a38f29e25fd24e8a29f8213916996074f8",
+        "tree": "0fc982e45d36f369689f003573f47d02ddffc7e8",
+        "equal": true
+      },
+      {
+        "local": "8ab940a8e1912c8bcb71878508db7217a945584c",
+        "public": "e03823fc406f563fcad54fc0f751ebc047ce69ec",
+        "tree": "ada496d6b4480a48b57a2af760e2223c32afd236",
+        "equal": true
+      },
+      {
+        "local": "9291740736c67075aa689f73b6fb8c6f6cfa695e",
+        "public": "f0f77e6b792286f449b4163db0802566975adf6e",
+        "tree": "1cc66f9df335e9ece0c480bd0319720d2af29712",
+        "equal": true
+      },
+      {
+        "local": "4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2",
+        "public": "45b1da7aa629222ca3e993d5465122f35794b657",
+        "tree": "7c5ab63daec0ad97ad73aee3417d81919ce207ba",
+        "equal": true
+      },
+      {
+        "local": "5483008b1c1fdb4f5ea15b4723743ee7afbe7af6",
+        "public": "7bd3b2a3863aa011d7aeb813d6dc055753511d70",
+        "tree": "b5918685cde1f4e15f62f516386c3ba85474acbd",
+        "equal": true
+      }
+    ],
+    "files": [
+      {
+        "candidate": "group",
+        "path": "crates/okv-htap/src/streaming.rs",
+        "blob": "1992e1f46085808ba35ad123ef3533da96f09803",
+        "sha256": "138b3fb90775b8fa12ce78cb26d115fc065e2e4cb879ae28a691b11b48bdcfa8",
+        "source_equals_receipt": true
+      },
+      {
+        "candidate": "group",
+        "path": "crates/okv-htap/src/streaming/tests/group_cap.rs",
+        "blob": "dfe428b2ee41de110ea82579165ec68a39ac269d",
+        "sha256": "da5354346882d4d8b42717bc5ea885baf27153ddcf3d0a27cdd6ea75c13a105d",
+        "source_equals_receipt": true
+      },
+      {
+        "candidate": "partition",
+        "path": "crates/okv-htap/src/streaming.rs",
+        "blob": "c238fd4c2fb5efbc1b4b6c2323476d8483f6cade",
+        "sha256": "c2f920466635fa8084fb48a9421e2ba7fc504a8dd786f7177fad7064573f3a1d",
+        "source_equals_receipt": true
+      },
+      {
+        "candidate": "partition",
+        "path": "crates/okv-htap/src/streaming/tests/input_partitions.rs",
+        "blob": "68fd71bf6e28bd122ef363d4ca5d165e9823eb1a",
+        "sha256": "1ad1cd83cfdca7d4ae9aeaddbaace32a3e450e353e15708ea83562c9a60b025c",
+        "source_equals_receipt": true
+      }
+    ]
+  }
+}
