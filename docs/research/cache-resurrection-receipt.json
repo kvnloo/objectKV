@@ -1,10 +1,19 @@
 {
-  "candidate_commit": "fd79c1df674112703ea8c0dbaf645898be3b1b62",
-  "candidate_tree": "af0bfacab256928391f50fb319dd2f29c7af85d0",
+  "candidate_commit": "42cff606978742523066e5ea57639d3532d31e43",
+  "candidate_tree": "3306b74bb2ac6c47a1ca19fcdf019e1345ca5dde",
   "base_commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+  "earlier_candidate": "fd79c1df674112703ea8c0dbaf645898be3b1b62",
+  "external_oracle_commit": "928b702",
+  "external_oracle_sha256": "bb7803412ce517a30c6ce8c19bf7b63d12d255461fcf840d9098336a9c64af37",
+  "external_oracle_red": {
+    "revision": "928b702",
+    "tests_passed": 0,
+    "tests_failed": 4,
+    "cause": "Earlier candidate lacks positive stream history and always-refuse control; frozen oracle rejects missing coverage"
+  },
   "backend": "deterministic in-memory object/cache seam; Turmoil 0.7.2",
-  "binary_sha256": "c204b14d532754e835a2143fa2b8fa84b7c0af70803766736589c4a102cc4f69",
-  "profile_sha256": "2f0d480d09c4ca23ef04a915ef72aa4c062349a21eb92a5e58bd0a701f5242df",
+  "binary_sha256": "515ad51f998bf7ad7d0bf4fb87eb79c1122195b721932345d7cc63c3b9c1132e",
+  "profile_sha256": "847cd4b76121b86ac58778611f85016bdc0d27f31bb58d65d331b271c4bbb006",
   "lockfile_sha256": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
   "toolchain": "rustc 1.88.0 (6b00bc388 2025-06-23), x86_64-unknown-linux-gnu",
   "build": {
@@ -14,10 +23,10 @@
   },
   "tests": {
     "existing": 9,
-    "new_integration": 4,
+    "integration": 8,
     "fmt_all": "pass",
     "clippy_sim_all_targets": "pass",
-    "clippy_1_97_1": "baseline failure: 8 manual_is_multiple_of diagnostics in unchanged okv-model"
+    "clippy_1_97_1": "earlier baseline failure: 8 manual_is_multiple_of diagnostics in unchanged okv-model"
   },
   "runs": [
     {
@@ -25,7 +34,7 @@
       "seed": 1103,
       "exit": 0,
       "replay_identical": true,
-      "trace_sha256": "e1b5fbd654f081f188016f418c6a94f220bf891e82540be76634b71fb45e14d6",
+      "trace_sha256": "b886eebf828dc3f695636d1473471c4ad31639b53956cdc9aa03c94d40e01a94",
       "failures": []
     },
     {
@@ -33,7 +42,7 @@
       "seed": 2027,
       "exit": 0,
       "replay_identical": true,
-      "trace_sha256": "ec70ea05901ec53f0c9e12e04aa9e78b8c5b23a645ba9cfc4122f0355a8332eb",
+      "trace_sha256": "b811444d08f6e6293c1bbc269dd039a95c30df0c8e90fc4005c8148f6fa6c090",
       "failures": []
     },
     {
@@ -41,7 +50,7 @@
       "seed": 4099,
       "exit": 0,
       "replay_identical": true,
-      "trace_sha256": "eefe210cd894ed35881535c89c7a6326a6646efa0b2e8d8671ab81a9a8dbb616",
+      "trace_sha256": "7d9732e8f97d7a9ea8ae3a07d6bad48da53c7e9f1b8824dda2fa10e1795e5b78",
       "failures": []
     },
     {
@@ -49,7 +58,7 @@
       "seed": 1103,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "eaaf36b6f0d9943dcb2a75061d9f89a23a02c2b315d7194442aacc16624f2eb5",
+      "trace_sha256": "49d08586e2486d8cca5d845ed670601b47e46b2c38221db5f8a3c346190c151e",
       "failures": [
         {
           "history": "delayed_population",
@@ -78,7 +87,7 @@
       "seed": 2027,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "a997b5abaa96459d950254266a5cd02df6779c29377d3dd971d5a289484ee0c2",
+      "trace_sha256": "b420d2a0894abb584940a45c9e0fc8d28b5cf7415977ec6981f17d4d9c978896",
       "failures": [
         {
           "history": "delayed_population",
@@ -107,7 +116,7 @@
       "seed": 4099,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "dc61cd41b140f6f420a23c788b2436877e7be4d2dc2ba5e0945d5ef9fe1e2440",
+      "trace_sha256": "4e4b234a1740df68b4e006c65470ac47017500fa01c7f71d41b6f74f81f62dab",
       "failures": [
         {
           "history": "delayed_population",
@@ -136,7 +145,7 @@
       "seed": 1103,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "77a9a34ed63799df0fa849775473c0d5705d096b5604b967919a6ec52ef0e94f",
+      "trace_sha256": "09a326b41e8620d5b9a6c29d30588d5bf7af78cd58c64cf77a7eceeda48d42d0",
       "failures": [
         {
           "history": "delete_then_read",
@@ -216,7 +225,7 @@
       "seed": 2027,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "724c0f92bb2f40a23bbb8ab31bc1d55dacd7329ed3a83acde09d2e1432d11df8",
+      "trace_sha256": "b66bcbf550601bc14e995f48ab151667982d203be4997ef166ea578a837c701b",
       "failures": [
         {
           "history": "delete_then_read",
@@ -296,7 +305,7 @@
       "seed": 4099,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "8f86223aa8b5fa4720ef7aa23f4cb17bbb6b01c9630f56c6060008dedfa6f686",
+      "trace_sha256": "e1b4273a48c0867e15eeced116a12cd5735a9960360ca4543fb4e83f1c8fe209",
       "failures": [
         {
           "history": "delete_then_read",
@@ -376,7 +385,7 @@
       "seed": 1103,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "bf5ea6e10ab6db91671c55478ed5912ca19b4ee5db0a23ee1b6c84b188a9924d",
+      "trace_sha256": "16f88acf780823f15a598e900c5a6c7f52038b8d24e8cc1ae2635eb61958ea36",
       "failures": [
         {
           "history": "cache_loss_and_corruption",
@@ -395,7 +404,7 @@
       "seed": 2027,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "109483649b5f1476d377c51efe2f5f333f8fdbcd694ed2609bda2e297006e949",
+      "trace_sha256": "40e29d8e79702eaf9fa8b400e38f9b242438f12a42f44d7cafb60d244ac7d45d",
       "failures": [
         {
           "history": "cache_loss_and_corruption",
@@ -414,7 +423,7 @@
       "seed": 4099,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "3329723a9f4230c9584dd2c84ad05829e05a383b7ccd01d9902c29b7a0f61395",
+      "trace_sha256": "85af5134f2525cb2c290e6e53d6adc27d7abd1a17698f922b6c632b4e390a665",
       "failures": [
         {
           "history": "cache_loss_and_corruption",
@@ -433,7 +442,7 @@
       "seed": 1103,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "d543ec405c98537c20ed73f2349985c429c618ff5a48aad15f34ee619ddfd28e",
+      "trace_sha256": "5e63073f5685946ccfab5562679ef199978248ef6ef32d386b5d0bd98be91787",
       "failures": [
         {
           "history": "cache_loss_and_corruption",
@@ -451,7 +460,7 @@
       "seed": 2027,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "f4581bcf4f8a62f1ef94bae0c0aa86a5c8017f8829c64a21c4a50cdfd194e647",
+      "trace_sha256": "87777f1c3dcc49bf34c6566f09a5d1cad2df193c7f3669f73186692a98d01032",
       "failures": [
         {
           "history": "cache_loss_and_corruption",
@@ -469,11 +478,65 @@
       "seed": 4099,
       "exit": 2,
       "replay_identical": true,
-      "trace_sha256": "04a0f20d9709b1873cd82928b62d0193ff22b6012053cdf15592c466e6a36aa7",
+      "trace_sha256": "b49c76f13f685f28da0c5dd27eb384b9291020950ac1550a184d248d06b46e64",
       "failures": [
         {
           "history": "cache_loss_and_corruption",
           "first_step": 4,
+          "minimal": [
+            "Authorize",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "always-refuse",
+      "seed": 1103,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "a8ced47f6b55915265f0851db1d92b8d4e2c1bf48c10eae6cde2c22172329683",
+      "failures": [
+        {
+          "history": "cache_loss_and_corruption",
+          "first_step": 2,
+          "minimal": [
+            "Authorize",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "always-refuse",
+      "seed": 2027,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "da04b7f64f0f12ae412f365b705551cfe65ebbf3861764962942487f168a9f99",
+      "failures": [
+        {
+          "history": "cache_loss_and_corruption",
+          "first_step": 2,
+          "minimal": [
+            "Authorize",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "always-refuse",
+      "seed": 4099,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "4c5c61565803bd2d9ab51293f52bf5ce84ffd0e847cebc373663be8b8f73cda1",
+      "failures": [
+        {
+          "history": "cache_loss_and_corruption",
+          "first_step": 2,
           "minimal": [
             "Authorize",
             "Read"
@@ -488,6 +551,7 @@
     "No full workspace test/clippy or okv-eval smoke",
     "New semantic seam requires review before eval suite/OTel freeze; no OTel export performed",
     "One-deletion-minimal witnesses; not a proof of globally shortest histories",
-    "Seeded delays in explicitly selected interleavings, not exhaustive concurrency exploration"
+    "Seeded delays in explicit interleavings, not exhaustive concurrency exploration",
+    "Initial candidate and internal grader co-developed; external frozen oracle introduced during rework before candidate changes"
   ]
 }

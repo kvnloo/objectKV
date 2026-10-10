@@ -31,14 +31,16 @@ fails even if a later read correctly refuses it.
 
 ## Fixed histories and controls
 
-Eight bounded histories cover delete/read, overwrite during an in-flight range,
+Nine bounded histories cover delete/read, overwrite during an in-flight range,
 delayed population, expired lease, released lease, cache loss plus corruption,
-stale-generation population and retained stale-root resurrection. Successful
+stale-generation population, retained stale-root resurrection, and successful
+stream completion without an authority change. Successful
 cache hits, repairs, refusals, stream completion, byte hashes and each detected
 invariant failure appear in the correctness history, not only counters.
 
-Four independent controls omit publication fencing, omit use fencing, trust
-corrupt cached bytes, or repair from the wrong immutable version. The publication
+Five controls omit publication fencing, omit use fencing, trust corrupt cached
+bytes, repair from the wrong immutable version, or refuse all admitted reads.
+The last control distinguishes fail-closed safety from required progress. The publication
 control's minimal witness is `Authorize, AdvanceGeneration, Populate`: generation
 1 is authorized, authority advances to generation 2, and the in-flight generation
 1 population is incorrectly accepted. The correct subject refuses step 2.
@@ -52,9 +54,23 @@ without virtual delays, which do not influence authority or lease transitions.
 
 ## Validation and reproduction
 
-The test/grader commits precede the candidate. Baseline 4d4fc69 plus the test-only
-change fails because the cache API is absent (E0432); this is an absent-feature
-RED, not evidence of a production bug. Each poison supplies a separate runtime
+The initial test-only commits preceded the first candidate, but its internal
+receipt grader and histories were co-developed with the subject. Those initial
+tests did not constitute an externally frozen semantic oracle. Baseline 4d4fc69
+plus the initial test-only change fails because the cache API is absent (E0432);
+this is an absent-feature RED, not evidence of a production bug.
+
+Independent review found the missing successful-stream control and oracle
+coupling. Rework first committed an external fixed-expectation oracle in
+0f4e80d and 928b702, before changing the candidate. Its file SHA-256 is
+`bb7803412ce517a30c6ce8c19bf7b63d12d255461fcf840d9098336a9c64af37`.
+It checks exact actions, results, authority states and expected byte hashes for
+nine histories without consulting candidate failure flags or verdicts. It also
+mutates every required value observation to refusal or wrong bytes and requires
+rejection. At frozen commit 928b702 all four external-oracle tests fail against
+the earlier candidate (missing positive history/control and semantic coverage).
+The candidate-only rework adds stream progress and an always-refuse control;
+the frozen oracle remains byte-identical. Original failed commits are retained. Each poison supplies a separate runtime
 RED, exit 2. Correct subject runs exit 0.
 
 Use the repository-pinned Rust 1.88.0, jobs 2, debug information disabled and
@@ -73,7 +89,7 @@ hashes and all fixed-seed outcomes. Repeating each CLI run in a fresh process
 produces byte-identical JSON for the same seed/mode/source identity. The trace
 hash covers the canonical report with its own hash field empty.
 
-Focused validation covers nine existing tests and four new integration tests.
+Focused validation covers nine existing tests and eight integration tests.
 Full-workspace tests, workspace Clippy and okv-eval smoke were not run in this
 resource-bounded lane. Strict Clippy 1.97.1 separately fails on eight existing
 `manual_is_multiple_of` diagnostics in untouched okv-model; this is not hidden or
@@ -81,7 +97,7 @@ fixed by unrelated changes here.
 
 ## Next gate
 
-HOLD for semantic review and downstream publication access. The issue explicitly
+HOLD for semantic review of the broader production/eval integration. The issue explicitly
 places frozen eval and OTel receipts after semantic review. This change does not
 modify okv-eval, existing result schemas, frozen suites, or reference models, and
 does not fabricate telemetry. After review, freeze the seam contract in a
