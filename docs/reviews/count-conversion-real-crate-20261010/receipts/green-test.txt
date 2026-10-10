@@ -1,0 +1,11 @@
+running 8 tests
+test count_conversion_tests::f64_exact_integer_limit_minus_one ... ok
+test count_conversion_tests::four_gib ... ok
+test count_conversion_tests::four_gib_plus_one ... ok
+test count_conversion_tests::f64_exact_integer_limit ... ok
+test count_conversion_tests::one ... ok
+test count_conversion_tests::ten_gib ... ok
+test count_conversion_tests::u32_max ... ok
+test count_conversion_tests::zero ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
