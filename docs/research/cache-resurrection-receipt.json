@@ -1,0 +1,493 @@
+{
+  "candidate_commit": "fd79c1df674112703ea8c0dbaf645898be3b1b62",
+  "candidate_tree": "af0bfacab256928391f50fb319dd2f29c7af85d0",
+  "base_commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+  "backend": "deterministic in-memory object/cache seam; Turmoil 0.7.2",
+  "binary_sha256": "c204b14d532754e835a2143fa2b8fa84b7c0af70803766736589c4a102cc4f69",
+  "profile_sha256": "2f0d480d09c4ca23ef04a915ef72aa4c062349a21eb92a5e58bd0a701f5242df",
+  "lockfile_sha256": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+  "toolchain": "rustc 1.88.0 (6b00bc388 2025-06-23), x86_64-unknown-linux-gnu",
+  "build": {
+    "jobs": 2,
+    "debug": 0,
+    "incremental": false
+  },
+  "tests": {
+    "existing": 9,
+    "new_integration": 4,
+    "fmt_all": "pass",
+    "clippy_sim_all_targets": "pass",
+    "clippy_1_97_1": "baseline failure: 8 manual_is_multiple_of diagnostics in unchanged okv-model"
+  },
+  "runs": [
+    {
+      "mode": "correct",
+      "seed": 1103,
+      "exit": 0,
+      "replay_identical": true,
+      "trace_sha256": "e1b5fbd654f081f188016f418c6a94f220bf891e82540be76634b71fb45e14d6",
+      "failures": []
+    },
+    {
+      "mode": "correct",
+      "seed": 2027,
+      "exit": 0,
+      "replay_identical": true,
+      "trace_sha256": "ec70ea05901ec53f0c9e12e04aa9e78b8c5b23a645ba9cfc4122f0355a8332eb",
+      "failures": []
+    },
+    {
+      "mode": "correct",
+      "seed": 4099,
+      "exit": 0,
+      "replay_identical": true,
+      "trace_sha256": "eefe210cd894ed35881535c89c7a6326a6646efa0b2e8d8671ab81a9a8dbb616",
+      "failures": []
+    },
+    {
+      "mode": "skip-publication-fence",
+      "seed": 1103,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "eaaf36b6f0d9943dcb2a75061d9f89a23a02c2b315d7194442aacc16624f2eb5",
+      "failures": [
+        {
+          "history": "delayed_population",
+          "first_step": 2,
+          "minimal": [
+            "Authorize",
+            "Overwrite",
+            "Populate"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "stale_generation_population",
+          "first_step": 2,
+          "minimal": [
+            "Authorize",
+            "AdvanceGeneration",
+            "Populate"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "skip-publication-fence",
+      "seed": 2027,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "a997b5abaa96459d950254266a5cd02df6779c29377d3dd971d5a289484ee0c2",
+      "failures": [
+        {
+          "history": "delayed_population",
+          "first_step": 2,
+          "minimal": [
+            "Authorize",
+            "Overwrite",
+            "Populate"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "stale_generation_population",
+          "first_step": 2,
+          "minimal": [
+            "Authorize",
+            "AdvanceGeneration",
+            "Populate"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "skip-publication-fence",
+      "seed": 4099,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "dc61cd41b140f6f420a23c788b2436877e7be4d2dc2ba5e0945d5ef9fe1e2440",
+      "failures": [
+        {
+          "history": "delayed_population",
+          "first_step": 2,
+          "minimal": [
+            "Authorize",
+            "Overwrite",
+            "Populate"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "stale_generation_population",
+          "first_step": 2,
+          "minimal": [
+            "Authorize",
+            "AdvanceGeneration",
+            "Populate"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "skip-use-fence",
+      "seed": 1103,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "77a9a34ed63799df0fa849775473c0d5705d096b5604b967919a6ec52ef0e94f",
+      "failures": [
+        {
+          "history": "delete_then_read",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "Delete",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "overwrite_during_stream",
+          "first_step": 4,
+          "minimal": [
+            "Authorize",
+            "BeginStream",
+            "Overwrite",
+            "FinishStream"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "delayed_population",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "Overwrite",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "expired_lease_cache_hit",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "ExpireLease",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "released_lease_cache_hit",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "ReleaseLease",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "stale_generation_population",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "AdvanceGeneration",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "stale_root_resurrection",
+          "first_step": 5,
+          "minimal": [
+            "Authorize",
+            "Overwrite",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "skip-use-fence",
+      "seed": 2027,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "724c0f92bb2f40a23bbb8ab31bc1d55dacd7329ed3a83acde09d2e1432d11df8",
+      "failures": [
+        {
+          "history": "delete_then_read",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "Delete",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "overwrite_during_stream",
+          "first_step": 4,
+          "minimal": [
+            "Authorize",
+            "BeginStream",
+            "Overwrite",
+            "FinishStream"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "delayed_population",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "Overwrite",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "expired_lease_cache_hit",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "ExpireLease",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "released_lease_cache_hit",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "ReleaseLease",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "stale_generation_population",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "AdvanceGeneration",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "stale_root_resurrection",
+          "first_step": 5,
+          "minimal": [
+            "Authorize",
+            "Overwrite",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "skip-use-fence",
+      "seed": 4099,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "8f86223aa8b5fa4720ef7aa23f4cb17bbb6b01c9630f56c6060008dedfa6f686",
+      "failures": [
+        {
+          "history": "delete_then_read",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "Delete",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "overwrite_during_stream",
+          "first_step": 4,
+          "minimal": [
+            "Authorize",
+            "BeginStream",
+            "Overwrite",
+            "FinishStream"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "delayed_population",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "Overwrite",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "expired_lease_cache_hit",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "ExpireLease",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "released_lease_cache_hit",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "ReleaseLease",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "stale_generation_population",
+          "first_step": 3,
+          "minimal": [
+            "Authorize",
+            "AdvanceGeneration",
+            "Read"
+          ],
+          "one_minimal": true
+        },
+        {
+          "history": "stale_root_resurrection",
+          "first_step": 5,
+          "minimal": [
+            "Authorize",
+            "Overwrite",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "trust-cache-bytes",
+      "seed": 1103,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "bf5ea6e10ab6db91671c55478ed5912ca19b4ee5db0a23ee1b6c84b188a9924d",
+      "failures": [
+        {
+          "history": "cache_loss_and_corruption",
+          "first_step": 6,
+          "minimal": [
+            "Authorize",
+            "CorruptCache",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "trust-cache-bytes",
+      "seed": 2027,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "109483649b5f1476d377c51efe2f5f333f8fdbcd694ed2609bda2e297006e949",
+      "failures": [
+        {
+          "history": "cache_loss_and_corruption",
+          "first_step": 6,
+          "minimal": [
+            "Authorize",
+            "CorruptCache",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "trust-cache-bytes",
+      "seed": 4099,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "3329723a9f4230c9584dd2c84ad05829e05a383b7ccd01d9902c29b7a0f61395",
+      "failures": [
+        {
+          "history": "cache_loss_and_corruption",
+          "first_step": 6,
+          "minimal": [
+            "Authorize",
+            "CorruptCache",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "repair-wrong-version",
+      "seed": 1103,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "d543ec405c98537c20ed73f2349985c429c618ff5a48aad15f34ee619ddfd28e",
+      "failures": [
+        {
+          "history": "cache_loss_and_corruption",
+          "first_step": 4,
+          "minimal": [
+            "Authorize",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "repair-wrong-version",
+      "seed": 2027,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "f4581bcf4f8a62f1ef94bae0c0aa86a5c8017f8829c64a21c4a50cdfd194e647",
+      "failures": [
+        {
+          "history": "cache_loss_and_corruption",
+          "first_step": 4,
+          "minimal": [
+            "Authorize",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    },
+    {
+      "mode": "repair-wrong-version",
+      "seed": 4099,
+      "exit": 2,
+      "replay_identical": true,
+      "trace_sha256": "04a0f20d9709b1873cd82928b62d0193ff22b6012053cdf15592c466e6a36aa7",
+      "failures": [
+        {
+          "history": "cache_loss_and_corruption",
+          "first_step": 4,
+          "minimal": [
+            "Authorize",
+            "Read"
+          ],
+          "one_minimal": true
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "No production provider or persistent cache validation",
+    "No full workspace test/clippy or okv-eval smoke",
+    "New semantic seam requires review before eval suite/OTel freeze; no OTel export performed",
+    "One-deletion-minimal witnesses; not a proof of globally shortest histories",
+    "Seeded delays in explicitly selected interleavings, not exhaustive concurrency exploration"
+  ]
+}
