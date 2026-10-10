@@ -196,7 +196,12 @@ fn external_reference_rejects_each_unsafe_subject_without_trusting_verdict() {
         CacheMode::RepairWrongVersion,
     ] {
         let report = run_cache_resurrection(1103, "frozen-reference", mode).unwrap();
-        assert!(matches_reference(&serde_json::to_value(report).unwrap()).is_err());
+        let receipt = serde_json::to_value(report).unwrap();
+        let error = matches_reference(&receipt).unwrap_err();
+        assert!(
+            error.contains(" step "),
+            "poison must fail semantics, not missing coverage: {error}"
+        );
     }
 }
 
@@ -219,7 +224,7 @@ fn external_reference_rejects_always_refuse_mutant() {
 }
 
 #[test]
-fn oracle_rejects_forged_verdicts_and_each_missing_progress_observation() {
+fn oracle_rejects_missing_progress_and_wrong_byte_observations() {
     let report = run_cache_resurrection(1103, "frozen-reference", CacheMode::Correct).unwrap();
     let original = serde_json::to_value(report).unwrap();
     assert!(matches_reference(&original).is_ok());

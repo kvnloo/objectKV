@@ -11,7 +11,7 @@ fn correct_cache_histories_replay_and_never_return_wrong_bytes() {
             report,
             run_cache_resurrection(seed, "fixture", CacheMode::Correct).unwrap()
         );
-        assert_eq!(report.histories.len(), 8);
+        assert_eq!(report.histories.len(), 9);
         assert!(report
             .histories
             .iter()
