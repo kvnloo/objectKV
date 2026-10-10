@@ -104,7 +104,7 @@ fn merge(
         .map(|index| (format!("p{index:02}"), LOWER_BOUND))
         .chain(std::iter::once(("west".to_owned(), LOWER_BOUND)))
         .collect::<BTreeMap<_, _>>();
-    let stats = Arc::new(StreamExecutionStats::default());
+    let execution_stats = Arc::new(StreamExecutionStats::default());
     (
         StreamingMergeState::new(
             base,
@@ -113,18 +113,21 @@ fn merge(
             LOWER_BOUND,
             watermarks,
             StreamingOverlayMode::Correct,
-            Arc::clone(&stats),
+            Arc::clone(&execution_stats),
         ),
-        stats,
+        execution_stats,
     )
 }
 
-fn assert_group_limit(error: DataFusionError, stats: &StreamExecutionStats) {
+fn assert_group_limit(error: DataFusionError, execution_stats: &StreamExecutionStats) {
     let DataFusionError::ResourcesExhausted(message) = error else {
         panic!("expected early resource refusal, received {error}");
     };
     assert_eq!(message, "logical id 1 group has 17 rows; limit is 16");
-    assert_eq!(stats.maximum_group_rows.load(Ordering::Relaxed), 17);
+    assert_eq!(
+        execution_stats.maximum_group_rows.load(Ordering::Relaxed),
+        17
+    );
 }
 
 fn latest_row(id: u64, version: u64) -> SnapshotRow {
@@ -142,10 +145,10 @@ async fn base_group_refuses_row_17_before_polling_row_18() {
     let (base, base_polls) =
         counted_stream(base_input_schema(), base_batches(&base_rows(1, 17)), true);
     let (tail, _) = counted_stream(tail_input_schema(), Vec::new(), false);
-    let (mut state, stats) = merge(base, tail);
+    let (mut state, execution_stats) = merge(base, tail);
     assert_group_limit(
         state.next_group().await.expect_err("oversized base group"),
-        &stats,
+        &execution_stats,
     );
     assert_eq!(base_polls.load(Ordering::Relaxed), 17);
 }
@@ -158,10 +161,10 @@ async fn tail_group_refuses_row_17_before_polling_row_18() {
         tail_batches(&tail_rows(1, 6..=22)),
         true,
     );
-    let (mut state, stats) = merge(base, tail);
+    let (mut state, execution_stats) = merge(base, tail);
     assert_group_limit(
         state.next_group().await.expect_err("oversized tail group"),
-        &stats,
+        &execution_stats,
     );
     assert_eq!(tail_polls.load(Ordering::Relaxed), 17);
 }
@@ -175,10 +178,10 @@ async fn mixed_group_refuses_combined_row_17_before_polling_row_18() {
         tail_batches(&tail_rows(1, 6..=14)),
         true,
     );
-    let (mut state, stats) = merge(base, tail);
+    let (mut state, execution_stats) = merge(base, tail);
     assert_group_limit(
         state.next_group().await.expect_err("oversized mixed group"),
-        &stats,
+        &execution_stats,
     );
     assert_eq!(base_polls.load(Ordering::Relaxed), 9);
     assert_eq!(tail_polls.load(Ordering::Relaxed), 9);
@@ -190,10 +193,10 @@ async fn mixed_group_counts_tail_lookahead_before_another_base_poll() {
         counted_stream(base_input_schema(), base_batches(&base_rows(1, 16)), true);
     let (tail, tail_polls) =
         counted_stream(tail_input_schema(), tail_batches(&tail_rows(1, [6])), true);
-    let (mut state, stats) = merge(base, tail);
+    let (mut state, execution_stats) = merge(base, tail);
     assert_group_limit(
         state.next_group().await.expect_err("oversized mixed group"),
-        &stats,
+        &execution_stats,
     );
     assert_eq!(base_polls.load(Ordering::Relaxed), 16);
     assert_eq!(tail_polls.load(Ordering::Relaxed), 1);
@@ -206,14 +209,17 @@ async fn exactly_16_base_rows_pass_and_the_next_id_gets_a_fresh_bound() {
     let rows = [first.clone(), second.clone()].concat();
     let (base, _) = counted_stream(base_input_schema(), base_batches(&rows), false);
     let (tail, _) = counted_stream(tail_input_schema(), Vec::new(), false);
-    let (mut state, stats) = merge(base, tail);
+    let (mut state, execution_stats) = merge(base, tail);
     assert_eq!(state.next_group().await.expect("first group"), Some(first));
     assert_eq!(
         state.next_group().await.expect("second group"),
         Some(second)
     );
     assert_eq!(state.next_group().await.expect("end of inputs"), None);
-    assert_eq!(stats.maximum_group_rows.load(Ordering::Relaxed), 16);
+    assert_eq!(
+        execution_stats.maximum_group_rows.load(Ordering::Relaxed),
+        16
+    );
 }
 
 #[tokio::test]
@@ -221,7 +227,7 @@ async fn exactly_16_tail_rows_pass_and_the_next_id_gets_a_fresh_bound() {
     let rows = [tail_rows(1, 6..=21), tail_rows(2, 6..=21)].concat();
     let (base, _) = counted_stream(base_input_schema(), Vec::new(), false);
     let (tail, _) = counted_stream(tail_input_schema(), tail_batches(&rows), false);
-    let (mut state, stats) = merge(base, tail);
+    let (mut state, execution_stats) = merge(base, tail);
     assert_eq!(
         state.next_group().await.expect("first group"),
         Some(vec![latest_row(1, 21)])
@@ -231,7 +237,10 @@ async fn exactly_16_tail_rows_pass_and_the_next_id_gets_a_fresh_bound() {
         Some(vec![latest_row(2, 21)])
     );
     assert_eq!(state.next_group().await.expect("end of inputs"), None);
-    assert_eq!(stats.maximum_group_rows.load(Ordering::Relaxed), 16);
+    assert_eq!(
+        execution_stats.maximum_group_rows.load(Ordering::Relaxed),
+        16
+    );
 }
 
 #[tokio::test]
@@ -242,13 +251,16 @@ async fn exactly_16_mixed_rows_suppress_base_and_emit_the_latest_tail() {
         tail_batches(&tail_rows(1, 6..=13)),
         false,
     );
-    let (mut state, stats) = merge(base, tail);
+    let (mut state, execution_stats) = merge(base, tail);
     assert_eq!(
         state.next_group().await.expect("mixed group"),
         Some(vec![latest_row(1, 13)])
     );
     assert_eq!(state.next_group().await.expect("end of inputs"), None);
-    assert_eq!(stats.maximum_group_rows.load(Ordering::Relaxed), 16);
+    assert_eq!(
+        execution_stats.maximum_group_rows.load(Ordering::Relaxed),
+        16
+    );
 }
 
 #[tokio::test]
@@ -262,7 +274,7 @@ async fn excluded_versions_do_not_count_toward_the_group_bound() {
     .concat();
     let (base, _) = counted_stream(base_input_schema(), Vec::new(), false);
     let (tail, _) = counted_stream(tail_input_schema(), tail_batches(&rows), false);
-    let (mut state, stats) = merge(base, tail);
+    let (mut state, execution_stats) = merge(base, tail);
     assert_eq!(
         state.next_group().await.expect("visible group"),
         Some(vec![latest_row(1, 21)])
@@ -272,7 +284,10 @@ async fn excluded_versions_do_not_count_toward_the_group_bound() {
         Some(vec![latest_row(2, TARGET)])
     );
     assert_eq!(state.next_group().await.expect("end of inputs"), None);
-    assert_eq!(stats.maximum_group_rows.load(Ordering::Relaxed), 16);
+    assert_eq!(
+        execution_stats.maximum_group_rows.load(Ordering::Relaxed),
+        16
+    );
 }
 
 #[tokio::test]
