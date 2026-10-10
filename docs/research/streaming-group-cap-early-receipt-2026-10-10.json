@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "project": "objectKV",
+  "change": "Enforce the existing 16-row logical-ID group bound incrementally in StreamingMergeState::next_group.",
+  "upstream_base": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+  "reviewed_local_commit": "3b60e7586113ce8f733f6341f8ffea08e84c0ce8",
+  "reviewed_git_tree": "0fc982e45d36f369689f003573f47d02ddffc7e8",
+  "commit_sequence": [
+    {
+      "purpose": "Freeze regression tests before the fix",
+      "local_commit": "52d481a9ea9bcdd5fa1abcc7d3c3ba78be45a280"
+    },
+    {
+      "purpose": "Add the incremental source guard",
+      "local_commit": "6bccbd62d7b2ae9452e7f91f1de897d28d9340da"
+    },
+    {
+      "purpose": "Rename only test-local statistics bindings for strict lint",
+      "local_commit": "3b60e7586113ce8f733f6341f8ffea08e84c0ce8"
+    }
+  ],
+  "files": [
+    {
+      "path": "crates/okv-htap/src/streaming.rs",
+      "git_blob_sha": "1992e1f46085808ba35ad123ef3533da96f09803",
+      "sha256": "138b3fb90775b8fa12ce78cb26d115fc065e2e4cb879ae28a691b11b48bdcfa8"
+    },
+    {
+      "path": "crates/okv-htap/src/streaming/tests/group_cap.rs",
+      "git_blob_sha": "dfe428b2ee41de110ea82579165ec68a39ac269d",
+      "sha256": "da5354346882d4d8b42717bc5ea885baf27153ddcf3d0a27cdd6ea75c13a105d"
+    }
+  ],
+  "regression_proof": {
+    "inputs": "Real ordered cursors, one-row Arrow batches, and poll-count poison sentinels.",
+    "original_production_with_final_tests": {
+      "passed": 9,
+      "expected_failures": 4,
+      "failure": "Requests another row after the first known seventeenth contributing row."
+    },
+    "fixed_production_source_fresh_replay": {
+      "passed": 15,
+      "failed": 0
+    },
+    "coverage": [
+      "Base-only, tail-only, mixed 8+9 and mixed 16+1 lookahead overflow",
+      "Exactly 16 contributing rows and fresh bounds for the next logical ID",
+      "Visibility exclusions at/below the lower bound and after the target",
+      "Latest after-image and delete semantics",
+      "Duplicate-base and cross-batch ordering validation",
+      "Existing correct and poisoned physical/streaming contracts"
+    ]
+  },
+  "validation": {
+    "rustfmt": "pass",
+    "strict_workspace_all_target_clippy": "pass",
+    "workspace_tests": {
+      "passed": 192,
+      "failed": 0,
+      "test_and_doc_targets": 34
+    },
+    "smoke": "pass using verified official-toolchain LLD-linked executable",
+    "frozen_htap_suites": {
+      "validated": 3,
+      "workloads": 16,
+      "correct_keep": 3,
+      "poison_discard": 13
+    }
+  },
+  "environment": {
+    "architecture": "Linux x86_64",
+    "rustc": "1.88.0 (6b00bc388 2025-06-23)",
+    "cargo": "1.88.0 (873a06493 2025-05-10)",
+    "build_jobs": 2,
+    "dev_debug": 0,
+    "test_debug": 0,
+    "incremental": 0,
+    "cargo_lock_sha256": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0"
+  },
+  "linker_disclosure": {
+    "default_link": "Interrupted after no observed progress; no smoke executable ran in this attempt. This attempt is NOT_RUN, not a pass.",
+    "recovery": "Bounded leaf-only cargo rustc rebuild using rust-lld included with the official Rust 1.88 toolchain; verified fresh ELF before execution. No source or dependency-cache change.",
+    "leaf_command": "cargo rustc --locked --offline -p okv-eval --bin okv-eval -- -C link-arg=-fuse-ld=lld",
+    "deadline_seconds": 180,
+    "eval_binary_sha256": "da28eb9e1f7c59f902909c985dd8dad6e20be8c5a87fd0af229ef1405286e1bd"
+  },
+  "claim_boundary": "Only early row-count refusal for one logical-ID group using the existing contributing-row cap. This does not establish a whole-plan or retained-byte bound, a bound on arbitrary input batches/payloads, or a bound on cursor work scanning excluded versions. No spill behavior or performance improvement is claimed.",
+  "credit": "Wiley Jones: existing architecture, RFC-0013, streaming implementation, and frozen evaluation contract. Kevin Rajan: regression tests and incremental correctness fix.",
+  "publication": {
+    "repository": "kvnloo/objectKV",
+    "branch": "research/htap/group-cap-early",
+    "method": "GitHub Git-data API. Commit metadata differs from local review commits; each reviewed source-stage Git tree and parent chain is verified.",
+    "source_stage_commit": "ec01f3a38f29e25fd24e8a29f8213916996074f8",
+    "source_stage_url": "https://github.com/kvnloo/objectKV/commit/ec01f3a38f29e25fd24e8a29f8213916996074f8",
+    "source_stage_tree": "0fc982e45d36f369689f003573f47d02ddffc7e8",
+    "commit_mapping": [
+      {
+        "local_commit": "52d481a9ea9bcdd5fa1abcc7d3c3ba78be45a280",
+        "remote_commit": "216cf9b5f1135ee60acfda079e786e540544ae63",
+        "tree_sha": "b2a13d76e3f004c7cf234a1681c3bc477f7a073b",
+        "parent_remote_commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+        "url": "https://github.com/kvnloo/objectKV/commit/216cf9b5f1135ee60acfda079e786e540544ae63"
+      },
+      {
+        "local_commit": "6bccbd62d7b2ae9452e7f91f1de897d28d9340da",
+        "remote_commit": "295cdc39374e190fff4d8af15dbf7738476dd4f4",
+        "tree_sha": "62453675642af891b2ad6a496e6c53319f63c9c6",
+        "parent_remote_commit": "216cf9b5f1135ee60acfda079e786e540544ae63",
+        "url": "https://github.com/kvnloo/objectKV/commit/295cdc39374e190fff4d8af15dbf7738476dd4f4"
+      },
+      {
+        "local_commit": "3b60e7586113ce8f733f6341f8ffea08e84c0ce8",
+        "remote_commit": "ec01f3a38f29e25fd24e8a29f8213916996074f8",
+        "tree_sha": "0fc982e45d36f369689f003573f47d02ddffc7e8",
+        "parent_remote_commit": "295cdc39374e190fff4d8af15dbf7738476dd4f4",
+        "url": "https://github.com/kvnloo/objectKV/commit/ec01f3a38f29e25fd24e8a29f8213916996074f8"
+      }
+    ],
+    "receipt_path": "docs/research/streaming-group-cap-early-receipt-2026-10-10.json"
+  },
+  "strongest_evidence": "Exactly 16 contributing rows remain accepted. The first known seventeenth row triggers ResourcesExhausted without another source poll, including 16 fetched base rows plus an already-fetched same-ID tail row.",
+  "portable_validation_commands": [
+    "export CARGO_BUILD_JOBS=2 CARGO_PROFILE_DEV_DEBUG=0 CARGO_PROFILE_TEST_DEBUG=0 CARGO_INCREMENTAL=0 CARGO_TARGET_DIR=\"$PWD/target/group-cap\"",
+    "cargo +1.88.0 fmt --all -- --check",
+    "cargo +1.88.0 clippy --workspace --all-targets -- -D warnings",
+    "cargo +1.88.0 test --workspace",
+    "cargo +1.88.0 test -p okv-htap",
+    "mkdir -p \"$CARGO_TARGET_DIR/tools\"",
+    "ln -s \"$(rustc +1.88.0 --print sysroot)/lib/rustlib/x86_64-unknown-linux-gnu/bin/rust-lld\" \"$CARGO_TARGET_DIR/tools/ld.lld\"",
+    "PATH=\"$CARGO_TARGET_DIR/tools:$PATH\" timeout --signal=INT --kill-after=15s 180s cargo +1.88.0 rustc --locked --offline -p okv-eval --bin okv-eval -- -C link-arg=-fuse-ld=lld",
+    "file \"$CARGO_TARGET_DIR/debug/okv-eval\" && readelf -h \"$CARGO_TARGET_DIR/debug/okv-eval\"",
+    "\"$CARGO_TARGET_DIR/debug/okv-eval\" smoke",
+    "\"$CARGO_TARGET_DIR/debug/okv-eval\" validate-suite evals/suites/htap-contract.toml",
+    "\"$CARGO_TARGET_DIR/debug/okv-eval\" validate-suite evals/suites/htap-physical.toml",
+    "\"$CARGO_TARGET_DIR/debug/okv-eval\" validate-suite evals/suites/htap-streaming.toml"
+  ]
+}
