@@ -37,8 +37,8 @@ remains exact.
 
 ## Separately frozen primary oracle
 
-- Test-only RED commit: `9291740736c67075aa689f73b6fb8c6f6cfa695e`
-- Minimal implementation commit: `8ab940a8e1912c8bcb71878508db7217a945584c`
+- Local test-only RED commit: `9291740736c67075aa689f73b6fb8c6f6cfa695e`
+- Local minimal implementation commit: `8ab940a8e1912c8bcb71878508db7217a945584c`
 - Frozen grader file: `crates/okv-htap/src/streaming/tests/input_partitions.rs`
 - Grader SHA-256: `1ad1cd83cfdca7d4ae9aeaddbaace32a3e450e353e15708ea83562c9a60b025c`
 
@@ -154,3 +154,17 @@ Repository-wide logs and source/executable identity receipts are alongside this
 file. These are local correctness gates; hosted CI and upstream adoption have
 not been established. No benchmark, cloud, production availability, or
 multi-execution-range claim is made.
+
+## Public reproducible revisions
+
+The public frozen RED is `f0f77e6b792286f449b4163db0802566975adf6e`; the minimal
+GREEN implementation is `e03823fc406f563fcad54fc0f751ebc047ce69ec`.
+The executed source checkpoint is `45b1da7aa629222ca3e993d5465122f35794b657`,
+and the complete validation receipt is `7bd3b2a3863aa011d7aeb813d6dc055753511d70`.
+Use these public revisions for separate RED/GREEN checkouts.
+
+`publication-map.json` maps the original local build/evidence commit IDs to
+these public API-created commits. Their complete Git trees are identical;
+API-created commit timestamps change commit IDs but do not change source or
+frozen grader bytes. The final upstream/owner check at 05:08 UTC still found
+main at the pinned revision and no overlapping partition-shape fix.

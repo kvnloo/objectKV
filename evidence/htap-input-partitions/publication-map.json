@@ -1,0 +1,38 @@
+{
+  "repository": "kvnloo/objectKV",
+  "branch": "research/htap/refuse-multipartition-inputs",
+  "upstream_repository": "Doss-com/objectKV",
+  "upstream_commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+  "ownership_refreshed_at": "2026-10-10T05:08:00Z",
+  "phases": [
+    {
+      "name": "frozen_red",
+      "local_commit": "9291740736c67075aa689f73b6fb8c6f6cfa695e",
+      "public_commit": "f0f77e6b792286f449b4163db0802566975adf6e",
+      "complete_tree": "1cc66f9df335e9ece0c480bd0319720d2af29712"
+    },
+    {
+      "name": "minimal_implementation",
+      "local_commit": "8ab940a8e1912c8bcb71878508db7217a945584c",
+      "public_commit": "e03823fc406f563fcad54fc0f751ebc047ce69ec",
+      "complete_tree": "ada496d6b4480a48b57a2af760e2223c32afd236"
+    },
+    {
+      "name": "executed_source_checkpoint",
+      "local_commit": "4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2",
+      "public_commit": "45b1da7aa629222ca3e993d5465122f35794b657",
+      "complete_tree": "7c5ab63daec0ad97ad73aee3417d81919ce207ba"
+    },
+    {
+      "name": "complete_validation_receipt",
+      "local_commit": "5483008b1c1fdb4f5ea15b4723743ee7afbe7af6",
+      "public_commit": "7bd3b2a3863aa011d7aeb813d6dc055753511d70",
+      "complete_tree": "b5918685cde1f4e15f62f516386c3ba85474acbd"
+    }
+  ],
+  "source_blob": "c238fd4c2fb5efbc1b4b6c2323476d8483f6cade",
+  "primary_grader_blob": "68fd71bf6e28bd122ef363d4ca5d165e9823eb1a",
+  "primary_grader_sha256": "1ad1cd83cfdca7d4ae9aeaddbaace32a3e450e353e15708ea83562c9a60b025c",
+  "independent_grader_sha256": "2252818e1b2da06ffdb5c2f6b691a374e3ba33d313c2f110ebf05dced347c429",
+  "identity_note": "API-created public commits have different commit IDs, with complete source trees verified equal to the corresponding local build/evidence commits."
+}
