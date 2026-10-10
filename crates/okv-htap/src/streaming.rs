@@ -1682,3 +1682,7 @@ mod tests {
         }
     }
 }
+
+#[cfg(test)]
+#[path = "streaming/tests/input_partitions.rs"]
+mod input_partitions;
