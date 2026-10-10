@@ -1,0 +1,150 @@
+{
+  "build_environment": {
+    "CARGO_BUILD_JOBS": "2",
+    "CARGO_PROFILE_DEV_DEBUG": "0",
+    "CARGO_PROFILE_TEST_DEBUG": "0",
+    "CARGO_INCREMENTAL": "0",
+    "toolchain": "1.88.0",
+    "dependency_mode": "offline and locked"
+  },
+  "format": [
+    "cargo",
+    "+1.88.0",
+    "fmt",
+    "--all",
+    "--",
+    "--check"
+  ],
+  "workspace_clippy": [
+    "cargo",
+    "+1.88.0",
+    "clippy",
+    "--offline",
+    "--locked",
+    "--workspace",
+    "--all-targets",
+    "--",
+    "-D",
+    "warnings"
+  ],
+  "workspace_tests": [
+    "cargo",
+    "+1.88.0",
+    "test",
+    "--offline",
+    "--locked",
+    "--workspace",
+    "--",
+    "--test-threads=2"
+  ],
+  "lld_leaf": [
+    "cargo",
+    "+1.88.0",
+    "rustc",
+    "--offline",
+    "--locked",
+    "-p",
+    "okv-eval",
+    "--bin",
+    "okv-eval",
+    "--",
+    "-C",
+    "link-arg=-fuse-ld=lld"
+  ],
+  "smoke": [
+    "<target>/debug/okv-eval",
+    "smoke"
+  ],
+  "streaming_workloads": [
+    [
+      "<target>/debug/okv-eval",
+      "run",
+      "evals/suites/htap-streaming.toml",
+      "--profile",
+      "local-fs",
+      "--backend",
+      "datafusion-local-fs",
+      "--workload",
+      "zebradb-streaming-overlay",
+      "--output",
+      "<receipt-directory>/zebradb-streaming-overlay.json"
+    ],
+    [
+      "<target>/debug/okv-eval",
+      "run",
+      "evals/suites/htap-streaming.toml",
+      "--profile",
+      "local-fs",
+      "--backend",
+      "datafusion-local-fs",
+      "--workload",
+      "zebradb-streaming-materialize-inputs",
+      "--output",
+      "<receipt-directory>/zebradb-streaming-materialize-inputs.json"
+    ],
+    [
+      "<target>/debug/okv-eval",
+      "run",
+      "evals/suites/htap-streaming.toml",
+      "--profile",
+      "local-fs",
+      "--backend",
+      "datafusion-local-fs",
+      "--workload",
+      "zebradb-streaming-reset-batch-group",
+      "--output",
+      "<receipt-directory>/zebradb-streaming-reset-batch-group.json"
+    ],
+    [
+      "<target>/debug/okv-eval",
+      "run",
+      "evals/suites/htap-streaming.toml",
+      "--profile",
+      "local-fs",
+      "--backend",
+      "datafusion-local-fs",
+      "--workload",
+      "zebradb-streaming-max-watermark",
+      "--output",
+      "<receipt-directory>/zebradb-streaming-max-watermark.json"
+    ],
+    [
+      "<target>/debug/okv-eval",
+      "run",
+      "evals/suites/htap-streaming.toml",
+      "--profile",
+      "local-fs",
+      "--backend",
+      "datafusion-local-fs",
+      "--workload",
+      "zebradb-streaming-rebase-continuation",
+      "--output",
+      "<receipt-directory>/zebradb-streaming-rebase-continuation.json"
+    ],
+    [
+      "<target>/debug/okv-eval",
+      "run",
+      "evals/suites/htap-streaming.toml",
+      "--profile",
+      "local-fs",
+      "--backend",
+      "datafusion-local-fs",
+      "--workload",
+      "zebradb-streaming-accept-unsorted",
+      "--output",
+      "<receipt-directory>/zebradb-streaming-accept-unsorted.json"
+    ]
+  ],
+  "final_runtime_environment": {
+    "RUSTUP_TOOLCHAIN": "1.88.0",
+    "PATH": "known shared Cargo bin prepended; RUSTUP_HOME and CARGO_HOME set to the matching installed toolchain/cache"
+  },
+  "lld_provenance": {
+    "source": "rust-lld bundled in the official installed Rust 1.88.0 x86_64 Linux toolchain; ld.lld on PATH is a symlink to that binary",
+    "sha256": "f8caf232fdaf43adf032d0aff6fdbac45fe978645c37acc094592a575d7fd8dc"
+  },
+  "final_eval_binary_sha256": "71a2ceae542da1d1085125f9c3dfd2955e7dd7b7b28a5a2569b384024ae40822",
+  "streaming_workload_invocations": 6,
+  "streaming_actual_sample_count": 18,
+  "streaming_actual_trace_receipt_count": 18
+}

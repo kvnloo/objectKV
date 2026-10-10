@@ -112,7 +112,45 @@ checkout, creating that directory if needed, then run:
 cargo +1.88.0 test -p okv-htap --test partition_shape_critic --offline --locked independent_partition_critic -- --nocapture --test-threads=1
 ```
 
-## Remaining validation
+## Final repository and adjacency gates
 
-Repository-wide format, strict clippy, tests, and smoke are pending. This receipt
-is not a full-workspace pass until those checks are recorded.
+- Workspace format: pass
+- Strict workspace all-target clippy: pass
+- Workspace tests: 188 passed, 0 failed, 0 ignored, 0 filtered out; 34 result
+  groups include 10 empty doctest groups
+- The 188 workspace tests include the seven primary tests. The 13 independent
+  critic checks were a separate unchanged-harness run and are not added to that
+  workspace total
+- Model/eval smoke: pass, zero correctness failures
+- Frozen streaming suite: six final workload invocations, with three actual
+  per-seed samples retained in each result (18 samples total). The correct
+  workload keeps and all five negative workloads discard. All exit zero;
+  schema and exact replay gates pass. This is not a count of independent
+  process-isolated performance runs
+
+The frozen final suite uses seeds 1103, 2207, and 3301, the unchanged 30-event
+budget, and the local-fs profile. The verdicts and gate evidence are retained in
+`streaming-workload-summary.json`.
+
+The direct initial suite invocations reported their runtime rustc field as
+`unknown` because the runtime shell lacked the toolchain PATH. Those raw local
+receipts were preserved; their hashes and the observation are recorded in
+`initial-runtime-profile-observation.json`. The final unchanged suite was rerun
+with the matching Rust PATH and explicit `RUSTUP_TOOLCHAIN=1.88.0`, and records
+`rustc 1.88.0 (6b00bc388 2025-06-23)` in every result. No source, oracle, suite,
+profile budget, or schema changed for that metadata repair.
+
+The eval executable was freshly built from source checkpoint
+`4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2` (implementation unchanged from
+`8ab940a`) with the existing official Rust 1.88.0 bundled LLD, passed directly
+as a leaf link argument. This avoids re-linking dependencies or retrying the
+previously problematic GNU-link path. The executable SHA-256 is
+`71a2ceae542da1d1085125f9c3dfd2955e7dd7b7b28a5a2569b384024ae40822`.
+The official bundled linker SHA-256 is
+`f8caf232fdaf43adf032d0aff6fdbac45fe978645c37acc094592a575d7fd8dc`.
+
+Exact commands and environment settings are in `commands-and-profile.json`.
+Repository-wide logs and source/executable identity receipts are alongside this
+file. These are local correctness gates; hosted CI and upstream adoption have
+not been established. No benchmark, cloud, production availability, or
+multi-execution-range claim is made.

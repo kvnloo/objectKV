@@ -1,0 +1,86 @@
+[
+  {
+    "workload": "zebradb-streaming-overlay",
+    "verdict": "keep",
+    "returncode": 0,
+    "result_sha256": "9245f07664e32c03927a69a3336212315fc59b568e0debddd9a0857c9fb3172d",
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "unknown"
+    },
+    "status": "held: runtime toolchain auto-identification missing; unchanged rerun has complete metadata"
+  },
+  {
+    "workload": "zebradb-streaming-materialize-inputs",
+    "verdict": "discard",
+    "returncode": 0,
+    "result_sha256": "613a903d2b1896b2cd410a64bf03c367e9e654c71ca91c465e12da80dd9bd6b7",
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "unknown"
+    },
+    "status": "held: runtime toolchain auto-identification missing; unchanged rerun has complete metadata"
+  },
+  {
+    "workload": "zebradb-streaming-reset-batch-group",
+    "verdict": "discard",
+    "returncode": 0,
+    "result_sha256": "1bfb774eb2f77d962e7fcf584cb8e824bb809dd9a1219c82aa50ee90d63c65a2",
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "unknown"
+    },
+    "status": "held: runtime toolchain auto-identification missing; unchanged rerun has complete metadata"
+  },
+  {
+    "workload": "zebradb-streaming-max-watermark",
+    "verdict": "discard",
+    "returncode": 0,
+    "result_sha256": "38191c05458963f5215300eec0b2e2991f2f236b4ad7bbcb5d193dca85f87e75",
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "unknown"
+    },
+    "status": "held: runtime toolchain auto-identification missing; unchanged rerun has complete metadata"
+  },
+  {
+    "workload": "zebradb-streaming-rebase-continuation",
+    "verdict": "discard",
+    "returncode": 0,
+    "result_sha256": "e067b3bf6419cb167674a03276973e1ae4520ac3235fc64b4fad7d5d1f63f502",
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "unknown"
+    },
+    "status": "held: runtime toolchain auto-identification missing; unchanged rerun has complete metadata"
+  },
+  {
+    "workload": "zebradb-streaming-accept-unsorted",
+    "verdict": "discard",
+    "returncode": 0,
+    "result_sha256": "3fffd845fba336296c5886f40bfaa7e4e6bb4a5058112720eddc34bde9a077f3",
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "unknown"
+    },
+    "status": "held: runtime toolchain auto-identification missing; unchanged rerun has complete metadata"
+  }
+]

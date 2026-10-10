@@ -1,0 +1,631 @@
+[
+  {
+    "workload": "zebradb-streaming-overlay",
+    "expected_verdict": "keep",
+    "verdict": "keep",
+    "returncode": 0,
+    "run_id": "af061a89-ddc2-4837-bd4f-f88de167833c",
+    "candidate_commit": "4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2",
+    "parent_commit": "8ab940a8e1912c8bcb71878508db7217a945584c",
+    "result_sha256": "c334e27639dd595da5308727f2658f34d173794d98c5e94fc28015db2273554d",
+    "suite_hash": "8d264833fa49c7a59e2e4664bc1d8f243834cc36bb8b5a111b95a37dbda9280c",
+    "seeds": [
+      1103,
+      2207,
+      3301
+    ],
+    "hard_gates": [
+      {
+        "id": "correctness_failures",
+        "status": "pass"
+      },
+      {
+        "id": "budget_must_hold",
+        "status": "pass"
+      },
+      {
+        "id": "schema_valid",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.exact_seed_replay",
+        "status": "pass"
+      },
+      {
+        "detail": "events=24, base_rows=21, tail_rows=27, output_rows=21, input_batches=210, output_batches=84, peak_buffered_rows=4, peak_buffered_bytes=5518, maximum_group_rows=3, materialized_rows=0",
+        "id": "htap_streaming.semantic_operations_exercised",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.exact_result",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.parquet_round_trip",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.arrow_tail_complete",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.incremental_emission",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.input_order_validated",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.batch_boundary_groups_preserved",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.independent_watermarks",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.continuation_target_bound",
+        "status": "pass"
+      },
+      {
+        "detail": "peak_rows=4, peak_bytes=5518, maximum_group_rows=3, materialized_rows=0",
+        "id": "htap_streaming.buffer_bound_holds",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.output_order_declared",
+        "status": "pass"
+      }
+    ],
+    "primary_metric": {
+      "direction": "lower",
+      "mad": 0.0,
+      "median": 0.0,
+      "name": "okv.eval.correctness.anomalies",
+      "samples": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unit": "{anomaly}"
+    },
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "rustc 1.88.0 (6b00bc388 2025-06-23)"
+    },
+    "budget": {
+      "kind": "events",
+      "limit": 30.0,
+      "observed": 24.0
+    }
+  },
+  {
+    "workload": "zebradb-streaming-materialize-inputs",
+    "expected_verdict": "discard",
+    "verdict": "discard",
+    "returncode": 0,
+    "run_id": "0ff8824e-7c51-4811-a2c6-489017134f65",
+    "candidate_commit": "4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2",
+    "parent_commit": "8ab940a8e1912c8bcb71878508db7217a945584c",
+    "result_sha256": "38b3f9704db7943c5e88c071d68179a8005fc6ff2f70abf8f3d39fee0426fe8c",
+    "suite_hash": "8d264833fa49c7a59e2e4664bc1d8f243834cc36bb8b5a111b95a37dbda9280c",
+    "seeds": [
+      1103,
+      2207,
+      3301
+    ],
+    "hard_gates": [
+      {
+        "id": "correctness_failures",
+        "status": "fail"
+      },
+      {
+        "id": "budget_must_hold",
+        "status": "pass"
+      },
+      {
+        "id": "schema_valid",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.exact_seed_replay",
+        "status": "pass"
+      },
+      {
+        "detail": "events=24, base_rows=21, tail_rows=27, output_rows=21, input_batches=210, output_batches=21, peak_buffered_rows=16, peak_buffered_bytes=29043, maximum_group_rows=0, materialized_rows=336",
+        "id": "htap_streaming.semantic_operations_exercised",
+        "status": "pass"
+      },
+      {
+        "detail": "seed 1103: operator did not emit incrementally: materialized_rows=112, full_scan_batches=1",
+        "id": "htap_streaming.exact_result",
+        "status": "fail"
+      },
+      {
+        "id": "htap_streaming.parquet_round_trip",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.arrow_tail_complete",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.incremental_emission",
+        "status": "fail"
+      },
+      {
+        "id": "htap_streaming.input_order_validated",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.batch_boundary_groups_preserved",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.independent_watermarks",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.continuation_target_bound",
+        "status": "pass"
+      },
+      {
+        "detail": "peak_rows=16, peak_bytes=29043, maximum_group_rows=0, materialized_rows=336",
+        "id": "htap_streaming.buffer_bound_holds",
+        "status": "fail"
+      },
+      {
+        "id": "htap_streaming.output_order_declared",
+        "status": "pass"
+      }
+    ],
+    "primary_metric": {
+      "direction": "lower",
+      "mad": 0.0,
+      "median": 2.0,
+      "name": "okv.eval.correctness.anomalies",
+      "samples": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "unit": "{anomaly}"
+    },
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "rustc 1.88.0 (6b00bc388 2025-06-23)"
+    },
+    "budget": {
+      "kind": "events",
+      "limit": 30.0,
+      "observed": 24.0
+    }
+  },
+  {
+    "workload": "zebradb-streaming-reset-batch-group",
+    "expected_verdict": "discard",
+    "verdict": "discard",
+    "returncode": 0,
+    "run_id": "5c57d88e-5497-4be5-96c8-2f74854d5988",
+    "candidate_commit": "4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2",
+    "parent_commit": "8ab940a8e1912c8bcb71878508db7217a945584c",
+    "result_sha256": "edd741e89d271fb641319a45093cca3ab8b363a9e11062b3666f71dae35ba62b",
+    "suite_hash": "8d264833fa49c7a59e2e4664bc1d8f243834cc36bb8b5a111b95a37dbda9280c",
+    "seeds": [
+      1103,
+      2207,
+      3301
+    ],
+    "hard_gates": [
+      {
+        "id": "correctness_failures",
+        "status": "fail"
+      },
+      {
+        "id": "budget_must_hold",
+        "status": "pass"
+      },
+      {
+        "id": "schema_valid",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.exact_seed_replay",
+        "status": "pass"
+      },
+      {
+        "detail": "events=24, base_rows=21, tail_rows=27, output_rows=24, input_batches=210, output_batches=84, peak_buffered_rows=4, peak_buffered_bytes=5422, maximum_group_rows=2, materialized_rows=0",
+        "id": "htap_streaming.semantic_operations_exercised",
+        "status": "pass"
+      },
+      {
+        "detail": "seed 1103: cross_batch_latest: expected [\"id=1|status=CLOSED|partition=west|amount_cents=110|priority=1\"], received [\"id=1|status=CLOSED|partition=west|amount_cents=100|priority=1\", \"id=1|status=CLOSED|partition=west|amount_cents=110|priority=1\"]",
+        "id": "htap_streaming.exact_result",
+        "status": "fail"
+      },
+      {
+        "id": "htap_streaming.parquet_round_trip",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.arrow_tail_complete",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.incremental_emission",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.input_order_validated",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.batch_boundary_groups_preserved",
+        "status": "fail"
+      },
+      {
+        "id": "htap_streaming.independent_watermarks",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.continuation_target_bound",
+        "status": "pass"
+      },
+      {
+        "detail": "peak_rows=4, peak_bytes=5422, maximum_group_rows=2, materialized_rows=0",
+        "id": "htap_streaming.buffer_bound_holds",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.output_order_declared",
+        "status": "pass"
+      }
+    ],
+    "primary_metric": {
+      "direction": "lower",
+      "mad": 0.0,
+      "median": 3.0,
+      "name": "okv.eval.correctness.anomalies",
+      "samples": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "unit": "{anomaly}"
+    },
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "rustc 1.88.0 (6b00bc388 2025-06-23)"
+    },
+    "budget": {
+      "kind": "events",
+      "limit": 30.0,
+      "observed": 24.0
+    }
+  },
+  {
+    "workload": "zebradb-streaming-max-watermark",
+    "expected_verdict": "discard",
+    "verdict": "discard",
+    "returncode": 0,
+    "run_id": "aabff7c3-bd75-478b-8bdf-fe72d706b69d",
+    "candidate_commit": "4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2",
+    "parent_commit": "8ab940a8e1912c8bcb71878508db7217a945584c",
+    "result_sha256": "7840304242c6e684e4777c7d89b287644fd3bfc45e4c3fec2d92698af55699f0",
+    "suite_hash": "8d264833fa49c7a59e2e4664bc1d8f243834cc36bb8b5a111b95a37dbda9280c",
+    "seeds": [
+      1103,
+      2207,
+      3301
+    ],
+    "hard_gates": [
+      {
+        "id": "correctness_failures",
+        "status": "fail"
+      },
+      {
+        "id": "budget_must_hold",
+        "status": "pass"
+      },
+      {
+        "id": "schema_valid",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.exact_seed_replay",
+        "status": "pass"
+      },
+      {
+        "detail": "events=24, base_rows=21, tail_rows=27, output_rows=21, input_batches=210, output_batches=84, peak_buffered_rows=4, peak_buffered_bytes=5422, maximum_group_rows=2, materialized_rows=0",
+        "id": "htap_streaming.semantic_operations_exercised",
+        "status": "pass"
+      },
+      {
+        "detail": "seed 1103: independent_watermark: expected [\"id=8|amount_cents=45\"], received [\"id=8|amount_cents=40\"]",
+        "id": "htap_streaming.exact_result",
+        "status": "fail"
+      },
+      {
+        "id": "htap_streaming.parquet_round_trip",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.arrow_tail_complete",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.incremental_emission",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.input_order_validated",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.batch_boundary_groups_preserved",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.independent_watermarks",
+        "status": "fail"
+      },
+      {
+        "id": "htap_streaming.continuation_target_bound",
+        "status": "fail"
+      },
+      {
+        "detail": "peak_rows=4, peak_bytes=5422, maximum_group_rows=2, materialized_rows=0",
+        "id": "htap_streaming.buffer_bound_holds",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.output_order_declared",
+        "status": "pass"
+      }
+    ],
+    "primary_metric": {
+      "direction": "lower",
+      "mad": 0.0,
+      "median": 4.0,
+      "name": "okv.eval.correctness.anomalies",
+      "samples": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "unit": "{anomaly}"
+    },
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "rustc 1.88.0 (6b00bc388 2025-06-23)"
+    },
+    "budget": {
+      "kind": "events",
+      "limit": 30.0,
+      "observed": 24.0
+    }
+  },
+  {
+    "workload": "zebradb-streaming-rebase-continuation",
+    "expected_verdict": "discard",
+    "verdict": "discard",
+    "returncode": 0,
+    "run_id": "d8d0f705-1066-4509-ad14-dc1f6b848c1d",
+    "candidate_commit": "4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2",
+    "parent_commit": "8ab940a8e1912c8bcb71878508db7217a945584c",
+    "result_sha256": "c73b8c1b0f3b4d6e6dbadfb53f906c8d22d4e2344da237b39564a4c266100bc8",
+    "suite_hash": "8d264833fa49c7a59e2e4664bc1d8f243834cc36bb8b5a111b95a37dbda9280c",
+    "seeds": [
+      1103,
+      2207,
+      3301
+    ],
+    "hard_gates": [
+      {
+        "id": "correctness_failures",
+        "status": "fail"
+      },
+      {
+        "id": "budget_must_hold",
+        "status": "pass"
+      },
+      {
+        "id": "schema_valid",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.exact_seed_replay",
+        "status": "pass"
+      },
+      {
+        "detail": "events=24, base_rows=21, tail_rows=27, output_rows=21, input_batches=180, output_batches=72, peak_buffered_rows=4, peak_buffered_bytes=5518, maximum_group_rows=3, materialized_rows=0",
+        "id": "htap_streaming.semantic_operations_exercised",
+        "status": "pass"
+      },
+      {
+        "detail": "seed 1103: continuation target was not preserved: token_valid=false, expected [\"id=6|status=OPEN|partition=east|amount_cents=60|priority=0\", \"id=7|status=OPEN|partition=east|amount_cents=505|priority=7\", \"id=8|status=OPEN|partition=west|amount_cents=45|priority=0\"], received [\"id=6|status=OPEN|partition=east|amount_cents=60|priority=0\", \"id=7|status=OPEN|partition=east|amount_cents=505|priority=7\", \"id=8|status=OPEN|partition=west|amount_cents=45|priority=0\", \"id=9|status=OPEN|partition=west|amount_cents=70|priority=0\"]",
+        "id": "htap_streaming.exact_result",
+        "status": "fail"
+      },
+      {
+        "id": "htap_streaming.parquet_round_trip",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.arrow_tail_complete",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.incremental_emission",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.input_order_validated",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.batch_boundary_groups_preserved",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.independent_watermarks",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.continuation_target_bound",
+        "status": "fail"
+      },
+      {
+        "detail": "peak_rows=4, peak_bytes=5518, maximum_group_rows=3, materialized_rows=0",
+        "id": "htap_streaming.buffer_bound_holds",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.output_order_declared",
+        "status": "pass"
+      }
+    ],
+    "primary_metric": {
+      "direction": "lower",
+      "mad": 0.0,
+      "median": 1.0,
+      "name": "okv.eval.correctness.anomalies",
+      "samples": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit": "{anomaly}"
+    },
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "rustc 1.88.0 (6b00bc388 2025-06-23)"
+    },
+    "budget": {
+      "kind": "events",
+      "limit": 30.0,
+      "observed": 24.0
+    }
+  },
+  {
+    "workload": "zebradb-streaming-accept-unsorted",
+    "expected_verdict": "discard",
+    "verdict": "discard",
+    "returncode": 0,
+    "run_id": "d6c7ed87-9f11-4678-9fee-5feb41208467",
+    "candidate_commit": "4ca824ac5d2a990cd5f2cec04f2ecc4d8f51d5b2",
+    "parent_commit": "8ab940a8e1912c8bcb71878508db7217a945584c",
+    "result_sha256": "d51d75ef85e158032f7044b4a2c371102595f1d1a373c152725aa7040b06a6e4",
+    "suite_hash": "8d264833fa49c7a59e2e4664bc1d8f243834cc36bb8b5a111b95a37dbda9280c",
+    "seeds": [
+      1103,
+      2207,
+      3301
+    ],
+    "hard_gates": [
+      {
+        "id": "correctness_failures",
+        "status": "fail"
+      },
+      {
+        "id": "budget_must_hold",
+        "status": "pass"
+      },
+      {
+        "id": "schema_valid",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.exact_seed_replay",
+        "status": "pass"
+      },
+      {
+        "detail": "events=24, base_rows=21, tail_rows=27, output_rows=21, input_batches=210, output_batches=84, peak_buffered_rows=4, peak_buffered_bytes=5518, maximum_group_rows=3, materialized_rows=0",
+        "id": "htap_streaming.semantic_operations_exercised",
+        "status": "pass"
+      },
+      {
+        "detail": "seed 1103: unsorted tail input was accepted while ordered output was declared",
+        "id": "htap_streaming.exact_result",
+        "status": "fail"
+      },
+      {
+        "id": "htap_streaming.parquet_round_trip",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.arrow_tail_complete",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.incremental_emission",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.input_order_validated",
+        "status": "fail"
+      },
+      {
+        "id": "htap_streaming.batch_boundary_groups_preserved",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.independent_watermarks",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.continuation_target_bound",
+        "status": "pass"
+      },
+      {
+        "detail": "peak_rows=4, peak_bytes=5518, maximum_group_rows=3, materialized_rows=0",
+        "id": "htap_streaming.buffer_bound_holds",
+        "status": "pass"
+      },
+      {
+        "id": "htap_streaming.output_order_declared",
+        "status": "pass"
+      }
+    ],
+    "primary_metric": {
+      "direction": "lower",
+      "mad": 0.0,
+      "median": 1.0,
+      "name": "okv.eval.correctness.anomalies",
+      "samples": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit": "{anomaly}"
+    },
+    "profile": {
+      "hash": "f878994466e19bf50c077e7455b2d466f6cd719b263ff21c76329f50e4d4bc97",
+      "id": "local-fs",
+      "lockfile_hash": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+      "machine": "x86_64",
+      "rustc": "rustc 1.88.0 (6b00bc388 2025-06-23)"
+    },
+    "budget": {
+      "kind": "events",
+      "limit": 30.0,
+      "observed": 24.0
+    }
+  }
+]

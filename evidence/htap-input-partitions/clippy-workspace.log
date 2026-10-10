@@ -1,0 +1,11 @@
+    Checking okv-model v0.0.0 (<checkout>/crates/okv-model)
+    Checking okv-wal v0.0.0 (<checkout>/crates/okv-wal)
+    Checking okv-publication v0.0.0 (<checkout>/crates/okv-publication)
+    Checking okv-sim v0.0.0 (<checkout>/crates/okv-sim)
+    Checking okv-slate v0.0.0 (<checkout>/crates/okv-slate)
+    Checking okv-consensus v0.0.0 (<checkout>/crates/okv-consensus)
+    Checking okv-htap v0.0.0 (<checkout>/crates/okv-htap)
+    Checking okv-object v0.0.0 (<checkout>/crates/okv-object)
+    Checking okv-postgres v0.0.0 (<checkout>/crates/okv-postgres)
+    Checking okv-eval v0.0.0 (<checkout>/crates/okv-eval)
+    Finished `dev` profile [unoptimized] target(s) in 39.48s
