@@ -1,0 +1,57 @@
+   Compiling okv-htap v0.0.0 (<checkout>/crates/okv-htap)
+    Finished `test` profile [unoptimized] target(s) in 12.23s
+     Running unittests src/lib.rs (<target>/debug/deps/okv_htap-1004b316f12b746e)
+
+running 7 tests
+test streaming::input_partitions::both_multipartition_inputs_are_exact_or_refused ... 
+thread 'streaming::input_partitions::both_multipartition_inputs_are_exact_or_refused' panicked at crates/okv-htap/src/streaming/tests/input_partitions.rs:164:13:
+assertion `left == right` failed: nonzero input partitions must not be silently omitted
+  left: [SnapshotRow { id: 1, status: "OPEN", partition: "west", amount_cents: 100, priority: 0 }]
+ right: [SnapshotRow { id: 1, status: "OPEN", partition: "west", amount_cents: 110, priority: 1 }, SnapshotRow { id: 3, status: "OPEN", partition: "west", amount_cents: 300, priority: 1 }]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+FAILED
+test streaming::input_partitions::partition_one_base_is_exact_or_refused ... 
+thread 'streaming::input_partitions::partition_one_base_is_exact_or_refused' panicked at crates/okv-htap/src/streaming/tests/input_partitions.rs:164:13:
+assertion `left == right` failed: nonzero input partitions must not be silently omitted
+  left: []
+ right: [SnapshotRow { id: 1, status: "OPEN", partition: "west", amount_cents: 100, priority: 0 }]
+FAILED
+test streaming::input_partitions::partition_one_delete_is_exact_or_refused ... 
+thread 'streaming::input_partitions::partition_one_delete_is_exact_or_refused' panicked at crates/okv-htap/src/streaming/tests/input_partitions.rs:164:13:
+assertion `left == right` failed: nonzero input partitions must not be silently omitted
+  left: [SnapshotRow { id: 1, status: "OPEN", partition: "west", amount_cents: 100, priority: 0 }]
+ right: []
+FAILED
+test streaming::input_partitions::partition_one_insert_is_exact_or_refused ... 
+thread 'streaming::input_partitions::partition_one_insert_is_exact_or_refused' panicked at crates/okv-htap/src/streaming/tests/input_partitions.rs:164:13:
+assertion `left == right` failed: nonzero input partitions must not be silently omitted
+  left: [SnapshotRow { id: 1, status: "OPEN", partition: "west", amount_cents: 100, priority: 0 }]
+ right: [SnapshotRow { id: 1, status: "OPEN", partition: "west", amount_cents: 100, priority: 0 }, SnapshotRow { id: 2, status: "OPEN", partition: "west", amount_cents: 200, priority: 1 }]
+FAILED
+test streaming::input_partitions::partition_one_update_is_exact_or_refused ... 
+thread 'streaming::input_partitions::partition_one_update_is_exact_or_refused' panicked at crates/okv-htap/src/streaming/tests/input_partitions.rs:164:13:
+assertion `left == right` failed: nonzero input partitions must not be silently omitted
+  left: [SnapshotRow { id: 1, status: "OPEN", partition: "west", amount_cents: 100, priority: 0 }]
+ right: [SnapshotRow { id: 1, status: "OPEN", partition: "west", amount_cents: 110, priority: 1 }]
+FAILED
+test streaming::input_partitions::sql_planner_multipartition_tail_is_exact_or_explicitly_refused ... 
+thread 'streaming::input_partitions::sql_planner_multipartition_tail_is_exact_or_explicitly_refused' panicked at crates/okv-htap/src/streaming/tests/input_partitions.rs:290:23:
+assertion `left == right` failed
+  left: [SnapshotRow { id: 1, status: "OPEN", partition: "west", amount_cents: 100, priority: 0 }, SnapshotRow { id: 2, status: "OPEN", partition: "west", amount_cents: 200, priority: 0 }]
+ right: [SnapshotRow { id: 1, status: "OPEN", partition: "west", amount_cents: 110, priority: 1 }, SnapshotRow { id: 3, status: "OPEN", partition: "west", amount_cents: 300, priority: 1 }]
+FAILED
+test streaming::input_partitions::sql_planner_single_partition_preserves_exact_snapshot ... ok
+
+failures:
+
+failures:
+    streaming::input_partitions::both_multipartition_inputs_are_exact_or_refused
+    streaming::input_partitions::partition_one_base_is_exact_or_refused
+    streaming::input_partitions::partition_one_delete_is_exact_or_refused
+    streaming::input_partitions::partition_one_insert_is_exact_or_refused
+    streaming::input_partitions::partition_one_update_is_exact_or_refused
+    streaming::input_partitions::sql_planner_multipartition_tail_is_exact_or_explicitly_refused
+
+test result: FAILED. 1 passed; 6 failed; 0 ignored; 0 measured; 4 filtered out; finished in 0.02s
+
+error: test failed, to rerun pass `-p okv-htap --lib`

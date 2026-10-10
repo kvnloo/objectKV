@@ -1,0 +1,25 @@
+   Compiling okv-htap v0.0.0 (<checkout>/crates/okv-htap)
+    Finished `test` profile [unoptimized] target(s) in 1.67s
+     Running unittests src/lib.rs (<target>/debug/deps/okv_htap-1004b316f12b746e)
+
+running 11 tests
+test streaming::input_partitions::partition_one_insert_is_exact_or_refused ... ok
+test streaming::input_partitions::partition_one_base_is_exact_or_refused ... ok
+test streaming::input_partitions::partition_one_delete_is_exact_or_refused ... ok
+test streaming::input_partitions::both_multipartition_inputs_are_exact_or_refused ... ok
+test streaming::input_partitions::partition_one_update_is_exact_or_refused ... ok
+test streaming::input_partitions::sql_planner_single_partition_preserves_exact_snapshot ... ok
+test streaming::input_partitions::sql_planner_multipartition_tail_is_exact_or_explicitly_refused ... ok
+test tests::correct_physical_overlay_matches_oracle ... ok
+test streaming::tests::correct_streaming_overlay_is_exact_and_bounded ... ok
+test tests::poisoned_subjects_are_detected ... ok
+test streaming::tests::every_streaming_negative_control_is_detected ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+   Doc-tests okv_htap
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

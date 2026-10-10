@@ -1,0 +1,87 @@
+   Compiling okv-htap v0.0.0 (<review-checkout>/crates/okv-htap)
+    Finished `test` profile [unoptimized] target(s) in 11.87s
+     Running tests/partition_shape_critic.rs (<target>/debug/deps/partition_shape_critic-77bdc640867d6796)
+
+running 13 tests
+test internal_adapter::independent_partition_critic::actual_parquet_files_produce_multiple_base_partitions_and_refuse ... 
+thread 'internal_adapter::independent_partition_critic::actual_parquet_files_produce_multiple_base_partitions_and_refuse' panicked at crates/okv-htap/tests/partition_shape_critic.rs:365:32:
+Parquet row was silently omitted: Ok(["id=10|status=OPEN|partition=west|amount_cents=100|priority=0", "id=20|status=OPEN|partition=west|amount_cents=200|priority=0"])
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+FAILED
+test internal_adapter::independent_partition_critic::empty_single_partition_inputs_are_valid_in_both_modes ... ok
+test internal_adapter::independent_partition_critic::independent_single_partition_update_delete_insert_result_is_exact ... ok
+test internal_adapter::independent_partition_critic::optimizer_child_replacement_cannot_bypass_guard ... 
+thread 'internal_adapter::independent_partition_critic::optimizer_child_replacement_cannot_bypass_guard' panicked at crates/okv-htap/tests/partition_shape_critic.rs:157:13:
+assertion failed: matches!(outcome, Err(DataFusionError::Execution(_)))
+FAILED
+test internal_adapter::independent_partition_critic::real_optimizer_expands_originally_single_partition_tail_and_fails_closed ... 
+thread 'internal_adapter::independent_partition_critic::real_optimizer_expands_originally_single_partition_tail_and_fails_closed' panicked at crates/okv-htap/tests/partition_shape_critic.rs:278:32:
+Planner produced incomplete rows instead of refusing: Ok(["id=10|status=OPEN|partition=west|amount_cents=110|priority=0"])
+FAILED
+test internal_adapter::independent_partition_critic::reject_one_two_before_base_starts ... 
+thread 'internal_adapter::independent_partition_critic::reject_one_two_before_base_starts' panicked at crates/okv-htap/tests/partition_shape_critic.rs:95:13:
+assertion `left == right` failed: Both shapes must be validated before either child executes: 1/2
+  left: (1, 1)
+ right: (0, 0)
+FAILED
+test internal_adapter::independent_partition_critic::reject_one_zero_before_base_starts ... 
+thread 'internal_adapter::independent_partition_critic::reject_one_zero_before_base_starts' panicked at crates/okv-htap/tests/partition_shape_critic.rs:95:13:
+assertion `left == right` failed: Both shapes must be validated before either child executes: 1/0
+  left: (1, 1)
+ right: (0, 0)
+FAILED
+test internal_adapter::independent_partition_critic::reject_two_one ... 
+thread 'internal_adapter::independent_partition_critic::reject_two_one' panicked at crates/okv-htap/tests/partition_shape_critic.rs:95:13:
+assertion `left == right` failed: Both shapes must be validated before either child executes: 2/1
+  left: (1, 1)
+ right: (0, 0)
+FAILED
+test internal_adapter::independent_partition_critic::reject_two_two ... 
+thread 'internal_adapter::independent_partition_critic::reject_two_two' panicked at crates/okv-htap/tests/partition_shape_critic.rs:95:13:
+assertion `left == right` failed: Both shapes must be validated before either child executes: 2/2
+  left: (1, 1)
+ right: (0, 0)
+FAILED
+test internal_adapter::independent_partition_critic::reject_two_zero ... 
+thread 'internal_adapter::independent_partition_critic::reject_two_zero' panicked at crates/okv-htap/tests/partition_shape_critic.rs:95:13:
+assertion `left == right` failed: Both shapes must be validated before either child executes: 2/0
+  left: (1, 1)
+ right: (0, 0)
+FAILED
+test internal_adapter::independent_partition_critic::reject_zero_one ... 
+thread 'internal_adapter::independent_partition_critic::reject_zero_one' panicked at crates/okv-htap/tests/partition_shape_critic.rs:95:13:
+assertion `left == right` failed: Both shapes must be validated before either child executes: 0/1
+  left: (1, 1)
+ right: (0, 0)
+FAILED
+test internal_adapter::independent_partition_critic::reject_zero_two ... 
+thread 'internal_adapter::independent_partition_critic::reject_zero_two' panicked at crates/okv-htap/tests/partition_shape_critic.rs:95:13:
+assertion `left == right` failed: Both shapes must be validated before either child executes: 0/2
+  left: (1, 1)
+ right: (0, 0)
+FAILED
+test internal_adapter::independent_partition_critic::reject_zero_zero ... 
+thread 'internal_adapter::independent_partition_critic::reject_zero_zero' panicked at crates/okv-htap/tests/partition_shape_critic.rs:95:13:
+assertion `left == right` failed: Both shapes must be validated before either child executes: 0/0
+  left: (1, 1)
+ right: (0, 0)
+FAILED
+
+failures:
+
+failures:
+    internal_adapter::independent_partition_critic::actual_parquet_files_produce_multiple_base_partitions_and_refuse
+    internal_adapter::independent_partition_critic::optimizer_child_replacement_cannot_bypass_guard
+    internal_adapter::independent_partition_critic::real_optimizer_expands_originally_single_partition_tail_and_fails_closed
+    internal_adapter::independent_partition_critic::reject_one_two_before_base_starts
+    internal_adapter::independent_partition_critic::reject_one_zero_before_base_starts
+    internal_adapter::independent_partition_critic::reject_two_one
+    internal_adapter::independent_partition_critic::reject_two_two
+    internal_adapter::independent_partition_critic::reject_two_zero
+    internal_adapter::independent_partition_critic::reject_zero_one
+    internal_adapter::independent_partition_critic::reject_zero_two
+    internal_adapter::independent_partition_critic::reject_zero_zero
+
+test result: FAILED. 2 passed; 11 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.03s
+
+error: test failed, to rerun pass `-p okv-htap --test partition_shape_critic`

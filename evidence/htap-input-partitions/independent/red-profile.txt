@@ -1,0 +1,6 @@
+source=4d4fc69ca7dea24acdbc9da8997b07498e1d02f5
+source_blob=8b71665b82fa62c81f70523ceca8af4f7e6baadc
+73381ec50058231a12a9a68c26370ecd0fcd508880cbe899de1b445190713ba4  crates/okv-htap/src/streaming.rs
+2252818e1b2da06ffdb5c2f6b691a374e3ba33d313c2f110ebf05dced347c429  crates/okv-htap/tests/partition_shape_critic.rs
+rustc 1.88.0 (6b00bc388 2025-06-23)
+Linux f40f26ef3d7f 6.18.44 #1 SMP Sat Sep 26 20:02:31 UTC 2026 x86_64 GNU/Linux

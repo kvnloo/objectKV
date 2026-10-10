@@ -1,0 +1,21 @@
+   Compiling okv-htap v0.0.0 (<review-checkout>/crates/okv-htap)
+    Finished `test` profile [unoptimized] target(s) in 11.79s
+     Running tests/partition_shape_critic.rs (<target>/debug/deps/partition_shape_critic-77bdc640867d6796)
+
+running 13 tests
+test internal_adapter::independent_partition_critic::actual_parquet_files_produce_multiple_base_partitions_and_refuse ... ok
+test internal_adapter::independent_partition_critic::empty_single_partition_inputs_are_valid_in_both_modes ... ok
+test internal_adapter::independent_partition_critic::independent_single_partition_update_delete_insert_result_is_exact ... ok
+test internal_adapter::independent_partition_critic::optimizer_child_replacement_cannot_bypass_guard ... ok
+test internal_adapter::independent_partition_critic::real_optimizer_expands_originally_single_partition_tail_and_fails_closed ... ok
+test internal_adapter::independent_partition_critic::reject_one_two_before_base_starts ... ok
+test internal_adapter::independent_partition_critic::reject_one_zero_before_base_starts ... ok
+test internal_adapter::independent_partition_critic::reject_two_one ... ok
+test internal_adapter::independent_partition_critic::reject_two_two ... ok
+test internal_adapter::independent_partition_critic::reject_two_zero ... ok
+test internal_adapter::independent_partition_critic::reject_zero_one ... ok
+test internal_adapter::independent_partition_critic::reject_zero_two ... ok
+test internal_adapter::independent_partition_critic::reject_zero_zero ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 9 filtered out; finished in 0.02s
+
