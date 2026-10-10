@@ -398,6 +398,23 @@ impl ExecutionPlan for StreamingSnapshotOverlayExec {
                 "StreamingSnapshotOverlayExec has one partition, received {partition}"
             )));
         }
+        // This adapter owns one logical-id range. Refuse an unsupported child
+        // shape before opening either stream rather than silently omitting data.
+        let base_partitions = self
+            .base
+            .properties()
+            .output_partitioning()
+            .partition_count();
+        let tail_partitions = self
+            .tail
+            .properties()
+            .output_partitioning()
+            .partition_count();
+        if base_partitions != 1 || tail_partitions != 1 {
+            return Err(DataFusionError::Execution(format!(
+                "StreamingSnapshotOverlayExec requires single-partition inputs: base partitions={base_partitions}, tail partitions={tail_partitions}"
+            )));
+        }
         let base = self.base.execute(0, Arc::clone(&context))?;
         let tail = self.tail.execute(0, context)?;
         let schema = snapshot_schema();
