@@ -36,6 +36,7 @@ fn bimodal_and_insufficient_controls_cannot_be_comparable() {
 #[test]
 fn invalid_policy_and_nonfinite_samples_are_rejected() {
     assert!(classify(&[f64::NAN], NoisePolicy::default()).is_err());
+    assert!(classify(&[f64::MAX, -f64::MAX, -f64::MAX], NoisePolicy::default()).is_err());
     assert!(classify(
         &[1.0],
         NoisePolicy {
@@ -96,7 +97,7 @@ mod processes {
             "candidate_commit": "abcdef0123456789", "parent_commit": "1234567890abcdef", "backend": "model", "seeds": [1103],
             "budget": {"kind": "operations", "limit": 10.0, "observed": 1.0},
             "hard_gates": [{"id": "fixture", "status": "pass"}],
-            "primary_metric": {"name": "okv.correctness.failures", "unit": "{failure}", "direction": "lower", "samples": [987654321], "median": 987654321, "mad": 0},
+            "primary_metric": {"name": "okv.correctness.failures", "unit": "{failure}", "direction": "lower", "samples": [987_654_321], "median": 987_654_321, "mad": 0},
             "secondary_metrics": {}, "verdict": "keep", "reason": "fixture only", "artifact_refs": []
         });
         // Use the actual registry contract, without redefining any instrument.
@@ -116,7 +117,7 @@ mod processes {
         .unwrap();
         fs::write(temp.path().join("mode"), mode).unwrap();
         let executable = temp.path().join("child.sh");
-        fs::write(&executable, r##"#!/bin/sh
+        fs::write(&executable, r#"#!/bin/sh
 set -eu
 base=$(dirname "$0")
 mode=$(cat "$base/mode")
@@ -136,7 +137,8 @@ case "$mode:$output" in
   identity:*measurement-0001*) sed 's/abcdef0123456789/abcdef0987654321/' "$output" > "$output.tmp"; mv "$output.tmp" "$output";;
   discard:*measurement-0001*) sed 's/"keep"/"discard"/' "$output" > "$output.tmp"; mv "$output.tmp" "$output";;
 esac
-"##).unwrap();
+if [ "$mode" = executable ]; then printf "\n# changed executable\n" >> "$0"; fi
+"#).unwrap();
         fs::set_permissions(&executable, fs::Permissions::from_mode(0o700)).unwrap();
         let options = RepeatOptions {
             executable,
@@ -199,7 +201,7 @@ esac
 
     #[test]
     fn failures_invalid_results_identity_drift_and_discards_are_retained() {
-        for mode in ["failed", "invalid", "identity", "discard"] {
+        for mode in ["failed", "invalid", "identity", "discard", "executable"] {
             let (_temp, options) = fixture(mode);
             let receipt = run_repeats(&options).unwrap();
             assert_eq!(receipt.verdict, "discard", "{mode}");

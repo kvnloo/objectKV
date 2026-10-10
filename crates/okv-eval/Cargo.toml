@@ -1,5 +1,6 @@
 [package]
 name = "okv-eval"
+default-run = "okv-eval"
 description = "Evaluation entrypoint for objectKV"
 edition.workspace = true
 license.workspace = true

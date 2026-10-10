@@ -2540,3 +2540,90 @@ Do not begin an open-ended autoresearch run until:
 
 See `docs/TELEMETRY.md` for signal roles, metric extension, and the local
 collector path.
+
+## Generic isolated repeats (downstream issue #4)
+
+`okv-eval-repeat` is an opt-in orchestration command for the existing single-pass
+`model_smoke`, `deterministic_generation_recovery`, and
+`commit_envelope_contract` operations. Other operations are rejected until their
+lifecycle and existing lane-local repeat behavior are reviewed. This changes no
+frozen suite, metric, result schema, correctness oracle, or measured implementation.
+The original `okv-eval run` command retains its behavior.
+
+```bash
+cargo build -p okv-eval --bins
+cargo run -p okv-eval --bin okv-eval-repeat -- evals/suites/smoke.toml \
+  --profile dev --workload model-smoke --backend model \
+  --repeats 5 --warmups 1 --output-dir /tmp/okv-repeat-smoke
+```
+
+Run from a clean committed checkout. `--allow-dirty` is diagnostic and can never
+produce a comparable receipt. The destination directory must not already exist;
+choose a new one for every invocation. Without `--repeats`, the runner uses
+`ProfileConfig.repeats`. An explicit override is recorded in the repeat receipt,
+without rewriting the profile or its hash. Repeat count, warmup count, tolerances,
+and timeout must be fixed before comparing any two receipts.
+
+Each warmup and measurement starts the same executable in a fresh OS process,
+with the same suite, profile, workload, backend, and dataset seeds. Each has its
+own run ID, process ID, output JSON, stdout and stderr. Warmups are separate
+processes, excluded from measurement samples, and have telemetry export disabled.
+They warm neither an in-process cache nor a later measurement process. Profiles
+requiring telemetry reject warmups rather than silently mixing phases. The
+admitted operations do not pool close, reopen, cleanup, or warmup measurements.
+
+Every attempt is retained, including crashes, timeouts, invalid results, failed
+hard gates and discards. `attempts.json` is checkpointed after each child; the
+original raw files remain available if the parent is interrupted. A failed
+warmup also invalidates comparability. Child results must pass the unchanged
+result schema and match the expected suite/profile hashes, lane/metric, backend
+and seeds. Source, toolchain, machine, lockfile and budget identity must stay
+constant across attempts. The executable SHA-256 is recorded and checked after
+every attempt. Reused child run IDs are rejected.
+
+The primary statistic is the median and MAD of **per-process primary medians**,
+not a blend of all inner seed samples or wall-clock lifecycle durations. The
+entire child sample set stays in the raw receipt. No sample is trimmed. The
+explicit noise policy rejects a distribution when its maximum absolute deviation
+from the median exceeds `max(absolute_tolerance, abs(median) *
+relative_tolerance)`. Defaults are zero absolute and 0.10 relative tolerance.
+This conservative spread check catches a single outlier even when MAD is zero,
+as well as separated modes. It is a comparability screen, not a confidence
+interval or a claim that a particular noise distribution was identified.
+
+At least three valid measurement processes are necessary for `comparable: true`.
+The separate `summary.verdict` is `comparable`, `noisy`, or `insufficient`;
+`comparable` additionally requires every attempt and hard gate to pass and no
+diagnostic source state. Noisy or failed runs receive `discard`; otherwise the
+schema-v1 aggregate receives `inconclusive`. This runner **never awards keep or
+chooses a winner**. A separate incumbent comparison must establish improvement.
+
+`receipt.json` records the repeat contract, workload, policy, all attempts and
+aggregate. `aggregate.json`, when at least one valid measured result exists,
+passes the existing result schema. Its budget is the maximum observed per-child
+measurement budget, not the sum of warmup and measurement. Secondary metrics and
+an incumbent value are not inherited from an arbitrary child. Its artifact
+references resolve relative to the output directory and lead to every raw
+attempt. If every measurement fails, no synthetic aggregate is invented.
+
+Measurement children retain the existing OTel path and cardinality enforcement.
+Repeat indices, PIDs, seeds, and artifact paths stay in artifacts; they are never
+added as metric labels. The parent does not export the aggregate a second time.
+
+Reproducible regression coverage:
+
+```bash
+cargo test -p okv-eval --test repeats
+cargo clippy -p okv-eval --all-targets -- -D warnings
+```
+
+Fixtures exercise stable, zero-valued, outlier and bimodal samples; separate OS
+processes and warmup exclusion; profile-default repeats; schema compatibility;
+failed exits, invalid JSON, source drift, timeouts and discard retention; and
+unchanged OTel label/cardinality enforcement. These are synthetic controls, not
+performance measurements. Process fixture tests use POSIX shell on Unix.
+
+Credit: this builds on Wiley Jones's objectKV/okv-eval implementation and issue
+#4, and the DOSS project RFCs and evaluation contract. Existing attribution and
+license are preserved. It is a separate downstream eval change, not an upstream
+acceptance or benchmark promotion.
