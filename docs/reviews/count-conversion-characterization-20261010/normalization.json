@@ -1,0 +1,124 @@
+{
+  "original_receipts_preserved_unchanged": true,
+  "normalizations": [
+    {
+      "original_receipt": "native-helper-witness/compiler.txt",
+      "public_receipt": "receipts/original-native/compiler.txt",
+      "original_sha256": "b2bdf493bcf6d1dc55181a0efc2774b6d9cf7bf5c8dcc5bed592c994b2ad38c4",
+      "public_sha256": "b2bdf493bcf6d1dc55181a0efc2774b6d9cf7bf5c8dcc5bed592c994b2ad38c4",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "native-helper-witness/compile.exit",
+      "public_receipt": "receipts/original-native/compile.exit",
+      "original_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "public_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "native-helper-witness/compile.stdout",
+      "public_receipt": "receipts/original-native/compile.stdout",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "native-helper-witness/compile.stderr",
+      "public_receipt": "receipts/original-native/compile.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "native-helper-witness/test.exit",
+      "public_receipt": "receipts/original-native/test.exit",
+      "original_sha256": "39b8dc3fc8b44765c8e6f1adee04c5b465e555ab791cc42d0d9e810d5b64297c",
+      "public_sha256": "39b8dc3fc8b44765c8e6f1adee04c5b465e555ab791cc42d0d9e810d5b64297c",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "native-helper-witness/test.stdout",
+      "public_receipt": "receipts/original-native/test.stdout",
+      "original_sha256": "c76773f76503b1963646ce39a9be1818aec2c430094cb82c584c916337fceb92",
+      "public_sha256": "c76773f76503b1963646ce39a9be1818aec2c430094cb82c584c916337fceb92",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "native-helper-witness/test.stderr",
+      "public_receipt": "receipts/original-native/test.stderr",
+      "original_sha256": "21fe8cee8df064e2d8fad3d47bef18a1ee4d66378a20b17842c33443b9873612",
+      "public_sha256": "32f755f41f28e96565bf0c7ba169bf72b38c8b09c0775d11c5105a9e7f290e40",
+      "transformation": "Replace only absolute harness path with witness.rs"
+    },
+    {
+      "original_receipt": "independent-native-replay/compiler.txt",
+      "public_receipt": "receipts/independent-native/compiler.txt",
+      "original_sha256": "b2bdf493bcf6d1dc55181a0efc2774b6d9cf7bf5c8dcc5bed592c994b2ad38c4",
+      "public_sha256": "b2bdf493bcf6d1dc55181a0efc2774b6d9cf7bf5c8dcc5bed592c994b2ad38c4",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "independent-native-replay/compile.exit",
+      "public_receipt": "receipts/independent-native/compile.exit",
+      "original_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "public_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "independent-native-replay/compile.stdout",
+      "public_receipt": "receipts/independent-native/compile.stdout",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "independent-native-replay/compile.stderr",
+      "public_receipt": "receipts/independent-native/compile.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "independent-native-replay/test.exit",
+      "public_receipt": "receipts/independent-native/test.exit",
+      "original_sha256": "39b8dc3fc8b44765c8e6f1adee04c5b465e555ab791cc42d0d9e810d5b64297c",
+      "public_sha256": "39b8dc3fc8b44765c8e6f1adee04c5b465e555ab791cc42d0d9e810d5b64297c",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "independent-native-replay/test.stdout",
+      "public_receipt": "receipts/independent-native/test.stdout",
+      "original_sha256": "bee9881293074005cccd14c2efd64c02f16705f296fcd142920dabfab6c3c8da",
+      "public_sha256": "bee9881293074005cccd14c2efd64c02f16705f296fcd142920dabfab6c3c8da",
+      "transformation": "Byte-identical"
+    },
+    {
+      "original_receipt": "independent-native-replay/test.stderr",
+      "public_receipt": "receipts/independent-native/test.stderr",
+      "original_sha256": "06722b6ffc67ae43f45b575bca3fd1a2914e999037ebcee6aebff2a756afef6d",
+      "public_sha256": "35d8bd4e73a7ef43c03fbc3205205b312e164d4833995d55b3ada6cbc6179e63",
+      "transformation": "Replace only absolute harness path with witness.rs"
+    },
+    {
+      "original_receipt": "native-helper-witness/oracle.json",
+      "public_receipt": "oracle.json",
+      "original_sha256": "226bc29abdb408ed63b0c5595abc27b98079aa01026ce963aa995c25afc309c3",
+      "public_sha256": "6803ea237b39c318390d75bf1bc6ace5e63dabad15bd07548b4fa627a49bdfe0",
+      "transformation": "Remove internal reviewer identifier and add public verification description; fixture array unchanged"
+    },
+    {
+      "original_receipt": "native-helper-witness/commands.txt",
+      "public_receipt": "receipts/original-native/commands.txt",
+      "original_sha256": "e78c7e617d8e1ec4d72501e91c8918b143742dadc389afdffeffc3f64872c478",
+      "public_sha256": "7f7e37c0bd902326792f66b18d422759a5b220f09386cb190b43282a5a2e8fd7",
+      "transformation": "Replace absolute compiler/harness/binary paths with portable executable and file names; arguments unchanged"
+    },
+    {
+      "original_receipt": "independent-native-replay/commands.txt",
+      "public_receipt": "receipts/independent-native/commands.txt",
+      "original_sha256": "98f54ef4f08f74db4e0a26e950f0deb7eb7b720b8606cabd3c65dbbbe4de8b22",
+      "public_sha256": "7f7e37c0bd902326792f66b18d422759a5b220f09386cb190b43282a5a2e8fd7",
+      "transformation": "Replace absolute compiler/harness/binary paths with portable executable and file names; arguments unchanged"
+    }
+  ]
+}

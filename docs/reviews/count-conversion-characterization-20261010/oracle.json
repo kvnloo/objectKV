@@ -1,0 +1,47 @@
+{
+  "contract": "Exact integer reporting characterization, not a replacement implementation or production gate",
+  "range": "All eight integers are exactly representable by binary64; no rounding ambiguity or epsilon",
+  "fixtures": [
+    {
+      "name": "zero",
+      "input_u64": 0,
+      "expected_f64_decimal": "0.0"
+    },
+    {
+      "name": "one",
+      "input_u64": 1,
+      "expected_f64_decimal": "1.0"
+    },
+    {
+      "name": "u32_max",
+      "input_u64": 4294967295,
+      "expected_f64_decimal": "4294967295.0"
+    },
+    {
+      "name": "four_gib",
+      "input_u64": 4294967296,
+      "expected_f64_decimal": "4294967296.0"
+    },
+    {
+      "name": "four_gib_plus_one",
+      "input_u64": 4294967297,
+      "expected_f64_decimal": "4294967297.0"
+    },
+    {
+      "name": "ten_gib",
+      "input_u64": 10737418240,
+      "expected_f64_decimal": "10737418240.0"
+    },
+    {
+      "name": "f64_exact_integer_limit_minus_one",
+      "input_u64": 9007199254740991,
+      "expected_f64_decimal": "9007199254740991.0"
+    },
+    {
+      "name": "f64_exact_integer_limit",
+      "input_u64": 9007199254740992,
+      "expected_f64_decimal": "9007199254740992.0"
+    }
+  ],
+  "verification": "Fixture expectations independently reviewed before native compilation; metadata-only public normalization."
+}

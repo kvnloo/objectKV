@@ -1,0 +1,5 @@
+RUSTC=/absolute/path/to/already-installed/rustc bash docs/reviews/count-conversion-characterization-20261010/replay.sh NEW_OUTPUT_DIRECTORY
+Observed compiler: rustc 1.97.1 (8bab26f4f 2026-07-14)
+Invocation exit: 101
+Final replay executed once after portable executable packaging.
+Absolute local compiler/output paths replaced only in this invocation receipt.

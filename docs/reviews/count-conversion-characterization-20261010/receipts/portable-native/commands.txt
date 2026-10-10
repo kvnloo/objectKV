@@ -1,0 +1,2 @@
+rustc --edition=2021 --test witness.rs -o witness-tests
+witness-tests --nocapture --test-threads=1

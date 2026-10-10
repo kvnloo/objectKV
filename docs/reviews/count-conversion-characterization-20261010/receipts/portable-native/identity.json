@@ -1,0 +1,16 @@
+{
+  "witness_kind": "Native exact-source-extracted helper numeric characterization",
+  "pinned_source_commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+  "source_git_blob": "38e9c9bc380454a6007613c64ee1be71ff6e1c6a",
+  "source_sha256": "cd23e358bdd27fdf0c9b6299faec004d9665b490cd0cc9268ac8d8f37f58e7c2",
+  "extracted_helper_sha256": "5bedb4287f0acfe8850a8f5e1cd6e56735f501ebeea4726443d1d2621043d278",
+  "harness_sha256": "5c803b9e505e70ce9dd96dc178041d75f33880867290502dc7f605bc0e8c21aa",
+  "oracle_sha256": "6803ea237b39c318390d75bf1bc6ace5e63dabad15bd07548b4fa627a49bdfe0",
+  "production_crate_built": false,
+  "workload_executed": false,
+  "production_source_modified": false,
+  "expected_native_results": {
+    "passed": 3,
+    "failed": 5
+  }
+}

@@ -1,0 +1,22 @@
+
+running 8 tests
+test tests::f64_exact_integer_limit ... FAILED
+test tests::f64_exact_integer_limit_minus_one ... FAILED
+test tests::four_gib ... FAILED
+test tests::four_gib_plus_one ... FAILED
+test tests::one ... ok
+test tests::ten_gib ... FAILED
+test tests::u32_max ... ok
+test tests::zero ... ok
+
+failures:
+
+failures:
+    tests::f64_exact_integer_limit
+    tests::f64_exact_integer_limit_minus_one
+    tests::four_gib
+    tests::four_gib_plus_one
+    tests::ten_gib
+
+test result: FAILED. 3 passed; 5 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

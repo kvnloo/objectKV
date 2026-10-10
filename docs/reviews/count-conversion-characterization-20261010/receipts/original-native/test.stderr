@@ -1,0 +1,26 @@
+
+thread 'tests::f64_exact_integer_limit' (31) panicked at witness.rs:54:9:
+assertion `left == right` failed: input=9007199254740992; reporting should preserve this exactly representable integer
+  left: 4751297606873776128
+ right: 4845873199050653696
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'tests::f64_exact_integer_limit_minus_one' (32) panicked at witness.rs:48:9:
+assertion `left == right` failed: input=9007199254740991; reporting should preserve this exactly representable integer
+  left: 4751297606873776128
+ right: 4845873199050653695
+
+thread 'tests::four_gib' (33) panicked at witness.rs:30:9:
+assertion `left == right` failed: input=4294967296; reporting should preserve this exactly representable integer
+  left: 4751297606873776128
+ right: 4751297606875873280
+
+thread 'tests::four_gib_plus_one' (34) panicked at witness.rs:36:9:
+assertion `left == right` failed: input=4294967297; reporting should preserve this exactly representable integer
+  left: 4751297606873776128
+ right: 4751297606876921856
+
+thread 'tests::ten_gib' (36) panicked at witness.rs:42:9:
+assertion `left == right` failed: input=10737418240; reporting should preserve this exactly representable integer
+  left: 4751297606873776128
+ right: 4756927106410086400

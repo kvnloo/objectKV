@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-10-10T16:40:21.258321+00:00",
+  "witness_kind": "Native compiled exact extracted-helper numeric characterization",
+  "production_crate_built": false,
+  "workload_executed": false,
+  "production_source_modified": false,
+  "commit": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+  "source_lines": [
+    22077,
+    22079
+  ],
+  "source_git_blob": "38e9c9bc380454a6007613c64ee1be71ff6e1c6a",
+  "source_sha256": "cd23e358bdd27fdf0c9b6299faec004d9665b490cd0cc9268ac8d8f37f58e7c2",
+  "extracted_helper_sha256": "5bedb4287f0acfe8850a8f5e1cd6e56735f501ebeea4726443d1d2621043d278",
+  "extraction_includes_trailing_newline": true,
+  "harness_sha256": "5c803b9e505e70ce9dd96dc178041d75f33880867290502dc7f605bc0e8c21aa",
+  "expected_native_results": {
+    "passed": 3,
+    "failed": 5
+  },
+  "repository_pinned_toolchain": "1.88.0",
+  "witness_toolchain": "1.97.1 (existing sandbox compiler)",
+  "reference": "https://doc.rust-lang.org/reference/expressions/operator-expr.html#numeric-cast",
+  "source_path": "crates/okv-eval/src/main.rs",
+  "original_oracle_sha256": "226bc29abdb408ed63b0c5595abc27b98079aa01026ce963aa995c25afc309c3",
+  "portable_oracle_sha256": "6803ea237b39c318390d75bf1bc6ace5e63dabad15bd07548b4fa627a49bdfe0",
+  "upstream": "https://github.com/Doss-com/objectKV",
+  "downstream": "https://github.com/kvnloo/objectKV",
+  "ownership_checked_at": "2026-10-10T16:38:00Z",
+  "owner_credit": "Wiley Jones: objectKV architecture, evaluation contracts, and current evaluation work",
+  "owner_pr16": "https://github.com/Doss-com/objectKV/pull/16",
+  "owner_pr16_head": "4cfc4a46ed5b7ae628dd44b99a22d4da470329be",
+  "owner_pr16_helper_identical": true,
+  "historical_intent_verified": false,
+  "frozen_suite_run": false,
+  "production_fix": false,
+  "compiler_binary_sha256": "d3a664c970a9fd8361b64194861bebc1ae37b9054e5ee3400dc1c9e691797eea",
+  "portable_replay_compile_exit": 0,
+  "portable_replay_test_exit": 101
+}

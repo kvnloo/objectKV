@@ -1,0 +1,13 @@
+Unsent review question for Wiley Jones, objectKV owner:
+
+Is the u32 ceiling in bounded_count an intentional evaluation numeric contract?
+If so, where is the bound defined, and how should larger counts be surfaced
+without silently appearing as exact byte totals? If not, this exact-source
+characterization supports a separately reviewed numeric-conversion correction,
+with frozen measurements left intact.
+
+Evidence: pinned main 4d4fc69ca7dea24acdbc9da8997b07498e1d02f5;
+8 exactly representable integer fixtures; compile exit 0;
+3 passed, 5 failed; test exit 101. No production fix or workload run.
+Credit: Wiley Jones owns the architecture, evaluation contracts, and current
+objectKV evaluation work. No upstream message has been sent.
