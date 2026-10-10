@@ -102,3 +102,10 @@ places frozen eval and OTel receipts after semantic review. This change does not
 modify okv-eval, existing result schemas, frozen suites, or reference models, and
 does not fabricate telemetry. After review, freeze the seam contract in a
 separate change and connect the accepted history to the existing eval/OTel path.
+
+Independent recheck confirmed the unchanged oracle with a freshly compiled
+baseline (four RED tests) and freshly compiled candidate (17 GREEN tests).
+A shared Cargo target can otherwise reuse stale artifacts across worktrees;
+force package recompilation or use separate targets before comparing revisions.
+The bounded simulation prototype passes this review gate. Production/eval
+integration remains HOLD under the limits above.

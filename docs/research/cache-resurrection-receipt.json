@@ -553,5 +553,17 @@
     "One-deletion-minimal witnesses; not a proof of globally shortest histories",
     "Seeded delays in explicit interleavings, not exhaustive concurrency exploration",
     "Initial candidate and internal grader co-developed; external frozen oracle introduced during rework before candidate changes"
-  ]
+  ],
+  "source_freshness": {
+    "baseline_log_compiled_packages": [
+      "okv-wal",
+      "okv-model",
+      "okv-sim"
+    ],
+    "baseline_log_sha256": "cba33508d36827f5e00e26479e2d268e3a987d550666ae0efb760b598225eaeb",
+    "candidate_log_compiled_package": "okv-sim",
+    "candidate_log_sha256": "a94023f2bbd73aae1a8e88cdd94dc0f35863e6ebfee0684321850cbcc83390b5",
+    "independent_recheck": "fresh baseline compilation: 4/4 external-oracle tests RED; fresh candidate compilation: 17/17 tests GREEN; frozen oracle hash unchanged",
+    "warning": "Reusing a Cargo target across worktrees can reuse stale artifacts; force package rebuild or use isolated targets for each revision."
+  }
 }
