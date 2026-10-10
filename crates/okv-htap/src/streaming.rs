@@ -1656,6 +1656,8 @@ fn hex_sha256(bytes: &[u8]) -> String {
 mod tests {
     use super::{run_streaming_overlay_contract, StreamingOverlayMode};
 
+    mod group_cap;
+
     #[test]
     fn correct_streaming_overlay_is_exact_and_bounded() {
         let report = run_streaming_overlay_contract(1103, StreamingOverlayMode::Correct)
