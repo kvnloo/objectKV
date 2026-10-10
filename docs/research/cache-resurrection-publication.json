@@ -1,0 +1,53 @@
+{
+  "repository": "kvnloo/objectKV",
+  "branch": "research/cache-resurrection/authority-revalidation",
+  "publication_method": "GitHub Git Data API; chronological commits retained; each source tree verified equal before creating commit",
+  "note": "Connector-authored commit IDs differ from local tested IDs. Mappings below preserve exact trees, including the external oracle before candidate rework.",
+  "commits": [
+    {
+      "local": "acb7178fe690280e5a533b635ac5f543b3badf59",
+      "remote": "a6d9a52b6803bfceeb49f47351a89f7490ebd433",
+      "tree": "9523ec2387db1de03bc16831a0264506093924cf"
+    },
+    {
+      "local": "bec9501557231ca7feb46658ae187447c69e62d4",
+      "remote": "01b62cd0102b0c6fe12fa0e4fab4dc13e5edbd28",
+      "tree": "84c7e6f2c8584a8393a71c19aada5309fd80ce46"
+    },
+    {
+      "local": "fd79c1df674112703ea8c0dbaf645898be3b1b62",
+      "remote": "784993972214bd6be68620e58987c991444e2b31",
+      "tree": "af0bfacab256928391f50fb319dd2f29c7af85d0"
+    },
+    {
+      "local": "1e545b88ad543198199a0e2a4e947f003e4f8d96",
+      "remote": "7a08b4f950cec98c6f837f64c95a1d7ca7ff65b8",
+      "tree": "bbfaea7c1664e7beacc3d3befc64cdab075ebc81"
+    },
+    {
+      "local": "0f4e80d13b9f367bbb2f723fd387bf4669c219b9",
+      "remote": "71e4bb1b280e6a06201b252f126d1e63ddd9cd11",
+      "tree": "f821d8930d8f740d13b8aa1b043dc26ab733fc5d"
+    },
+    {
+      "local": "928b7020bef9991fd4ee04021754ee2901d7ada8",
+      "remote": "16eb6b3546210adf283ee66077f7819109b7e474",
+      "tree": "d0d96e50b5d3ef0a8ca86e456f392466cfdc2dac"
+    },
+    {
+      "local": "42cff606978742523066e5ea57639d3532d31e43",
+      "remote": "88425c8ec08cd8e760052326be8bb3673300bdaf",
+      "tree": "3306b74bb2ac6c47a1ca19fcdf019e1345ca5dde"
+    },
+    {
+      "local": "f39ad000c8165335256acb6b5f2b1929bd4b40b1",
+      "remote": "7eae4b4bd19274a15675f65b02524fde542086b3",
+      "tree": "e564ccd3603d3f5749b009e98bc35639dd56bd0d"
+    },
+    {
+      "local": "46e8e2820d9ee6a72774c2c97d122c5afcf84bf1",
+      "remote": "976700e4d25289890131efe916b1d1650f455938",
+      "tree": "863cd82ccee96be95bf76b9e816dbed959689f10"
+    }
+  ]
+}
