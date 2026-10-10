@@ -3,8 +3,13 @@
 #[cfg(not(tokio_unstable))]
 compile_error!("okv-sim requires --cfg tokio_unstable to seed Tokio runtime scheduling");
 
+mod cache;
 mod commit;
 mod persisted_wal;
+
+pub use cache::{
+    run_cache_resurrection, CacheAction, CacheEvent, CacheHistory, CacheMode, CacheReport,
+};
 
 pub use commit::{
     run_commit_contract, CommitCodecError, CommitContractMode, CommitContractReport,

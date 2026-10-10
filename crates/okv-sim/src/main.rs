@@ -1,5 +1,5 @@
 use clap::{Parser, Subcommand};
-use okv_sim::run_generation_fencing;
+use okv_sim::{run_cache_resurrection, run_generation_fencing, CacheMode};
 use std::error::Error;
 use std::process::Command;
 
@@ -13,6 +13,15 @@ struct Cli {
 
 #[derive(Debug, Subcommand)]
 enum Commands {
+    /// Emit bounded cache correctness histories and minimized counterexamples.
+    CacheReplay {
+        #[arg(long, default_value_t = 1103)]
+        seed: u64,
+        #[arg(long)]
+        source_revision: Option<String>,
+        #[arg(long, value_enum, default_value_t = CacheMode::Correct)]
+        mode: CacheMode,
+    },
     /// Emit one canonical generation-fencing trace.
     Replay {
         #[arg(long, default_value_t = 1103)]
@@ -26,6 +35,18 @@ enum Commands {
 
 fn main() -> Result<(), Box<dyn Error>> {
     match Cli::parse().command {
+        Commands::CacheReplay {
+            seed,
+            source_revision,
+            mode,
+        } => {
+            let revision = source_revision.unwrap_or_else(current_revision);
+            let report = run_cache_resurrection(seed, &revision, mode).map_err(io_error)?;
+            println!("{}", serde_json::to_string_pretty(&report)?);
+            if !report.passed() {
+                std::process::exit(2);
+            }
+        }
         Commands::Replay {
             seed,
             source_revision,
