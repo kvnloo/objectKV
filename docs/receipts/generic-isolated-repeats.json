@@ -1,0 +1,111 @@
+{
+  "receipt_version": 1,
+  "issue": "https://github.com/Doss-com/objectKV/issues/4",
+  "upstream_base": "4d4fc69ca7dea24acdbc9da8997b07498e1d02f5",
+  "credit": [
+    "Wiley Jones: upstream objectKV/okv-eval implementation and issue #4",
+    "DOSS: project RFCs and evaluation contracts"
+  ],
+  "candidate": {
+    "remote_commit": "4bebfaab6cffc2eb2242e0d15b2662ee4cd3a9e5",
+    "source_tree": "be96cd045db7b1524b5d947deb8012fc08056e3c",
+    "equivalent_local_test_commit": "352c3c9ab75f17fc589597571cb64c65edaa4b32",
+    "red_parent_remote": "26131a29bf5671af141931ae6f80196c3c3398e1"
+  },
+  "environment": {
+    "rustc": "1.97.1 (8bab26f4f 2026-07-14)",
+    "cargo": "1.97.1 (c980f4866 2026-06-30)",
+    "profile": "unoptimized dev/test, debug=0, incremental=0, jobs=2",
+    "repo_pinned_msrv": "1.88.0; not verified in this receipt"
+  },
+  "red": {
+    "command": "cargo test -p okv-eval --test repeats",
+    "result": "compilation failed: E0432 unresolved okv_eval::repeats API on baseline; failed test commit preserved"
+  },
+  "green": {
+    "baseline_lib_tests": 5,
+    "candidate_lib_tests": 5,
+    "repeat_integration_tests": 11,
+    "failed_tests": 0,
+    "command": "cargo test -p okv-eval",
+    "coverage": [
+      "stable and zero-valued distributions",
+      "zero-MAD outlier and bimodal controls discard",
+      "warmup excluded from measurement",
+      "separate process and run identities",
+      "profile-default repeat count",
+      "unchanged result-schema validation",
+      "failed exit, invalid JSON, source drift, modified executable, timeout and spawn failure preservation",
+      "no overwrite of artifacts",
+      "OTel cardinality and label contract"
+    ]
+  },
+  "format": {
+    "command": "cargo fmt --all -- --check",
+    "result": "pass"
+  },
+  "lint": {
+    "strict_command": "cargo clippy -p okv-eval --all-targets --no-deps -- -D warnings",
+    "strict_result": "blocked by unchanged upstream lint diagnostics under newer Clippy",
+    "baseline_diagnostics": [
+      "result.rs:108 manual_is_multiple_of",
+      "main.rs:4719 duplicated_attributes",
+      "main.rs:14120 duplicated_attributes"
+    ],
+    "scoped_command": "cargo clippy -p okv-eval --all-targets --no-deps -- -D warnings -A clippy::manual_is_multiple_of -A clippy::duplicated_attributes",
+    "scoped_result": "pass; no source-level allowances or unrelated baseline fixes added"
+  },
+  "actual_lane": {
+    "command": "okv-eval-repeat evals/suites/smoke.toml --profile dev --workload model-smoke --backend model --repeats 3 --warmups 1 --output-dir <fresh-directory>",
+    "invocations": 2,
+    "attempts_per_invocation": 4,
+    "attempt_errors": 0,
+    "seeds": [
+      1103
+    ],
+    "profile_hash": "fa186c2071e4cbc3edc600902c1459d13875281128b9541f4d85cf664bacc8f2",
+    "suite_hash": "0b6bf9b50c5ee3659a5b38b341ae5b6ed173257ecdab1e60908bcec621369a08",
+    "executable_sha256": "d3fb9a498275619bb721529c813cffbff1079b5906ddaa8a5f4ffcd481a5fb76",
+    "summary": {
+      "samples": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "median": 0.0,
+      "mad": 0.0,
+      "max_deviation": 0.0,
+      "verdict": "comparable"
+    },
+    "comparable": true,
+    "aggregate_verdict": "inconclusive",
+    "reproducible": [
+      "summary",
+      "policy",
+      "source commit",
+      "executable hash"
+    ],
+    "distinct_child_run_ids": 8,
+    "dirty_diagnostic": "stable numeric summary remains inconclusive and non-comparable"
+  },
+  "scope": {
+    "frozen_suites_changed": false,
+    "metric_or_result_schema_changed": false,
+    "measured_implementation_changed": false,
+    "benchmark_winner_selected": false,
+    "upstream_comments_or_prs_created": false
+  },
+  "ci": {
+    "checked_commit": "4bebfaab6cffc2eb2242e0d15b2662ee4cd3a9e5",
+    "check_runs": 0,
+    "workflow_runs": 0,
+    "commit_status_contexts": 0,
+    "note": "Existing workflow triggers pull_request and main pushes only. No fork-branch CI success is claimed."
+  },
+  "remaining_gates": [
+    "repository-pinned Rust 1.88 validation",
+    "full workspace validation",
+    "independent review; no upstream submission"
+  ],
+  "promotion": "HOLD for benchmark/upstream promotion; downstream tested implementation is available"
+}
