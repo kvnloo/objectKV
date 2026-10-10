@@ -16,6 +16,8 @@ pub enum CacheMode {
     SkipUseFence,
     TrustCacheBytes,
     RepairWrongVersion,
+    /// Overconservative negative control: deny every otherwise admitted read.
+    AlwaysRefuse,
 }
 
 /// Explicit interleaving points; finish operations must revalidate authorization.
@@ -139,7 +141,8 @@ impl Subject {
         }
     }
     fn use_allowed(&self, authority: &Authority, token: Token) -> bool {
-        self.mode == CacheMode::SkipUseFence || authority.admits(token)
+        self.mode != CacheMode::AlwaysRefuse
+            && (self.mode == CacheMode::SkipUseFence || authority.admits(token))
     }
     fn execute(&mut self, authority: &Authority, action: CacheAction) -> Outcome {
         let mut out = Outcome {
@@ -246,8 +249,24 @@ fn step(
         }
         _ => {}
     }
+    let delivery_token = match action {
+        CacheAction::Read => subject.authorized,
+        CacheAction::FinishStream => subject.streaming.as_ref().map(|(token, _)| *token),
+        _ => None,
+    };
+    let delivery_required = delivery_token.is_some_and(|token| {
+        authority.present
+            && authority.lease_active
+            && token.generation == authority.token.generation
+            && token.root == authority.token.root
+            && token.lease_epoch == authority.token.lease_epoch
+    });
     let out = subject.execute(authority, action);
-    let mut failure = None;
+    let mut failure = if delivery_required && out.returned.is_none() {
+        Some("admitted exact read failed to make progress".to_owned())
+    } else {
+        None
+    };
     if let Some(token) = out.published.or(out.used) {
         if !authority.present
             || !authority.lease_active
@@ -311,6 +330,10 @@ fn histories() -> Vec<(&'static str, Vec<CacheAction>)> {
         LoseCache, Overwrite, Populate, Read, ReleaseLease, RestoreOldRoot,
     };
     vec![
+        (
+            "successful_stream_completion",
+            vec![Authorize, Populate, BeginStream, FinishStream],
+        ),
         ("delete_then_read", vec![Authorize, Populate, Delete, Read]),
         (
             "overwrite_during_stream",
