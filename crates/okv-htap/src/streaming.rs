@@ -764,8 +764,22 @@ impl StreamingMergeState {
             (None, None) => return Ok(None),
         };
 
+        // The fetched tail row already belongs to this group. Count it before
+        // requesting another base row, even though tail reduction comes later.
+        let tail_lookahead_rows = usize::from(
+            self.next_tail
+                .as_ref()
+                .is_some_and(|effect| effect.id == id),
+        );
         let mut base_rows = Vec::new();
         while self.next_base.as_ref().is_some_and(|row| row.row.id == id) {
+            self.check_group_bound(
+                id,
+                base_rows
+                    .len()
+                    .saturating_add(1)
+                    .saturating_add(tail_lookahead_rows),
+            )?;
             let row = self.next_base.take().expect("predicate checked");
             base_rows.push(row);
             self.next_base = self.base.next_row().await?;
@@ -792,6 +806,10 @@ impl StreamingMergeState {
             {
                 break;
             }
+            self.check_group_bound(
+                id,
+                base_rows.len().saturating_add(tail_rows).saturating_add(1),
+            )?;
             let effect = self.next_tail.take().expect("predicate checked");
             tail_rows = tail_rows.saturating_add(1);
             latest_tail = Some(effect);
@@ -800,11 +818,6 @@ impl StreamingMergeState {
 
         let group_rows = base_rows.len().saturating_add(tail_rows);
         self.stats.record_group(group_rows);
-        if group_rows > MAXIMUM_GROUP_ROWS {
-            return Err(DataFusionError::ResourcesExhausted(format!(
-                "logical id {id} group has {group_rows} rows; limit is {MAXIMUM_GROUP_ROWS}"
-            )));
-        }
         self.record_buffered(group_rows, 0);
 
         if let Some(effect) = latest_tail {
@@ -833,6 +846,16 @@ impl StreamingMergeState {
         }
         rows.sort_by(|left, right| left.partition.cmp(&right.partition));
         Ok(Some(rows))
+    }
+
+    fn check_group_bound(&self, id: u64, group_rows: usize) -> DataFusionResult<()> {
+        if group_rows > MAXIMUM_GROUP_ROWS {
+            self.stats.record_group(group_rows);
+            return Err(DataFusionError::ResourcesExhausted(format!(
+                "logical id {id} group has {group_rows} rows; limit is {MAXIMUM_GROUP_ROWS}"
+            )));
+        }
+        Ok(())
     }
 
     async fn fill_lookahead(&mut self) -> DataFusionResult<()> {
