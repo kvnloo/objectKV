@@ -22082,6 +22082,9 @@ fn bounded_usize(value: usize) -> f64 {
     bounded_count(u64::try_from(value).unwrap_or(u64::MAX))
 }
 
+#[cfg(test)]
+mod count_conversion_tests;
+
 fn gate_status(passed: bool) -> GateStatus {
     if passed {
         GateStatus::Pass

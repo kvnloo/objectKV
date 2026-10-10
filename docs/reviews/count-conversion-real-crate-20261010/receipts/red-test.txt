@@ -1,0 +1,48 @@
+running 8 tests
+
+thread 'count_conversion_tests::f64_exact_integer_limit' panicked at crates/okv-eval/src/count_conversion_tests.rs:31:1:
+assertion `left == right` failed: input=9007199254740992; reporting should preserve this exactly representable integer
+  left: 4751297606873776128
+ right: 4845873199050653696
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'count_conversion_tests::f64_exact_integer_limit_minus_one' panicked at crates/okv-eval/src/count_conversion_tests.rs:26:1:
+assertion `left == right` failed: input=9007199254740991; reporting should preserve this exactly representable integer
+  left: 4751297606873776128
+ right: 4845873199050653695
+
+thread 'count_conversion_tests::four_gib' panicked at crates/okv-eval/src/count_conversion_tests.rs:23:1:
+assertion `left == right` failed: input=4294967296; reporting should preserve this exactly representable integer
+  left: 4751297606873776128
+ right: 4751297606875873280
+
+thread 'count_conversion_tests::four_gib_plus_one' panicked at crates/okv-eval/src/count_conversion_tests.rs:24:1:
+assertion `left == right` failed: input=4294967297; reporting should preserve this exactly representable integer
+  left: 4751297606873776128
+ right: 4751297606876921856
+test count_conversion_tests::f64_exact_integer_limit_minus_one ... FAILED
+test count_conversion_tests::four_gib ... FAILED
+test count_conversion_tests::four_gib_plus_one ... FAILED
+test count_conversion_tests::f64_exact_integer_limit ... FAILED
+
+thread 'count_conversion_tests::ten_gib' panicked at crates/okv-eval/src/count_conversion_tests.rs:25:1:
+assertion `left == right` failed: input=10737418240; reporting should preserve this exactly representable integer
+  left: 4751297606873776128
+ right: 4756927106410086400
+test count_conversion_tests::one ... ok
+test count_conversion_tests::u32_max ... ok
+test count_conversion_tests::ten_gib ... FAILED
+test count_conversion_tests::zero ... ok
+
+failures:
+
+failures:
+    count_conversion_tests::f64_exact_integer_limit
+    count_conversion_tests::f64_exact_integer_limit_minus_one
+    count_conversion_tests::four_gib
+    count_conversion_tests::four_gib_plus_one
+    count_conversion_tests::ten_gib
+
+test result: FAILED. 3 passed; 5 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p okv-eval --bin okv-eval`
