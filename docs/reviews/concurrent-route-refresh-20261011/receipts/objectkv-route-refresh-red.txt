@@ -1,6 +1,6 @@
-   Compiling okv-object v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-object)
+   Compiling okv-object v0.0.0 (<CHECKOUT>/crates/okv-object)
     Finished `test` profile [unoptimized + debuginfo] target(s) in 14.76s
-     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_object-d26173ceb75cb679)
+     Running unittests src/lib.rs (<TARGET_DIR>/debug/deps/okv_object-d26173ceb75cb679)
 
 running 1 test
 
