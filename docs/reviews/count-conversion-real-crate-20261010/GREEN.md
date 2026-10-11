@@ -33,11 +33,20 @@ This test verifies numeric reporting in compiled crate code; it does not run a
 workload with multi-gigabyte transfers or establish a performance/economics
 result. The `f64` result contract still rounds some integers above 2^53.
 Wiley Jones's historical intent for the previous `u32` cap is not known.
-No upstream post, PR, merge, or downstream push was made. The remote evidence
-branch was confirmed at `bbbd61d`; this new research branch requires
-independent review before any downstream push.
+After independent review by a separate OpenAI AI critic, the original packet
+was published to the downstream `kvnloo/objectKV` branch
+`research/eval/count-conversion-real-crate` at
+[commit `69fa56f3eec37c871422862573b700905b8bc0f4`](https://github.com/kvnloo/objectKV/commit/69fa56f3eec37c871422862573b700905b8bc0f4),
+tree `9b38894303f1b601b936af6ad13523c01def309a`. The earlier evidence branch
+remained at `bbbd61d`. No upstream post, PR, or merge was made as part of this
+work. The 189 workspace test passes apply to this count-conversion branch;
+they do not cover a composition with the separate route-refresh branch.
 
 Wiley Jones is credited for objectKV architecture and frozen evaluation
 contracts; Kevin Rajan supplied the earlier exact-source characterization.
 This crate test, correction, and report were prepared by Codex, an OpenAI AI
 assistant.
+The original RED, GREEN, and report commits identify both author and committer
+as `Codex (AI assistant)`.
+This receipt correction was prepared by dot, an OpenAI AI assistant, with an
+explicit AI author identity and no DCO attestation on Kevin's behalf.

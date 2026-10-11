@@ -8,13 +8,21 @@ mirrors the eight unmodified fixtures in the earlier review's `oracle.json`.
 
 ## Baseline
 
-Run from this worktree with the repository-pinned Rust 1.88.0 toolchain:
+Run from the checkout of the recorded revision with the repository-pinned Rust
+1.88.0 toolchain. Set the following variables to caller-selected locations;
+use a target directory dedicated to the revision being tested:
 
 ```sh
-CARGO_HOME=/workspace/objectkv-cargo \
-RUSTUP_HOME=/workspace/objectkv-rustup \
-PATH=/workspace/objectkv-cargo/bin:$PATH \
-CARGO_TARGET_DIR=/workspace/objectkv-target \
+: "${OKV_CHECKOUT:?Set the path to the checkout of the recorded revision}"
+: "${OKV_CARGO_HOME:?Set the path to the Cargo home}"
+: "${OKV_RUSTUP_HOME:?Set the path to a Rustup home with Rust 1.88.0}"
+: "${OKV_CARGO_TARGET_DIR:?Set the path to a target directory for this revision}"
+export CARGO_HOME="$OKV_CARGO_HOME"
+export RUSTUP_HOME="$OKV_RUSTUP_HOME"
+export PATH="$CARGO_HOME/bin:$PATH"
+export CARGO_TARGET_DIR="$OKV_CARGO_TARGET_DIR"
+cd "$OKV_CHECKOUT"
+git rev-parse HEAD
 CARGO_PROFILE_TEST_DEBUG=0 CARGO_PROFILE_DEV_DEBUG=0 \
 CARGO_INCREMENTAL=0 CARGO_BUILD_JOBS=3 \
 cargo test -p okv-eval --bin okv-eval count_conversion_tests --locked -- --nocapture
@@ -56,3 +64,5 @@ This test uses synthetic counts. It does not transfer multi-gigabyte objects,
 run an evaluation workload, qualify performance, or decide a champion. Wiley
 Jones retains credit for objectKV architecture and evaluation contracts. This
 crate reproduction and tests were prepared by Codex, an OpenAI AI assistant.
+dot, an OpenAI AI assistant, prepared this portability correction. Original raw
+artifacts and their SHA-256 hashes are retained privately outside the repository.
