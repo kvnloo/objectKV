@@ -353,19 +353,21 @@ impl KvReadClient {
             .await
             .map_err(KvReadClientError::RouteRefreshFailed)?;
         validate_snapshot_identity(self.cell_id, self.tenant_id, &refreshed_snapshot)?;
-        if refreshed_snapshot.map_version <= prior_version {
-            return Err(KvReadClientError::RouteRefreshDidNotAdvance {
-                current: prior_version,
-                refreshed: refreshed_snapshot.map_version,
-            });
-        }
         let mut cached = self.routes.write().map_err(|_| {
             KvReadClientError::InvalidRangeMap("cached range map is poisoned".to_owned())
         })?;
+        let refreshed_version = refreshed_snapshot.map_version;
         if refreshed_snapshot.map_version > cached.map_version {
             *cached = Arc::new(refreshed_snapshot);
         }
-        Ok(())
+        if cached.map_version > prior_version {
+            Ok(())
+        } else {
+            Err(KvReadClientError::RouteRefreshDidNotAdvance {
+                current: prior_version,
+                refreshed: refreshed_version,
+            })
+        }
     }
 }
 
