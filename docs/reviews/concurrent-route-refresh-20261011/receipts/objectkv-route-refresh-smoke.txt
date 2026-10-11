@@ -1,0 +1,4 @@
+   Compiling okv-eval v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-eval)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 39.64s
+     Running `/workspace/objectkv-route-red-target/debug/okv-eval smoke`
+{"schema_version":1,"suite":"smoke","status":"pass","correctness_failures":0}

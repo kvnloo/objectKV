@@ -1,0 +1,566 @@
+   Compiling serde_core v1.0.229
+   Compiling zerocopy v0.8.56
+   Compiling foldhash v0.2.0
+   Compiling tracing-core v0.1.36
+   Compiling hashbrown v0.17.1
+   Compiling tracing v0.1.44
+   Compiling indexmap v2.14.0
+   Compiling futures-executor v0.3.34
+   Compiling futures v0.3.34
+   Compiling foldhash v0.1.5
+   Compiling phf_shared v0.12.1
+   Compiling hashbrown v0.15.5
+   Compiling phf v0.12.1
+   Compiling lexical-util v1.0.7
+   Compiling itertools v0.14.0
+   Compiling lexical-write-integer v1.0.6
+   Compiling lexical-parse-integer v1.0.6
+   Compiling lexical-parse-float v1.0.6
+   Compiling lexical-write-float v1.0.6
+   Compiling serde v1.0.229
+   Compiling serde_json v1.0.151
+   Compiling uuid v1.25.0
+   Compiling bytes v1.12.1
+   Compiling chrono v0.4.45
+   Compiling tokio v1.53.1
+   Compiling http v1.5.0
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.9.0
+   Compiling ahash v0.8.12
+   Compiling half v2.7.1
+   Compiling rand v0.9.5
+   Compiling arrow-schema v58.4.0
+   Compiling arrow-buffer v58.4.0
+   Compiling chrono-tz v0.10.4
+   Compiling arrow-data v58.4.0
+   Compiling tokio-util v0.7.19
+   Compiling zstd-sys v2.0.16+zstd.1.5.7
+   Compiling unicode-width v0.2.2
+   Compiling unicode-segmentation v1.13.3
+   Compiling zstd-safe v7.2.4
+   Compiling lexical-core v1.0.6
+   Compiling atoi v2.0.0
+   Compiling comfy-table v7.2.2
+   Compiling alloc-no-stdlib v2.0.4
+   Compiling twox-hash v2.1.3
+   Compiling lz4_flex v0.13.1
+   Compiling alloc-stdlib v0.2.4
+   Compiling zstd v0.13.3
+   Compiling http-body v1.1.0
+   Compiling arrow-array v58.4.0
+   Compiling csv-core v0.1.13
+   Compiling simdutf8 v0.1.5
+   Compiling csv v1.4.0
+   Compiling brotli-decompressor v5.0.3
+   Compiling ordered-float v2.10.1
+   Compiling byteorder v1.5.0
+   Compiling zlib-rs v0.6.7
+   Compiling integer-encoding v3.0.4
+   Compiling h2 v0.4.15
+   Compiling brotli v8.0.4
+   Compiling arrow-select v58.4.0
+   Compiling flate2 v1.1.9
+   Compiling arrow-arith v58.4.0
+   Compiling arrow-row v58.4.0
+   Compiling arrow-ord v58.4.0
+   Compiling arrow-ipc v58.4.0
+   Compiling arrow-cast v58.4.0
+   Compiling arrow-string v58.4.0
+   Compiling thrift v0.17.0
+   Compiling snap v1.1.2
+   Compiling object_store v0.13.2
+   Compiling arrow-csv v58.4.0
+   Compiling arrow-json v58.4.0
+   Compiling parquet v58.3.0
+   Compiling arrow v58.3.0
+   Compiling sqlparser v0.62.0
+   Compiling hyper v1.11.0
+   Compiling hyper-util v0.1.20
+   Compiling tower v0.5.3
+   Compiling tokio-rustls v0.26.4
+   Compiling hyper-rustls v0.27.9
+   Compiling tower-http v0.6.11
+   Compiling http-body-util v0.1.5
+   Compiling reqwest v0.13.4
+   Compiling datafusion-doc v54.0.0
+   Compiling serde_urlencoded v0.7.1
+   Compiling quick-xml v0.41.0
+   Compiling serde_spanned v0.6.9
+   Compiling toml_datetime v0.6.11
+   Compiling toml_edit v0.22.27
+   Compiling object_store v0.14.1
+   Compiling serde_yaml v0.9.34+deprecated
+   Compiling datafusion-common v54.0.0
+   Compiling slatedb-common v0.15.0 (https://github.com/slatedb/slatedb.git?rev=e0161973d8d7ffdede7c44725729838811674e99#e0161973)
+   Compiling datafusion-expr-common v54.0.0
+   Compiling datafusion-physical-expr-common v54.0.0
+   Compiling toml v0.8.23
+   Compiling datafusion-functions-aggregate-common v54.0.0
+   Compiling datafusion-functions-window-common v54.0.0
+   Compiling datafusion-expr v54.0.0
+   Compiling fixedbitset v0.5.7
+   Compiling moka v0.12.16
+   Compiling duration-str v0.11.3
+   Compiling petgraph v0.8.3
+   Compiling figment v0.10.19
+   Compiling slatedb-txn-obj v0.15.0 (https://github.com/slatedb/slatedb.git?rev=e0161973d8d7ffdede7c44725729838811674e99#e0161973)
+   Compiling fail-parallel v0.6.0
+   Compiling backon v1.6.0
+   Compiling rand_distr v0.5.1
+   Compiling ulid v1.2.1
+   Compiling lru v0.18.2
+   Compiling hashbrown v0.14.5
+   Compiling slatedb v0.15.0 (https://github.com/slatedb/slatedb.git?rev=e0161973d8d7ffdede7c44725729838811674e99#e0161973)
+   Compiling turmoil v0.7.2
+   Compiling dashmap v6.2.1
+   Compiling datafusion-physical-expr v54.0.0
+   Compiling datafusion-macros v54.0.0
+   Compiling datafusion-execution v54.0.0
+   Compiling rand_chacha v0.3.1
+   Compiling okv-sim v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-sim)
+   Compiling anyerror v0.1.13
+   Compiling hex v0.4.3
+   Compiling validit v0.2.6
+   Compiling rand v0.8.7
+   Compiling datafusion-functions v54.0.0
+   Compiling okv-publication v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-publication)
+   Compiling tracing-futures v0.2.5
+   Compiling openraft v0.9.25
+   Compiling fluent-uri v0.4.1
+   Compiling jsonschema-value v0.50.1
+   Compiling referencing v0.50.1
+   Compiling datafusion-common-runtime v54.0.0
+   Compiling email_address v0.2.9
+   Compiling jsonschema v0.50.1
+   Compiling okv-slate v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-slate)
+   Compiling okv-consensus v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-consensus)
+   Compiling datafusion-physical-plan v54.0.0
+   Compiling datafusion-physical-expr-adapter v54.0.0
+   Compiling glob v0.3.4
+   Compiling datafusion-functions-aggregate v54.0.0
+   Compiling datafusion-session v54.0.0
+   Compiling datafusion-datasource v54.0.0
+   Compiling datafusion-pruning v54.0.0
+   Compiling datafusion-catalog v54.0.0
+   Compiling okv-object v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-object)
+   Compiling opentelemetry v0.32.0
+   Compiling datafusion-functions-nested v54.0.0
+   Compiling okv-postgres v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-postgres)
+   Compiling bigdecimal v0.4.10
+   Compiling tokio-stream v0.1.19
+   Compiling datafusion-sql v54.0.0
+   Compiling datafusion-datasource-json v54.0.0
+   Compiling datafusion-datasource-parquet v54.0.0
+   Compiling datafusion-physical-optimizer v54.0.0
+   Compiling datafusion-datasource-csv v54.0.0
+   Compiling datafusion-datasource-arrow v54.0.0
+   Compiling datafusion-functions-window v54.0.0
+   Compiling datafusion-optimizer v54.0.0
+   Compiling datafusion-functions-table v54.0.0
+   Compiling datafusion-catalog-listing v54.0.0
+   Compiling lazy_static v1.5.0
+   Compiling sharded-slab v0.1.7
+   Compiling prost-derive v0.14.4
+   Compiling tracing-serde v0.2.0
+   Compiling matchers v0.2.0
+   Compiling tracing-log v0.2.0
+   Compiling nu-ansi-term v0.50.3
+   Compiling tracing-subscriber v0.3.23
+   Compiling prost v0.14.4
+   Compiling opentelemetry_sdk v0.32.1
+   Compiling opentelemetry-http v0.32.0
+   Compiling opentelemetry-proto v0.32.0
+   Compiling opentelemetry-otlp v0.32.0
+   Compiling opentelemetry-appender-tracing v0.32.0
+   Compiling tracing-opentelemetry v0.33.0
+   Compiling datafusion v54.0.0
+   Compiling okv-model v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-model)
+   Compiling okv-wal v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-wal)
+   Compiling okv-htap v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-htap)
+   Compiling okv-eval v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-eval)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3m 42s
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_consensus-091294ce6534c393)
+
+running 28 tests
+test commit_proxy_recovery::tests::tlog_quorums_expose_only_the_common_contiguous_prefix ... ok
+test commit_proxy_recovery::tests::version_spaces_do_not_reuse_old_issued_versions ... ok
+test contract::tests::correct_storage_contract_has_no_anomalies_and_replays_exactly ... ok
+test contract::tests::every_negative_mode_breaks_one_bounded_contract ... ok
+test generation::tests::generation_command_round_trips_numeric_member_ids ... ok
+test generation::tests::legacy_generation_command_decodes_without_storage_incarnations ... ok
+test generation::tests::reserve_fences_active_generation_until_proven_activation ... ok
+test generation::tests::routine_reconfiguration_preserves_generation_and_finalizes_once ... ok
+test multi_proxy_ordering::tests::bounded_permutations_require_buffering_but_preserve_membership ... ok
+test online_resolver_split::tests::batch_seventeen_retries_batch_sixteen_with_new_identities ... ok
+test online_resolver_split::tests::frozen_maps_are_contiguous_and_split_only_the_source ... ok
+test publication::tests::publication_command_has_a_distinct_versioned_prefix ... ok
+test publication::tests::publication_pop_capability_requires_distinct_pinned_signers ... ok
+test publication_client::tests::endpoint_set_must_be_non_empty ... ok
+test resolver_hotspot_curve::tests::frozen_distributions_have_exact_counts ... ok
+test resolver_hotspot_curve::tests::source_history_is_exact_child_union ... ok
+test rpc::tests::extracts_generation_binding_from_supported_command_families ... ok
+test state_machine::tests::disabled_dedup_reapplies_the_same_publication_request ... ok
+test state_machine::tests::durable_snapshot_restores_outcomes_and_rejects_corruption ... ok
+test state_machine::tests::publication_apply_is_fenced_deduplicated_and_fail_closed ... ok
+test state_machine::tests::state_machine_snapshot_v1_fixture_is_dual_readable ... ok
+test tests::openraft_vote_commit_and_conflict_replacement_survive_reopen ... ok
+test cluster_contract::tests::acknowledgement_before_quorum_is_rejected ... ok
+test transaction_system_recovery_curve::tests::frozen_large_point_remains_inside_eval_envelope ... ok
+test transaction_system_recovery_curve::tests::inventory_receipt_signature_detects_mutation ... ok
+test cluster_contract::tests::three_node_cluster_preserves_commits_through_failover_and_bounce ... ok
+test cluster_contract::tests::same_seed_replays_exactly ... ok
+test tests::passes_openraft_storage_conformance_suite ... ok
+
+test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.11s
+
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_eval-fc72ab7bfe12cb27)
+
+running 5 tests
+test result::tests::calculates_median_and_mad ... ok
+test telemetry::tests::enforces_attribute_and_cardinality_contracts ... ok
+test config::tests::smoke_suite_and_registry_are_valid ... ok
+test mvcc_gc_authority::tests::binds_only_the_exact_physical_job_receipt ... ok
+test mvcc_gc_authority::tests::rejects_a_collector_that_claims_collection_without_publication ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.51s
+
+     Running unittests src/main.rs (/workspace/objectkv-route-red-target/debug/deps/okv_eval-c9f7ead73702a447)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_htap-1abd2631ae4419bc)
+
+running 4 tests
+test tests::correct_physical_overlay_matches_oracle ... ok
+test streaming::tests::correct_streaming_overlay_is_exact_and_bounded ... ok
+test tests::poisoned_subjects_are_detected ... ok
+test streaming::tests::every_streaming_negative_control_is_detected ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_model-873ca6542fb5ecee)
+
+running 16 tests
+test htap::tests::correct_contract_is_exactly_replayable ... ok
+test htap::tests::every_negative_control_has_one_bounded_failure ... ok
+test htap::tests::seed_changes_the_trace_without_changing_the_contract ... ok
+test publication_gc::tests::correct_contract_is_exactly_replayable ... ok
+test routine_reconfiguration::tests::correct_contract_is_exactly_replayable ... ok
+test publication_gc::tests::every_negative_control_has_a_bounded_failure ... ok
+test tests::ambiguous_point_mutations_are_rejected ... ok
+test history::tests::every_negative_control_has_a_bounded_failing_prefix ... ok
+test tests::availability_errors_are_distinct ... ok
+test routine_reconfiguration::tests::every_negative_control_has_a_bounded_failure ... ok
+test tests::range_clear_obeys_half_open_bounds_and_same_version_point_precedence ... ok
+test tests::replay_is_canonical_but_identity_bound ... ok
+test tests::stale_generation_is_non_monotonic_even_with_larger_sequence ... ok
+test tests::version_encoding_preserves_generation_order ... ok
+test tests::transaction_reads_writes_in_operation_order ... ok
+test history::tests::generated_history_is_exactly_replayable ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_object-592373f2b55d1769)
+
+running 25 tests
+test persistent_range_serving::tests::delta_descriptor_v1_fixture_remains_exact ... ok
+test provider_bound_range::tests::binding_refuses_changed_bytes_and_scope_mismatch ... ok
+test provider_bound_range::tests::exact_revision_range_read_passes_and_same_bytes_overwrite_refuses ... ok
+test provider_bound_range::tests::provider_bound_v2_fixture_remains_exact ... ok
+test persistent_range_serving::tests::materializes_one_content_addressed_delta_and_rejects_changed_bytes ... ok
+test provider_bound_range::tests::version_1_fixture_remains_eager_only_and_rejects_v2 ... ok
+test persistent_range_serving::tests::reopens_one_authenticated_object_base_without_source_rows ... ok
+test publisher_process::tests::job_and_request_identities_are_restart_stable ... ok
+test publisher_process::tests::prepared_intent_is_exactly_job_bound ... ok
+test range_read_client::tests::accepts_another_readers_newer_map_when_source_reply_is_stale ... ok
+test publication_adapter::tests::correct_adapter_passes_and_replays_semantically ... ok
+test range_read_client::tests::refuses_a_refresh_that_does_not_advance_the_map ... ok
+test publication_adapter::tests::root_graph_passes_replays_and_rejects_an_omitted_lease_root ... ok
+test range_read_client::tests::refreshes_a_stale_route_and_fans_out_without_changing_snapshot ... ok
+test tagged_log_process::tests::compact_binary_record_remains_legacy_json_readable ... ok
+test tagged_log_process::tests::exact_required_tags_validate ... ok
+test tagged_log_process::tests::missing_required_tag_fails_closed ... ok
+test tagged_log_process::tests::pop_rejects_a_capability_without_the_pinned_publication_quorum ... ok
+test tests::filesystem_passes_segment_but_not_authority_contract ... ok
+test range_serving_view::tests::publishes_same_base_tail_advance_without_mixing_concurrent_readers ... ok
+test tests::immutable_overwrite_negative_control_fails ... ok
+test range_serving_view::tests::swaps_authority_base_without_losing_exact_old_or_new_reads ... ok
+test tests::list_authority_negative_control_fails ... ok
+test tests::memory_passes_authority_contract ... ok
+test publication_adapter::tests::every_negative_subject_has_a_bounded_anomaly ... ok
+
+test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running unittests src/main.rs (/workspace/objectkv-route-red-target/debug/deps/okv_object-89425c73b4370066)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/kv_runtime.rs (/workspace/objectkv-route-red-target/debug/deps/kv_runtime-871a7b977ccfed25)
+
+running 4 tests
+test kv_runtime_evicts_disposable_cache_before_refusing_work ... ok
+test kv_runtime_rate_limits_then_refuses_at_debt_bounds ... ok
+test kv_runtime_moves_ranges_when_non_evictable_ram_exceeds_limit ... ok
+test kv_runtime_accounts_1_100_1000_ranges_with_one_shared_cache ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/range_cache_faults.rs (/workspace/objectkv-route-red-target/debug/deps/range_cache_faults-fa0991ae3977e5f8)
+
+running 2 tests
+test released_or_mismatched_lease_blocks_reopen_before_cache_access ... ok
+test corrupted_persistent_cache_never_returns_a_wrong_value ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/range_serving_curve.rs (/workspace/objectkv-route-red-target/debug/deps/range_serving_curve-9d926ee446215717)
+
+running 6 tests
+test gcs_backend_refuses_an_unguarded_scratch_scope_before_network_io ... ok
+test provider_bound_curve_checks_every_backend_get_revision ... ok
+test measures_exact_authority_base_plus_certified_tail ... ok
+test decoded_ram_cold_reopen_reads_from_persistent_nvme_cache ... ok
+test shared_cache_removes_backend_requests_from_repeated_points ... ok
+test provider_controls_refuse_changed_revision_and_detect_unversioned_fallback ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.37s
+
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_postgres-768c103a2af19dd8)
+
+running 29 tests
+test extent::tests::extent_key_ignores_block_and_sorts_apart_from_pages ... ok
+test commit::tests::refuses_extent_change_or_page_resurrection_shape ... ok
+test smgr_durable::tests::legacy_durable_root_v1_decodes_without_object_deltas ... ok
+test smgr_durable::tests::legacy_reader_contract_rejects_delta_aware_root ... ok
+test extent::tests::extent_round_trips_and_refuses_corruption ... ok
+test commit::tests::verifies_exact_advancing_cell_receipt ... ok
+test commit::tests::plans_atomic_page_and_extent_extend ... ok
+test smgr_durable::tests::objectifies_only_the_certified_suffix_and_restarts_without_a_new_sst ... ok
+test smgr_service::tests::parses_fixed_width_storage_manager_request ... ok
+test smgr_service::tests::reads_postgres_split_lsn_in_native_order ... ok
+test smgr_stable::tests::object_snapshot_identity_is_required_without_a_row_digest ... ok
+test smgr_stable::tests::publication_identities_are_deterministic_and_phase_separated ... ok
+test smgr_stable::tests::stable_object_paths_refuse_escape_or_ambiguous_keys ... ok
+test smgr_write_service::tests::appends_only_a_strictly_advancing_history ... ok
+test smgr_write_service::tests::decodes_native_page_lsn_for_write_admission ... ok
+test smgr_write_service::tests::objectifier_keeps_one_runner_and_only_the_latest_pending_version ... ok
+test smgr_write_service::tests::parses_versioned_write_request ... ok
+test smgr_write_service::tests::resolves_current_or_exact_versions_and_refuses_stale_versions ... ok
+test tests::page_keys_preserve_block_order_and_relation_boundaries ... ok
+test tests::page_value_round_trips_and_refuses_payload_corruption ... ok
+test tests::vectored_decode_requires_every_exact_block_at_the_lsn_frontier ... ok
+test write::tests::admits_permanent_pages_only_after_wal_is_durable ... ok
+test write::tests::gate_receipt_detects_each_poison_control ... ok
+test write::tests::gate_receipt_is_exact_and_replayable ... ok
+test write::tests::refuses_empty_oversized_and_overflowing_batches ... ok
+test write::tests::refuses_the_complete_batch_when_one_page_is_ahead_of_wal ... ok
+test smgr_durable::tests::postgres_worker_readiness_splits_reads_from_closure_audit_and_detects_controls ... ok
+test smgr_durable::tests::postgres_object_delta_suffix_is_independent_of_untouched_relation_size ... ok
+test smgr_durable::tests::postgres_object_delta_contract_replays_and_detects_every_fault ... ok
+
+test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.66s
+
+     Running unittests src/bin/okv-postgres-page-service.rs (/workspace/objectkv-route-red-target/debug/deps/okv_postgres_page_service-7b9c9d495dbb379f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/okv-postgres-stable-authority.rs (/workspace/objectkv-route-red-target/debug/deps/okv_postgres_stable_authority-9939c05db172b308)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/okv-postgres-transaction-authority.rs (/workspace/objectkv-route-red-target/debug/deps/okv_postgres_transaction_authority-3f9675fb1f0c60d7)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/okv-postgres-write-service.rs (/workspace/objectkv-route-red-target/debug/deps/okv_postgres_write_service-6e37965a5ce58760)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_publication-33bb55b5401db086)
+
+running 9 tests
+test tests::expiry_cannot_be_reversed_by_renewal ... ok
+test tests::active_snapshot_lease_validation_rejects_drift_release_and_expiry ... ok
+test tests::format_one_state_without_lease_fields_reads_with_safe_defaults ... ok
+test tests::lease_and_collection_faults_expose_each_frozen_violation ... ok
+test tests::lease_floor_and_collection_history_preserve_exact_roots ... ok
+test tests::publication_requires_intent_and_retires_it_atomically ... ok
+test tests::negative_faults_expose_each_frozen_violation ... ok
+test tests::reservation_fences_epoch_and_intersecting_prepare ... ok
+test tests::root_pin_generation_and_retirement_require_exact_compare_values ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_sim-4ced465ec5f0991c)
+
+running 9 tests
+test commit::tests::envelope_round_trips_and_rejects_corruption ... ok
+test commit::tests::correct_contract_is_exactly_replayable ... ok
+test commit::tests::seed_changes_commit_trace ... ok
+test commit::tests::every_commit_negative_control_has_a_bounded_failure ... ok
+test persisted_wal::tests::correct_persisted_wal_contract_is_exactly_replayable ... ok
+test persisted_wal::tests::every_persisted_wal_negative_control_has_a_bounded_failure ... ok
+test tests::stale_publication_negative_control_fails ... ok
+test tests::same_seed_replays_exactly ... ok
+test tests::adjacent_seed_changes_the_explored_trace ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/main.rs (/workspace/objectkv-route-red-target/debug/deps/okv_sim-d888a1335364807e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_slate-922f26a9146a598d)
+
+running 27 tests
+test manifest_bound_store::tests::hides_every_manifest_after_the_authority_root ... ok
+test mvcc_retention::tests::floor_advances_but_never_retreats ... ok
+test mvcc_retention::tests::keeps_newer_versions_and_one_floor_anchor_per_key ... ok
+test mvcc_retention::tests::malformed_or_out_of_order_physical_keys_abort_collection ... ok
+test mvcc_retention::tests::running_job_does_not_reload_an_advanced_floor ... ok
+test mvcc_retention::tests::supplier_freezes_the_lower_internal_snapshot_floor ... ok
+test phase0::tests::filesystem_contract_passes ... ok
+test phase0::tests::missing_external_worker_is_detected ... ok
+test phase0::tests::objectkv_serving_profile_meets_reopen_and_point_budgets ... ok
+test mvcc_gc_curve::tests::authorization_is_issued_after_input_discovery_and_before_compaction ... ok
+test phase0::tests::warm_reopen_negative_control_fails_only_cache_state ... ok
+test tests::accepts_exact_replay_after_later_commits ... ok
+test tests::applies_externally_assigned_versions_with_gaps ... ok
+test mvcc_gc_curve::tests::real_compaction_converges_to_the_retained_window ... ok
+test tests::concurrent_conflicting_version_has_one_winner ... ok
+test tests::authority_bound_reader_keeps_the_selected_manifest_visible ... ok
+test tests::concurrent_identical_version_has_one_apply_and_one_replay ... ok
+test tests::mvcc_key_codec_preserves_binary_user_order_and_descending_versions ... ok
+test tests::mvcc_key_decoder_rejects_malformed_entries ... ok
+test tests::pins_the_observed_revision ... ok
+test tests::concurrent_lower_version_cannot_replace_higher_version ... ok
+test tests::rejects_conflicting_replay ... ok
+test tests::rejects_unimplemented_logical_generation_and_range_clear ... ok
+test tests::rejects_unknown_non_monotonic_version ... ok
+test tests::retained_reads_reject_expired_and_future_snapshots ... ok
+test phase0::tests::separate_compaction_roles_preserve_exact_serving_reads ... ok
+test mvcc_gc_curve::tests::every_unsafe_collection_subject_is_detected ... ok
+
+test result: ok. 27 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.63s
+
+     Running tests/kv_runtime_density.rs (/workspace/objectkv-route-red-target/debug/deps/kv_runtime_density-59ffc267079da12d)
+
+running 3 tests
+test one_database_hosts_a_real_range_and_rebuilds_from_empty_caches ... ok
+test private_cache_topology_reports_one_decoded_cache_per_database ... ok
+test many_databases_share_one_decoded_and_nvme_cache ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/mvcc_retention_compaction.rs (/workspace/objectkv-route-red-target/debug/deps/mvcc_retention_compaction-4ef4e3aebb868616)
+
+running 1 test
+test separate_compactor_collects_history_but_preserves_floor_snapshots ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/snapshot_read.rs (/workspace/objectkv-route-red-target/debug/deps/snapshot_read-fd8185971a4e9c3c)
+
+running 3 tests
+test reads_points_at_an_exact_external_version ... ok
+test scans_binary_keys_in_logical_order_at_one_version ... ok
+test exact_history_survives_close_and_reopen ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/snapshot_read_curve.rs (/workspace/objectkv-route-red-target/debug/deps/snapshot_read_curve-336489ab8f4863ec)
+
+running 2 tests
+test correct_worker_reads_every_snapshot_and_reopens ... ok
+test every_negative_mode_breaks_its_own_semantic_gate ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_wal-f4728a58044f4a2d)
+
+running 9 tests
+test node_journal::tests::complete_corruption_fails_closed ... ok
+test node_journal::tests::torn_tail_is_removed_before_a_new_durable_record ... ok
+test node_journal::tests::journal_v1_compatibility_fixture_is_dual_readable ... ok
+test node_journal::tests::vote_commit_log_truncate_and_purge_survive_reopen ... ok
+test tests::frame_v1_compatibility_fixture_is_dual_readable ... ok
+test tests::quorum_frames_survive_reopen_and_single_replica_loss ... ok
+test tests::leader_only_suffix_is_not_recovered ... ok
+test tests::synchronized_rewrite_replaces_the_prefix_on_every_replica ... ok
+test tests::torn_suffix_is_ignored_but_complete_corruption_without_quorum_fails ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests okv_consensus
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests okv_eval
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests okv_htap
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests okv_model
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests okv_object
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests okv_postgres
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests okv_publication
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests okv_sim
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests okv_slate
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests okv_wal
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

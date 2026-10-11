@@ -1,0 +1,19 @@
+   Compiling okv-object v0.0.0 (/workspace/objectKV-route-refresh/crates/okv-object)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 14.76s
+     Running unittests src/lib.rs (/workspace/objectkv-route-red-target/debug/deps/okv_object-d26173ceb75cb679)
+
+running 1 test
+
+thread 'range_read_client::tests::accepts_another_readers_newer_map_when_source_reply_is_stale' panicked at crates/okv-object/src/range_read_client.rs:641:45:
+called `Result::unwrap()` on an `Err` value: RouteRefreshDidNotAdvance { current: 1, refreshed: 1 }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test range_read_client::tests::accepts_another_readers_newer_map_when_source_reply_is_stale ... FAILED
+
+failures:
+
+failures:
+    range_read_client::tests::accepts_another_readers_newer_map_when_source_reply_is_stale
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 24 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p okv-object --lib`
