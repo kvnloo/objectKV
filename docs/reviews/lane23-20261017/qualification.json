@@ -1,0 +1,26 @@
+{
+  "classification": "independent native exact-head qualification; not origin-check admission or human review",
+  "authorization": "Kevin's bounded Lane23 instruction; decision https://github.com/kvnloo/objectKV/pull/1#issuecomment-6236658003",
+  "goal_lock": {
+    "objective": "Qualify and resolve existing standalone upstream PRs17 and18 without duplicate submissions or merges",
+    "targets": ["kvnloo/objectKV:promotion/count-conversion-u64-f64@324835ce37c04c9d69a145a6cc07013885e05c0f", "kvnloo/objectKV:promotion/concurrent-route-refresh@bd8eaca6b22f0adaaaef30a412e385122825a97c"],
+    "controls": ["Doss-com/objectKV:main@4d4fc69ca7dea24acdbc9da8997b07498e1d02f5"],
+    "environment": "GitHub hosted Ubuntu24.04.5 x86_64, Rust1.88.0, cargo1.88.0",
+    "proof": "Explicit original-head checkout and identity assertions, real owning regressions, workspace tests and smoke"
+  },
+  "execution_proof": {
+    "tested": ["324835ce37c04c9d69a145a6cc07013885e05c0f", "bd8eaca6b22f0adaaaef30a412e385122825a97c"],
+    "runtime": "https://github.com/kvnloo/objectKV/actions/runs/39049664679",
+    "result_status": "PASS",
+    "pr17": {"focused_passed": 8, "workspace_passed": 189, "job_seconds": 473, "job_id": 117445500369},
+    "pr18": {"focused_passed": 3, "workspace_passed": 182, "job_seconds": 219, "job_id": 117445500126}
+  },
+  "commands_passed_on_each_head": ["cargo fmt --all -- --check", "cargo clippy --workspace --all-targets --locked -- -D warnings", "cargo test --workspace --locked", "cargo run -p okv-eval --locked -- smoke", "cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml", "git diff --exit-code"],
+  "focused_commands": {"17": "cargo test -p okv-eval --bin okv-eval count_conversion_tests --locked -- --nocapture", "18": "cargo test -p okv-object --locked range_read_client::tests:: -- --nocapture"},
+  "cargo_lock_sha256_before_and_after": "f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0",
+  "log_sha256": {"pr17-exact-head-ci.log": "ff936c43775501b80040c461d66abd93256facf4a834d904d6086a0dbc551f8c", "pr18-exact-head-ci.log": "8b1842b12370b8ffcf951869b6c946e8f497034ceea8cb5e39c57efdfd0a3be7"},
+  "workflow_infrastructure_commit_not_tested_source": "2e4a22cd48c4d57d99827c88cee6f3bf1a688386",
+  "requirement_evidence": {"17": "evals/metrics.toml defines bytes transferred; okv-eval object-store runner reports request/response bytes through bounded_count; no documented u32 ceiling", "18": "RFC0062 stale-route recovery and fixed-version refresh/retry; source inspection preserves identity validation and monotonic shared-cache updates"},
+  "limits": ["focused and workspace test totals overlap", "no fresh baseline RED run", "no combined-candidate test", "no multi-GiB transfer", "no public concurrent TCP or production/performance acceptance", "f64 rounds some integers above2^53", "origin workflows still action_required with zero jobs; formal review remains required"],
+  "credit": "Wiley Jones architecture/evaluation/RFC0062; Kevin Rajan count characterization; Codex count correction; dot route correction, portable evidence and independent AI review. Lane23 adds native CI qualification and source audit, not human GitHub approval or DCO signoff."
+}

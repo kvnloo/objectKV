@@ -1,0 +1,1112 @@
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	﻿2026-10-17T16:38:01.6693387Z Current runner version: '2.337.0'
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6717995Z ##[group]Runner Image Provisioner
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6718930Z Hosted Compute Agent
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6719498Z Version: 20261012.601
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6720120Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6720804Z Build Date: 2026-10-12T17:48:21Z
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6721435Z Worker ID: {01f81a79-b45f-4ad0-a1ff-1f19b352044a}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6722110Z Region: westus3
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6722797Z Cloud: Azure
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6723285Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6724805Z ##[group]Operating System
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6725382Z Ubuntu
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6725899Z 24.04.5
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6726414Z LTS
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6726905Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6727823Z ##[group]Runner Image
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6728396Z Image: ubuntu-24.04
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6728925Z Version: 20261012.334.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6729925Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6731528Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6732519Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6733567Z ##[group]GITHUB_TOKEN Permissions
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6735789Z Contents: read
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6736401Z Metadata: read
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6736915Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6738933Z Secret source: Actions
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6739889Z Cache mode: write
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.6740512Z Prepare workflow directory
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.7112013Z Prepare all required actions
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:01.7160844Z Getting action download info
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:02.0261178Z Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:02.0985411Z Download action repository 'actions-rust-lang/setup-rust-toolchain@v1' (SHA:166cdcfd11aee3cb47222f9ddb555ce30ddb9659)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:02.4459409Z Getting action download info
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:02.5548478Z Download action repository 'Swatinem/rust-cache@c19371144df3bb44fab255c43d04cbc2ab54d1c4' (SHA:c19371144df3bb44fab255c43d04cbc2ab54d1c4)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Set up job	2026-10-17T16:38:03.5536318Z Complete job name: exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	﻿2026-10-17T16:38:03.6562604Z ##[group]Run actions/checkout@v5
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6563970Z with:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6564877Z   ref: bd8eaca6b22f0adaaaef30a412e385122825a97c
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6566043Z   repository: kvnloo/objectKV
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6574387Z   token: ***
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6575141Z   ssh-strict: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6575964Z   ssh-user: git
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6577056Z   persist-credentials: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6577902Z   clean: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6578678Z   sparse-checkout-cone-mode: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6579580Z   fetch-depth: 1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6580314Z   fetch-tags: false
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6581071Z   show-progress: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6581844Z   lfs: false
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6582711Z   submodules: false
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6583530Z   set-safe-directory: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6584413Z   allow-unsafe-pr-checkout: false
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.6585736Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7681872Z Syncing repository: kvnloo/objectKV
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7686261Z ##[group]Getting Git version info
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7688525Z Working directory is '/home/runner/work/objectKV/objectKV'
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7694748Z [command]/usr/bin/git version
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7753171Z git version 2.55.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7793194Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7802214Z Temporarily overriding HOME='/home/runner/work/_temp/17d9389b-e4ea-42eb-a825-c2a7b1df91f7' before making global git config changes
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7806379Z Adding repository directory to the temporary git global config as a safe directory
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7809667Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/objectKV/objectKV
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7858991Z Deleting the contents of '/home/runner/work/objectKV/objectKV'
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7864831Z ##[group]Initializing the repository
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7868012Z [command]/usr/bin/git init /home/runner/work/objectKV/objectKV
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7977584Z hint: Using 'master' as the name for the initial branch. This default branch name
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7979792Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7981556Z hint: to use in all of your new repositories, which will suppress this warning,
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7983067Z hint: call:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7983846Z hint:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7984820Z hint: 	git config --global init.defaultBranch <name>
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7985961Z hint:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7987037Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7988727Z hint: 'development'. The just-created branch can be renamed via this command:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7990081Z hint:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7990858Z hint: 	git branch -m <name>
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7991754Z hint:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7993117Z hint: Disable this message with "git config set advice.defaultBranchName false"
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.7995039Z Initialized empty Git repository in /home/runner/work/objectKV/objectKV/.git/
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8009314Z [command]/usr/bin/git remote add origin https://github.com/kvnloo/objectKV
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8057437Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8059025Z ##[group]Disabling automatic garbage collection
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8061080Z [command]/usr/bin/git config --local gc.auto 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8095433Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8098117Z ##[group]Setting up auth
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8102530Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8133352Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8485846Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8507295Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8699177Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8728307Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8904705Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8938413Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8940211Z ##[group]Fetching the repository
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:03.8947703Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin bd8eaca6b22f0adaaaef30a412e385122825a97c
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.7984095Z From https://github.com/kvnloo/objectKV
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.7986598Z  * branch            bd8eaca6b22f0adaaaef30a412e385122825a97c -> FETCH_HEAD
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.7990110Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.7991103Z ##[group]Determining the checkout info
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.7992232Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.7997341Z [command]/usr/bin/git sparse-checkout disable
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8041968Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8067063Z ##[group]Checking out the ref
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8072563Z [command]/usr/bin/git checkout --progress --force bd8eaca6b22f0adaaaef30a412e385122825a97c
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8414133Z Note: switching to 'bd8eaca6b22f0adaaaef30a412e385122825a97c'.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8414942Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8415408Z You are in 'detached HEAD' state. You can look around, make experimental
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8416467Z changes and commit them, and you can discard any commits you make in this
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8417312Z state without impacting any branches by switching back to a branch.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8418064Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8418381Z If you want to create a new branch to retain commits you create, you may
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8418952Z do so (now or later) by using -c with the switch command. Example:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8419268Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8419467Z   git switch -c <new-branch-name>
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8419700Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8419864Z Or undo this operation with:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8420092Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8420228Z   git switch -
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8420466Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8420747Z Turn off this advice by setting config variable advice.detachedHead to false
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8421113Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8421416Z HEAD is now at bd8eaca fix(range-read): accept a concurrently advanced shared route map
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8423765Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8462220Z [command]/usr/bin/git log -1 --format=%H
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions/checkout@v5	2026-10-17T16:38:04.8484161Z bd8eaca6b22f0adaaaef30a412e385122825a97c
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	﻿2026-10-17T16:38:04.8909885Z ##[group]Run actions-rust-lang/setup-rust-toolchain@v1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8910407Z with:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8910714Z   toolchain: 1.88.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8911046Z   components: rustfmt, clippy
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8911407Z   cache: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8911721Z   cache-on-failure: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8912053Z   cache-bin: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8912509Z   cache-provider: github
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8912851Z   cache-all-crates: false
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8913208Z   cache-workspace-crates: false
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8913558Z   cache-save-if: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8913874Z   cache-targets: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8914185Z   matcher: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8914479Z   override: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8914777Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.8985648Z ##[start-action display=Unbork mac;id=__actions-rust-lang_setup-rust-toolchain.__run]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9005637Z ##[end-action id=__actions-rust-lang_setup-rust-toolchain.__run;outcome=skipped;conclusion=skipped;duration_ms=0]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9044637Z ##[start-action display=Run : construct rustup command line;id=__actions-rust-lang_setup-rust-toolchain.flags]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9091096Z ##[group]Run : construct rustup command line
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9091751Z ^[[36;1m: construct rustup command line^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9092686Z ^[[36;1mecho "targets=$(for t in ${_srt_targets//,/ }; do echo -n ' --target' $t; done)" >> $GITHUB_OUTPUT^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9093675Z ^[[36;1mecho "components=$(for c in ${_srt_components//,/ }; do echo -n ' --component' $c; done)" >> $GITHUB_OUTPUT^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9094428Z ^[[36;1mecho "downgrade=" >> $GITHUB_OUTPUT^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9278978Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9279536Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9279862Z   _srt_targets: 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9280218Z   _srt_components: rustfmt, clippy
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9280609Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9420130Z ##[end-action id=__actions-rust-lang_setup-rust-toolchain.flags;outcome=success;conclusion=success;duration_ms=37]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9427543Z ##[start-action display=Setting Environment Variables;id=__actions-rust-lang_setup-rust-toolchain.__run_2]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9452159Z ##[group]Run if [[ ! -v CARGO_INCREMENTAL ]]; then
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9452904Z ^[[36;1mif [[ ! -v CARGO_INCREMENTAL ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9453376Z ^[[36;1m  echo "CARGO_INCREMENTAL=0" >> $GITHUB_ENV^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9453791Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9454148Z ^[[36;1mif [[ ! -v CARGO_PROFILE_DEV_DEBUG ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9454658Z ^[[36;1m  echo "CARGO_PROFILE_DEV_DEBUG=0" >> $GITHUB_ENV^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9455109Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9455458Z ^[[36;1mif [[ ! -v CARGO_TERM_COLOR ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9455921Z ^[[36;1m  echo "CARGO_TERM_COLOR=always" >> $GITHUB_ENV^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9456344Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9456684Z ^[[36;1mif [[ ! -v RUST_BACKTRACE ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9457132Z ^[[36;1m  echo "RUST_BACKTRACE=short" >> $GITHUB_ENV^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9457598Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9458153Z ^[[36;1mif [[ ( ! -v RUSTFLAGS ) && $_srt_NEW_RUSTFLAGS != "" ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9458685Z ^[[36;1m  echo "RUSTFLAGS=$_srt_NEW_RUSTFLAGS" >> $GITHUB_ENV^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9459127Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9459477Z ^[[36;1m# Enable faster sparse index on nightly^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9459973Z ^[[36;1m# The value is ignored on stable and causes no problems^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9460653Z ^[[36;1m# https://internals.rust-lang.org/t/call-for-testing-cargo-sparse-registry/16862^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9461304Z ^[[36;1mif [[ ! -v CARGO_UNSTABLE_SPARSE_REGISTRY ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9461832Z ^[[36;1m  echo "CARGO_UNSTABLE_SPARSE_REGISTRY=true" >> $GITHUB_ENV^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9462411Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9462889Z ^[[36;1mif [[ ! -v CARGO_REGISTRIES_CRATES_IO_PROTOCOL ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9463462Z ^[[36;1m  echo "CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse" >> $GITHUB_ENV^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9464095Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9507768Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9508261Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9508587Z   _srt_NEW_RUSTFLAGS: 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9508925Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9586350Z ##[end-action id=__actions-rust-lang_setup-rust-toolchain.__run_2;outcome=success;conclusion=success;duration_ms=15]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9589691Z ##[start-action display=Install Rust Problem Matcher;id=__actions-rust-lang_setup-rust-toolchain.__run_3]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9616554Z ##[group]Run echo "::add-matcher::/home/runner/work/_actions/actions-rust-lang/setup-rust-toolchain/v1/rust.json"
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9617505Z ^[[36;1mecho "::add-matcher::/home/runner/work/_actions/actions-rust-lang/setup-rust-toolchain/v1/rust.json"^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9662241Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9663041Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9663374Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9663759Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9664156Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9664521Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9664892Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9665322Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9665730Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9760489Z ##[end-action id=__actions-rust-lang_setup-rust-toolchain.__run_3;outcome=success;conclusion=success;duration_ms=16]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9764945Z ##[start-action display=Install rustup, if needed;id=__actions-rust-lang_setup-rust-toolchain.__run_4]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9787164Z ##[group]Run if ! command -v rustup &> /dev/null ; then
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9787692Z ^[[36;1mif ! command -v rustup &> /dev/null ; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9788473Z ^[[36;1m  curl --proto '=https' --tlsv1.2 --retry 10 --retry-connrefused -fsSL "https://sh.rustup.rs" | sh -s -- --default-toolchain none -y^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9789173Z ^[[36;1m^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9789556Z ^[[36;1m  # Resolve the correct CARGO_HOME path depending on OS^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9790069Z ^[[36;1m  if [[ "$RUNNER_OS" == "Windows" ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9790617Z ^[[36;1m    echo "${CARGO_HOME:-$USERPROFILE/.cargo}/bin" | sed 's|/|\\|g' >> $GITHUB_PATH^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9791134Z ^[[36;1m  else^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9791522Z ^[[36;1m    echo "${CARGO_HOME:-$HOME/.cargo}/bin" >> $GITHUB_PATH^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9791957Z ^[[36;1m  fi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9792381Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9834877Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9835342Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9835657Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9835999Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9836351Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9836701Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9837058Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9837475Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9837874Z   RUNNER_OS: Linux
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9838207Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9911377Z ##[end-action id=__actions-rust-lang_setup-rust-toolchain.__run_4;outcome=success;conclusion=success;duration_ms=14]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9918254Z ##[start-action display=rustup toolchain install 1.88.0;id=__actions-rust-lang_setup-rust-toolchain.__run_5]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9942230Z ##[group]Run # Check if value is set
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9942928Z ^[[36;1m# Check if value is set^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9943328Z ^[[36;1mif [[ -n "$_srt_rust_src_dir" ]]^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9943727Z ^[[36;1mthen^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9944100Z ^[[36;1m  # If value is set the directory must exist^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9944546Z ^[[36;1m  if [[ -d "$_srt_rust_src_dir" ]]^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9944955Z ^[[36;1m  then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9945281Z ^[[36;1m    cd "$_srt_rust_src_dir"^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9945643Z ^[[36;1m  else^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9946081Z ^[[36;1m    echo "'rust-src-dir' does not point to an existing directory" >&2^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9946855Z ^[[36;1m    echo "The value of 'rust-src-dir' is: ${_srt_rust_src_dir}" >&2^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9947341Z ^[[36;1m    exit 1^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9947664Z ^[[36;1m  fi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9947966Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9948438Z ^[[36;1mif [[ -z "$_srt_toolchain" && ( -f "rust-toolchain" || -f "rust-toolchain.toml") ]]^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9948959Z ^[[36;1mthen^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9949335Z ^[[36;1m  # Install the toolchain as specified in the file^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9949888Z ^[[36;1m  # rustup show is the old way that implicitly installed a toolchain^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9950442Z ^[[36;1m  # rustup toolchain install is the new explicit way^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9951059Z ^[[36;1m  # https://github.com/rust-lang/rustup/issues/3635#issuecomment-2343511297^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9951664Z ^[[36;1m  rustup show active-toolchain || rustup toolchain install^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9952159Z ^[[36;1m  if [[ -n $_srt_components ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9952817Z ^[[36;1m    rustup component add ${_srt_components//,/ }^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9953261Z ^[[36;1m  fi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9953596Z ^[[36;1m  if [[ -n $_srt_targets ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9954031Z ^[[36;1m    rustup target add ${_srt_targets//,/ }^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9954433Z ^[[36;1m  fi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9954733Z ^[[36;1melse^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9955060Z ^[[36;1m  if [[ -z "$_srt_toolchain" ]]^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9955435Z ^[[36;1m  then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9955760Z ^[[36;1m    _srt_toolchain=stable^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9956122Z ^[[36;1m  fi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9956742Z ^[[36;1m  rustup toolchain install ${_srt_toolchain//,/ }  --component rustfmt --component clippy --profile minimal --no-self-update^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9957449Z ^[[36;1m  # Take the last element from the list^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9957884Z ^[[36;1m  if [[ "$_srt_override" == "true" ]]^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9958277Z ^[[36;1m  then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9958651Z ^[[36;1m    rustup override set ${_srt_toolchain//*,/ }^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9959064Z ^[[36;1m  fi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:04.9959372Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0001991Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0002632Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0002963Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0003336Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0003711Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0004077Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0004451Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0004871Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0005290Z   _srt_toolchain: 1.88.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0005631Z   _srt_targets: 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0005979Z   _srt_components: rustfmt, clippy
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0006356Z   _srt_override: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0006677Z   _srt_rust_src_dir: 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0007000Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.0439541Z info: syncing channel updates for 1.88.0-x86_64-unknown-linux-gnu
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.2315180Z info: latest update on 2025-06-26 for version 1.88.0 (6b00bc388 2025-06-23)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:05.2317343Z info: downloading 5 components
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9121968Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9195428Z   1.88.0-x86_64-unknown-linux-gnu installed - rustc 1.88.0 (6b00bc388 2025-06-23)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9197154Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9270164Z info: override toolchain for /home/runner/work/objectKV/objectKV set to 1.88.0-x86_64-unknown-linux-gnu
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9290152Z ##[end-action id=__actions-rust-lang_setup-rust-toolchain.__run_5;outcome=success;conclusion=success;duration_ms=8937]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9293684Z ##[start-action display=Print installed versions;id=__actions-rust-lang_setup-rust-toolchain.versions]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9318423Z ##[group]Run echo "rustc-version=$(rustc --version)" >> $GITHUB_OUTPUT
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9319025Z ^[[36;1mecho "rustc-version=$(rustc --version)" >> $GITHUB_OUTPUT^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9319460Z ^[[36;1mrustc --version --verbose^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9319873Z ^[[36;1mecho "cargo-version=$(cargo --version)" >> $GITHUB_OUTPUT^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9320475Z ^[[36;1mcargo --version --verbose^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9320894Z ^[[36;1mecho "rustup-version=$(rustup --version)" >> $GITHUB_OUTPUT^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9321315Z ^[[36;1mrustup --version^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9321603Z ^[[36;1m^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9322133Z ^[[36;1m_srt_DATE=$(rustc --version --verbose | sed -ne 's/^commit-date: \(20[0-9][0-9]\)-\([01][0-9]\)-\([0-3][0-9]\)$/\1\2\3/p')^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9323321Z ^[[36;1m_srt_HASH=$(rustc --version --verbose | sed -ne 's/^commit-hash: //p')^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9323923Z ^[[36;1mecho "cachekey=$(echo $_srt_DATE$_srt_HASH | head -c12)" >> $GITHUB_OUTPUT^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9360013Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9360370Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9360592Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9360853Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9361102Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9361350Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9361610Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9361924Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9362208Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9636595Z rustc 1.88.0 (6b00bc388 2025-06-23)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9637329Z binary: rustc
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9637862Z commit-hash: 6b00bc3880198600130e1cf62b8f8a93494488cc
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9638559Z commit-date: 2025-06-23
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9639086Z host: x86_64-unknown-linux-gnu
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9639519Z release: 1.88.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9639870Z LLVM version: 20.1.5
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9867547Z cargo 1.88.0 (873a06493 2025-05-10)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9868067Z release: 1.88.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9868361Z commit-hash: 873a0649350c486caf67be772828a4f36bb4734c
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9868762Z commit-date: 2025-05-10
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9869059Z host: x86_64-unknown-linux-gnu
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9869341Z libgit2: 1.9.0 (sys:0.20.0 vendored)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9869751Z libcurl: 8.12.1-DEV (sys:0.4.80+curl-8.12.1 vendored ssl:OpenSSL/3.4.1)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9870336Z ssl: OpenSSL 3.4.1 11 Feb 2025
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9870740Z os: Ubuntu 24.4.0 (noble) [64-bit]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9898190Z info: This is the version for the rustup toolchain manager, not the rustc compiler.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:13.9980494Z info: the currently active `rustc` version is `rustc 1.88.0 (6b00bc388 2025-06-23)`
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0010837Z info: This is the version for the rustup toolchain manager, not the rustc compiler.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0011375Z rustup 1.29.1 (d95a37b6a 2026-08-13)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0094304Z info: the currently active `rustc` version is `rustc 1.88.0 (6b00bc388 2025-06-23)`
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0348849Z ##[end-action id=__actions-rust-lang_setup-rust-toolchain.versions;outcome=success;conclusion=success;duration_ms=105]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0351464Z ##[start-action display=Downgrade registry access protocol when needed;id=__actions-rust-lang_setup-rust-toolchain.__run_6]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0369817Z ##[group]Run # Not all versions support setting CARGO_REGISTRIES_CRATES_IO_PROTOCOL
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0370539Z ^[[36;1m# Not all versions support setting CARGO_REGISTRIES_CRATES_IO_PROTOCOL^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0371058Z ^[[36;1m# On versions 1.66, 1.67, and 1.68.0-nightly the value "sparse" is still unstable.^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0371633Z ^[[36;1m# https://github.com/dtolnay/rust-toolchain/pull/69#discussion_r1107268108^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0372176Z ^[[36;1m# If we detect an incompatible value, set it to "git" which is always supported.^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0373091Z ^[[36;1mif [[ "rustc 1.88.0 (6b00bc388 2025-06-23)" =~ ^rustc\ (1\.6[67]\.|1\.68\.0-nightly) && "${CARGO_REGISTRIES_CRATES_IO_PROTOCOL}" == "sparse" ]]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0373707Z ^[[36;1m  echo "Downgrade cargo registry protocol to git"^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0374112Z ^[[36;1m  echo "CARGO_REGISTRIES_CRATES_IO_PROTOCOL=git" >> $GITHUB_ENV^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0374462Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0410325Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0410828Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0411043Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0411287Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0411554Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0411794Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0412043Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0412491Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0412784Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0472660Z ##[end-action id=__actions-rust-lang_setup-rust-toolchain.__run_6;outcome=success;conclusion=success;duration_ms=12]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0475011Z ##[start-action display=Setup Rust Caching;id=__actions-rust-lang_setup-rust-toolchain.__Swatinem_rust-cache]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0520903Z ##[group]Run Swatinem/rust-cache@c19371144df3bb44fab255c43d04cbc2ab54d1c4
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0521301Z with:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0521518Z   cache-on-failure: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0521760Z   cache-bin: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0522000Z   cache-provider: github
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0522415Z   cache-all-crates: false
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0522714Z   cache-workspace-crates: false
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0522992Z   cache-targets: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0523220Z   save-if: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0523450Z   prefix-key: v0-rust
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0523692Z   add-job-id-key: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0523952Z   add-rust-environment-hash-key: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0524240Z   lookup-only: false
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0524456Z   cmd-format: {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0524663Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0524859Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0525090Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0525332Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0525579Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0525823Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0526115Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.0526397Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.3414509Z (node:2362) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.3416113Z (Use `node --trace-deprecation ...` to show where the warning was created)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6080300Z ##[group]Cache Configuration
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6081132Z Cache Provider:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6081913Z     github
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6082679Z Workspaces:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6083522Z     /home/runner/work/objectKV/objectKV
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6084102Z Cache Paths:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6084455Z     /home/runner/.cargo/bin
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6084885Z     /home/runner/.cargo/.crates.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6085381Z     /home/runner/.cargo/.crates2.json
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6085864Z     /home/runner/.cargo/registry
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6086324Z     /home/runner/.cargo/git
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6086790Z     /home/runner/work/objectKV/objectKV/target
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6087307Z Restore Key:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6087714Z     v0-rust-exact-head-Linux-x64-79c3ecf2
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6088145Z Cache Key:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6088548Z     v0-rust-exact-head-Linux-x64-79c3ecf2-9d76d3a7
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6089331Z .. Prefix:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6089625Z   - v0-rust-exact-head-Linux-x64
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6090046Z .. Environment considered:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6090405Z   - Rust Versions:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6090913Z     - 1.88.0 x86_64-unknown-linux-gnu 6b00bc3880198600130e1cf62b8f8a93494488cc
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6091712Z     - 1.99.0 x86_64-unknown-linux-gnu b940084d7eb6a299eb4bfeb8e34901bc051e7ac4
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6092607Z     - 1.88.0 x86_64-unknown-linux-gnu 6b00bc3880198600130e1cf62b8f8a93494488cc
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6093190Z   - CARGO_INCREMENTAL
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6093554Z   - CARGO_PROFILE_DEV_DEBUG
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6093999Z   - CARGO_REGISTRIES_CRATES_IO_PROTOCOL
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6094454Z   - CARGO_TERM_COLOR
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6094832Z   - CARGO_UNSTABLE_SPARSE_REGISTRY
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6095251Z   - RUST_BACKTRACE
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6095597Z .. Lockfiles considered:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6096097Z   - /home/runner/work/objectKV/objectKV/.cargo/config.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6096941Z   - /home/runner/work/objectKV/objectKV/Cargo.lock
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6097564Z   - /home/runner/work/objectKV/objectKV/crates/okv-consensus/Cargo.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6098251Z   - /home/runner/work/objectKV/objectKV/crates/okv-eval/Cargo.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6098940Z   - /home/runner/work/objectKV/objectKV/crates/okv-htap/Cargo.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6099634Z   - /home/runner/work/objectKV/objectKV/crates/okv-model/Cargo.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6100339Z   - /home/runner/work/objectKV/objectKV/crates/okv-object/Cargo.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6101044Z   - /home/runner/work/objectKV/objectKV/crates/okv-postgres/Cargo.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6101827Z   - /home/runner/work/objectKV/objectKV/crates/okv-publication/Cargo.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6102792Z   - /home/runner/work/objectKV/objectKV/crates/okv-sim/Cargo.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6103532Z   - /home/runner/work/objectKV/objectKV/crates/okv-slate/Cargo.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6104286Z   - /home/runner/work/objectKV/objectKV/crates/okv-wal/Cargo.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6104964Z   - /home/runner/work/objectKV/objectKV/rust-toolchain.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6105881Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6106086Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.6106256Z ... Restoring cache ...
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:14.8120966Z Cache hit for: v0-rust-exact-head-Linux-x64-79c3ecf2-9d76d3a7
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:16.0365895Z Received 33554432 of 656536645 (5.1%), 32.0 MBs/sec
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:17.0374088Z Received 192937984 of 656536645 (29.4%), 92.0 MBs/sec
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:18.0378943Z Received 264241152 of 656536645 (40.2%), 84.0 MBs/sec
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:19.0386710Z Received 402653184 of 656536645 (61.3%), 96.0 MBs/sec
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:20.0423439Z Received 574619648 of 656536645 (87.5%), 109.5 MBs/sec
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:20.5470677Z Received 656536645 of 656536645 (100.0%), 113.6 MBs/sec
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:20.5471646Z Cache Size: ~626 MB (656536645 B)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:20.5506721Z [command]/usr/bin/tar -xf /home/runner/work/_temp/28a3064c-a909-454b-8dc1-e71fcab66ebb/cache.tzst -P -C /home/runner/work/objectKV/objectKV --use-compress-program unzstd
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:24.1272035Z Cache restored successfully
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:24.8452237Z Restored from cache key "v0-rust-exact-head-Linux-x64-79c3ecf2-9d76d3a7" full match: true.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:38:24.8559221Z ##[end-action id=__actions-rust-lang_setup-rust-toolchain.__Swatinem_rust-cache;outcome=success;conclusion=success;duration_ms=10808]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	﻿2026-10-17T16:38:24.8622831Z ##[group]Run test "$(git rev-parse HEAD)" = "$EXPECTED_SHA"
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8623293Z ^[[36;1mtest "$(git rev-parse HEAD)" = "$EXPECTED_SHA"^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8623633Z ^[[36;1mgit log -1 --format=fuller^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8623916Z ^[[36;1mrustc -Vv^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8624132Z ^[[36;1mcargo -V^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8624342Z ^[[36;1muname -a^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8624566Z ^[[36;1msha256sum Cargo.lock^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8660724Z shell: /usr/bin/bash -e {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8661009Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8661220Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8661601Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8661857Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8662115Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8662570Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8662874Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8663176Z   CACHE_ON_FAILURE: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8663481Z   EXPECTED_SHA: bd8eaca6b22f0adaaaef30a412e385122825a97c
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8663854Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8749571Z commit bd8eaca6b22f0adaaaef30a412e385122825a97c
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8750528Z Author:     Kevin Rajan <7121943+kvnloo@users.noreply.github.com>
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8751426Z AuthorDate: Sun Oct 11 02:37:37 2026 -0500
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8752509Z Commit:     Kevin Rajan <7121943+kvnloo@users.noreply.github.com>
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8752958Z CommitDate: Sun Oct 11 02:37:37 2026 -0500
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8753197Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8753440Z     fix(range-read): accept a concurrently advanced shared route map
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8753912Z     
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8754306Z     If a stale source snapshot returns while another reader has already advanced
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8754919Z     the cached map past the caller's captured version, accept the advanced cache.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8755536Z     Keep identity validation, monotonic version checks, and refusal when no map
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8756126Z     advances. Add deterministic real-crate regression test.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8756518Z     
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8756874Z     Validated on isolated branch: focused 3 PASS, workspace 182 PASS,
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8757435Z     formatting/strict Clippy/smoke PASS. No simultaneous public TCP test,
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8757965Z     benchmark, or combined acceptance with count conversion.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8758339Z     
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8758730Z     Credit: Wiley Jones authored RFC-0062 and the original routed-read design.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8759310Z     dot (OpenAI AI assistant) prepared the regression and correction with a
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8759917Z     separate OpenAI AI critic. No human-authorship or DCO attestation is implied.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8851639Z rustc 1.88.0 (6b00bc388 2025-06-23)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8853181Z binary: rustc
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8853926Z commit-hash: 6b00bc3880198600130e1cf62b8f8a93494488cc
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8854721Z commit-date: 2025-06-23
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8855266Z host: x86_64-unknown-linux-gnu
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8855859Z release: 1.88.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8856427Z LLVM version: 20.1.5
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8929930Z cargo 1.88.0 (873a06493 2025-05-10)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8941080Z Linux runnervm8k3b6 6.17.0-1022-azure #22-Ubuntu SMP Mon Jul 27 17:24:03 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record exact execution identity	2026-10-17T16:38:24.8961943Z f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0  Cargo.lock
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	﻿2026-10-17T16:38:24.8990056Z ##[group]Run cargo fmt --all -- --check
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.8990422Z ^[[36;1mcargo fmt --all -- --check^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.9025904Z shell: /usr/bin/bash -e {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.9026202Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.9026419Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.9026678Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.9026932Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.9027173Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.9027423Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.9027743Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.9028044Z   CACHE_ON_FAILURE: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo fmt --all -- --check	2026-10-17T16:38:24.9028283Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	﻿2026-10-17T16:38:26.2055875Z ##[group]Run cargo clippy --workspace --all-targets --locked -- -D warnings
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2056540Z ^[[36;1mcargo clippy --workspace --all-targets --locked -- -D warnings^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2096804Z shell: /usr/bin/bash -e {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2097100Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2097321Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2097573Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2097827Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2098084Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2098482Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2098791Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2099098Z   CACHE_ON_FAILURE: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.2099340Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:26.3831022Z ^[[1m^[[32m    Updating^[[0m crates.io index
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:28.4765258Z ^[[1m^[[32m    Checking^[[0m okv-model v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-model)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:28.4807212Z ^[[1m^[[32m    Checking^[[0m okv-wal v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-wal)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:28.4839153Z ^[[1m^[[32m    Checking^[[0m okv-publication v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-publication)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:28.4873829Z ^[[1m^[[32m    Checking^[[0m okv-htap v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-htap)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:29.0694135Z ^[[1m^[[32m    Checking^[[0m okv-slate v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-slate)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:29.4289732Z ^[[1m^[[32m    Checking^[[0m okv-sim v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-sim)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:30.0059132Z ^[[1m^[[32m    Checking^[[0m okv-consensus v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-consensus)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:47.5948036Z ^[[1m^[[32m    Checking^[[0m okv-object v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-object)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:38:58.9181977Z ^[[1m^[[32m    Checking^[[0m okv-postgres v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-postgres)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:39:01.9298473Z ^[[1m^[[32m    Checking^[[0m okv-eval v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-eval)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo clippy --workspace --all-targets --locked -- -D warnings	2026-10-17T16:39:07.3495041Z ^[[1m^[[32m    Finished^[[0m `dev` profile [unoptimized] target(s) in 41.11s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	﻿2026-10-17T16:39:07.3921892Z ##[group]Run if [ "$PR_NUMBER" = 17 ]; then
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3922452Z ^[[36;1mif [ "$PR_NUMBER" = 17 ]; then^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3922982Z ^[[36;1m  cargo test -p okv-eval --bin okv-eval count_conversion_tests --locked -- --nocapture^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3923422Z ^[[36;1melse^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3923775Z ^[[36;1m  cargo test -p okv-object --locked range_read_client::tests:: -- --nocapture^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3924191Z ^[[36;1mfi^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3959177Z shell: /usr/bin/bash -e {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3959459Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3959677Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3959927Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3960191Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3960437Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3960690Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3960996Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3961302Z   CACHE_ON_FAILURE: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3961537Z   PR_NUMBER: 18
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.3961799Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.6617792Z ^[[1m^[[32m   Compiling^[[0m serde_core v1.0.229
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.6644585Z ^[[1m^[[32m   Compiling^[[0m foldhash v0.2.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.6645304Z ^[[1m^[[32m   Compiling^[[0m zerocopy v0.8.56
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.6678357Z ^[[1m^[[32m   Compiling^[[0m tracing-core v0.1.36
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:07.7698589Z ^[[1m^[[32m   Compiling^[[0m hashbrown v0.17.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:08.1423733Z ^[[1m^[[32m   Compiling^[[0m tracing v0.1.44
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:08.3263526Z ^[[1m^[[32m   Compiling^[[0m hashbrown v0.15.5
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:08.3721557Z ^[[1m^[[32m   Compiling^[[0m indexmap v2.14.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:08.8307005Z ^[[1m^[[32m   Compiling^[[0m futures-executor v0.3.34
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:08.9955978Z ^[[1m^[[32m   Compiling^[[0m futures v0.3.34
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:09.0004651Z ^[[1m^[[32m   Compiling^[[0m okv-model v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-model)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:09.0333802Z ^[[1m^[[32m   Compiling^[[0m tracing-futures v0.2.5
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:09.0963456Z ^[[1m^[[32m   Compiling^[[0m okv-wal v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-wal)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:09.6553999Z ^[[1m^[[32m   Compiling^[[0m lru v0.18.2
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:09.9993831Z ^[[1m^[[32m   Compiling^[[0m serde v1.0.229
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:10.1933805Z ^[[1m^[[32m   Compiling^[[0m serde_json v1.0.151
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:10.2114031Z ^[[1m^[[32m   Compiling^[[0m uuid v1.25.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:10.4844336Z ^[[1m^[[32m   Compiling^[[0m bytes v1.12.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:10.5723747Z ^[[1m^[[32m   Compiling^[[0m chrono v0.4.45
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:11.0583965Z ^[[1m^[[32m   Compiling^[[0m tokio v1.53.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:11.4593565Z ^[[1m^[[32m   Compiling^[[0m http v1.5.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:11.6903117Z ^[[1m^[[32m   Compiling^[[0m ppv-lite86 v0.2.21
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:12.0093866Z ^[[1m^[[32m   Compiling^[[0m rand_chacha v0.9.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:12.0337214Z ^[[1m^[[32m   Compiling^[[0m quick-xml v0.41.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:12.3670504Z ^[[1m^[[32m   Compiling^[[0m http-body v1.1.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:12.4074035Z ^[[1m^[[32m   Compiling^[[0m rand v0.9.5
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:12.4423574Z ^[[1m^[[32m   Compiling^[[0m http-body-util v0.1.5
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:12.6463591Z ^[[1m^[[32m   Compiling^[[0m serde_urlencoded v0.7.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:12.8203695Z ^[[1m^[[32m   Compiling^[[0m toml_datetime v0.6.11
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:12.9603831Z ^[[1m^[[32m   Compiling^[[0m serde_spanned v0.6.9
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:12.9812250Z ^[[1m^[[32m   Compiling^[[0m rand_distr v0.5.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:13.0318049Z ^[[1m^[[32m   Compiling^[[0m toml_edit v0.22.27
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:13.4413670Z ^[[1m^[[32m   Compiling^[[0m rand_chacha v0.3.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:13.6773676Z ^[[1m^[[32m   Compiling^[[0m ahash v0.8.12
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:13.8156720Z ^[[1m^[[32m   Compiling^[[0m serde_yaml v0.9.34+deprecated
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:13.8513764Z ^[[1m^[[32m   Compiling^[[0m anyerror v0.1.13
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:13.9743666Z ^[[1m^[[32m   Compiling^[[0m validit v0.2.6
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:14.0413699Z ^[[1m^[[32m   Compiling^[[0m rand v0.8.7
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:14.6604647Z ^[[1m^[[32m   Compiling^[[0m ulid v1.2.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:14.7893899Z ^[[1m^[[32m   Compiling^[[0m toml v0.8.23
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:15.2233776Z ^[[1m^[[32m   Compiling^[[0m figment v0.10.19
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:15.3493889Z ^[[1m^[[32m   Compiling^[[0m moka v0.12.16
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:15.9054065Z ^[[1m^[[32m   Compiling^[[0m tokio-util v0.7.19
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:16.5233835Z ^[[1m^[[32m   Compiling^[[0m tower v0.5.3
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:16.6593758Z ^[[1m^[[32m   Compiling^[[0m h2 v0.4.15
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:16.8844210Z ^[[1m^[[32m   Compiling^[[0m tokio-rustls v0.26.4
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:16.9584099Z ^[[1m^[[32m   Compiling^[[0m tower-http v0.6.11
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:17.0794833Z ^[[1m^[[32m   Compiling^[[0m fail-parallel v0.6.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:17.1869235Z ^[[1m^[[32m   Compiling^[[0m backon v1.6.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:17.2786401Z ^[[1m^[[32m   Compiling^[[0m turmoil v0.7.2
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:17.3443927Z ^[[1m^[[32m   Compiling^[[0m fluent-uri v0.4.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:17.4283827Z ^[[1m^[[32m   Compiling^[[0m duration-str v0.11.3
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:17.7243640Z ^[[1m^[[32m   Compiling^[[0m openraft v0.9.25
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:17.9924026Z ^[[1m^[[32m   Compiling^[[0m referencing v0.50.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:19.1863896Z ^[[1m^[[32m   Compiling^[[0m okv-sim v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-sim)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:20.1393565Z ^[[1m^[[32m   Compiling^[[0m jsonschema-value v0.50.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:20.4564043Z ^[[1m^[[32m   Compiling^[[0m hyper v1.11.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:20.4793625Z ^[[1m^[[32m   Compiling^[[0m email_address v0.2.9
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:20.6387273Z ^[[1m^[[32m   Compiling^[[0m okv-publication v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-publication)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:21.1993750Z ^[[1m^[[32m   Compiling^[[0m jsonschema v0.50.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:21.8075412Z ^[[1m^[[32m   Compiling^[[0m hyper-util v0.1.20
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:22.7216440Z ^[[1m^[[32m   Compiling^[[0m hyper-rustls v0.27.9
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:22.9013696Z ^[[1m^[[32m   Compiling^[[0m reqwest v0.13.4
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:23.7782155Z ^[[1m^[[32m   Compiling^[[0m object_store v0.14.1
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:27.4799163Z ^[[1m^[[32m   Compiling^[[0m okv-consensus v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-consensus)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:29.2351700Z ^[[1m^[[32m   Compiling^[[0m slatedb-common v0.15.0 (https://github.com/slatedb/slatedb.git?rev=e0161973d8d7ffdede7c44725729838811674e99#e0161973)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:29.5882742Z ^[[1m^[[32m   Compiling^[[0m slatedb-txn-obj v0.15.0 (https://github.com/slatedb/slatedb.git?rev=e0161973d8d7ffdede7c44725729838811674e99#e0161973)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:30.1384707Z ^[[1m^[[32m   Compiling^[[0m slatedb v0.15.0 (https://github.com/slatedb/slatedb.git?rev=e0161973d8d7ffdede7c44725729838811674e99#e0161973)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:45.6724095Z ^[[1m^[[32m   Compiling^[[0m okv-slate v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-slate)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:39:49.0844083Z ^[[1m^[[32m   Compiling^[[0m okv-object v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-object)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.5831231Z ^[[1m^[[32m    Finished^[[0m `test` profile [unoptimized] target(s) in 59.17s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6056104Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_object-f55e1445f7b4856b)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6077676Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6078155Z running 3 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6089203Z test range_read_client::tests::accepts_another_readers_newer_map_when_source_reply_is_stale ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6089999Z test range_read_client::tests::refuses_a_refresh_that_does_not_advance_the_map ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6364578Z test range_read_client::tests::refreshes_a_stale_route_and_fans_out_without_changing_snapshot ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6365640Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6366097Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 22 filtered out; finished in 0.03s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6366626Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6377373Z ^[[1m^[[32m     Running^[[0m unittests src/main.rs (target/debug/deps/okv_object-fdf99de286fc02f3)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6399784Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6400428Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6400747Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6401148Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6401524Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6402770Z ^[[1m^[[32m     Running^[[0m tests/kv_runtime.rs (target/debug/deps/kv_runtime-4e92d9defa32904d)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6421432Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6422186Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6422631Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6423079Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6423607Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6424640Z ^[[1m^[[32m     Running^[[0m tests/range_cache_faults.rs (target/debug/deps/range_cache_faults-5d8fe6e1ba989630)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6445848Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6446053Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6446324Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6446804Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6447253Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6449500Z ^[[1m^[[32m     Running^[[0m tests/range_serving_curve.rs (target/debug/deps/range_serving_curve-9f5216718a44e9e8)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6478722Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6479171Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6479422Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6479951Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 6 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Owning regression	2026-10-17T16:40:06.6480363Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	﻿2026-10-17T16:40:06.6598436Z ##[group]Run cargo test --workspace --locked
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6598998Z ^[[36;1mcargo test --workspace --locked^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6665876Z shell: /usr/bin/bash -e {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6666305Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6666584Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6666904Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6667288Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6667586Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6667902Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6668251Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6668633Z   CACHE_ON_FAILURE: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:06.6668904Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:07.0001187Z ^[[1m^[[32m   Compiling^[[0m okv-sim v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-sim)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:07.0002649Z ^[[1m^[[32m   Compiling^[[0m okv-slate v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-slate)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:07.0007670Z ^[[1m^[[32m   Compiling^[[0m okv-publication v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-publication)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:07.0103974Z ^[[1m^[[32m   Compiling^[[0m okv-htap v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-htap)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:08.2504485Z ^[[1m^[[32m   Compiling^[[0m okv-consensus v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-consensus)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:24.8734097Z ^[[1m^[[32m   Compiling^[[0m okv-object v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-object)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:37.1814254Z ^[[1m^[[32m   Compiling^[[0m okv-postgres v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-postgres)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:38.0194199Z ^[[1m^[[32m   Compiling^[[0m okv-model v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-model)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:39.8021643Z ^[[1m^[[32m   Compiling^[[0m okv-wal v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-wal)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:40.6173872Z ^[[1m^[[32m   Compiling^[[0m okv-eval v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-eval)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.3400036Z ^[[1m^[[32m    Finished^[[0m `test` profile [unoptimized] target(s) in 52.65s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.3712113Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_consensus-d8cdfd0ecb5329c5)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.3728092Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.3728817Z running 28 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.3748436Z test commit_proxy_recovery::tests::tlog_quorums_expose_only_the_common_contiguous_prefix ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.3757862Z test commit_proxy_recovery::tests::version_spaces_do_not_reuse_old_issued_versions ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4006455Z test contract::tests::correct_storage_contract_has_no_anomalies_and_replays_exactly ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4433662Z test contract::tests::every_negative_mode_breaks_one_bounded_contract ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4458809Z test generation::tests::generation_command_round_trips_numeric_member_ids ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4503444Z test generation::tests::legacy_generation_command_decodes_without_storage_incarnations ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4533769Z test generation::tests::reserve_fences_active_generation_until_proven_activation ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4608833Z test generation::tests::routine_reconfiguration_preserves_generation_and_finalizes_once ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4625359Z test multi_proxy_ordering::tests::bounded_permutations_require_buffering_but_preserve_membership ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4662064Z test online_resolver_split::tests::batch_seventeen_retries_batch_sixteen_with_new_identities ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4693240Z test online_resolver_split::tests::frozen_maps_are_contiguous_and_split_only_the_source ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4695478Z test publication::tests::publication_command_has_a_distinct_versioned_prefix ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4696829Z test publication::tests::publication_pop_capability_requires_distinct_pinned_signers ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4705024Z test publication_client::tests::endpoint_set_must_be_non_empty ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.4723889Z test resolver_hotspot_curve::tests::frozen_distributions_have_exact_counts ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5103870Z test resolver_hotspot_curve::tests::source_history_is_exact_child_union ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5128812Z test rpc::tests::extracts_generation_binding_from_supported_command_families ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5133183Z test state_machine::tests::disabled_dedup_reapplies_the_same_publication_request ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5134503Z test state_machine::tests::durable_snapshot_restores_outcomes_and_rejects_corruption ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5136047Z test state_machine::tests::publication_apply_is_fenced_deduplicated_and_fail_closed ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5143421Z test state_machine::tests::state_machine_snapshot_v1_fixture_is_dual_readable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5158408Z test tests::openraft_vote_commit_and_conflict_replacement_survive_reopen ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5681351Z test cluster_contract::tests::acknowledgement_before_quorum_is_rejected ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5683298Z test transaction_system_recovery_curve::tests::frozen_large_point_remains_inside_eval_envelope ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5704465Z test transaction_system_recovery_curve::tests::inventory_receipt_signature_detects_mutation ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.5975223Z test cluster_contract::tests::three_node_cluster_preserves_commits_through_failover_and_bounce ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:40:59.7243674Z test cluster_contract::tests::same_seed_replays_exactly ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.6392752Z test tests::passes_openraft_storage_conformance_suite ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.6393407Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.6393939Z test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.27s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.6394674Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.6403559Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_eval-873d046acf6bc567)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.6420008Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.6420205Z running 5 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.6439187Z test result::tests::calculates_median_and_mad ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.6440287Z test telemetry::tests::enforces_attribute_and_cardinality_contracts ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.6830403Z test config::tests::smoke_suite_and_registry_are_valid ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:07.9638437Z test mvcc_gc_authority::tests::binds_only_the_exact_physical_job_receipt ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1644071Z test mvcc_gc_authority::tests::rejects_a_collector_that_claims_collection_without_publication ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1644946Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1645420Z test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1646054Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1654082Z ^[[1m^[[32m     Running^[[0m unittests src/main.rs (target/debug/deps/okv_eval-2885071ad509a5ab)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1663434Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1663932Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1664204Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1664576Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1664915Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1665639Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_htap-e0c06dde0bff7e48)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1709100Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.1709268Z running 4 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.2143692Z test tests::correct_physical_overlay_matches_oracle ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.2686215Z test streaming::tests::correct_streaming_overlay_is_exact_and_bounded ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.2809850Z test tests::poisoned_subjects_are_detected ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5332586Z test streaming::tests::every_streaming_negative_control_is_detected ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5333374Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5333910Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5334680Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5356920Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_model-5c4a388d9d432e60)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5366739Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5366943Z running 16 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5377796Z test htap::tests::correct_contract_is_exactly_replayable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5386095Z test htap::tests::every_negative_control_has_one_bounded_failure ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5388341Z test htap::tests::seed_changes_the_trace_without_changing_the_contract ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5390608Z test publication_gc::tests::correct_contract_is_exactly_replayable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5392019Z test history::tests::every_negative_control_has_a_bounded_failing_prefix ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5393803Z test routine_reconfiguration::tests::correct_contract_is_exactly_replayable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5395136Z test tests::ambiguous_point_mutations_are_rejected ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5395717Z test tests::availability_errors_are_distinct ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5396402Z test tests::range_clear_obeys_half_open_bounds_and_same_version_point_precedence ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5397100Z test tests::replay_is_canonical_but_identity_bound ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5397917Z test tests::stale_generation_is_non_monotonic_even_with_larger_sequence ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5398605Z test tests::transaction_reads_writes_in_operation_order ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5399271Z test publication_gc::tests::every_negative_control_has_a_bounded_failure ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5399965Z test tests::version_encoding_preserves_generation_order ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.5400686Z test routine_reconfiguration::tests::every_negative_control_has_a_bounded_failure ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6868087Z test history::tests::generated_history_is_exactly_replayable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6868813Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6869104Z test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6869454Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6872679Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_object-ef9467bc330fc565)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6890045Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6890287Z running 25 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6900428Z test persistent_range_serving::tests::delta_descriptor_v1_fixture_remains_exact ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6913741Z test provider_bound_range::tests::binding_refuses_changed_bytes_and_scope_mismatch ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6915084Z test provider_bound_range::tests::exact_revision_range_read_passes_and_same_bytes_overwrite_refuses ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6916295Z test provider_bound_range::tests::version_1_fixture_remains_eager_only_and_rejects_v2 ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6931076Z test provider_bound_range::tests::provider_bound_v2_fixture_remains_exact ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.6942618Z test persistent_range_serving::tests::materializes_one_content_addressed_delta_and_rejects_changed_bytes ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7111998Z test persistent_range_serving::tests::reopens_one_authenticated_object_base_without_source_rows ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7126468Z test publisher_process::tests::job_and_request_identities_are_restart_stable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7130523Z test publisher_process::tests::prepared_intent_is_exactly_job_bound ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7131369Z test range_read_client::tests::accepts_another_readers_newer_map_when_source_reply_is_stale ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7373141Z test range_read_client::tests::refreshes_a_stale_route_and_fans_out_without_changing_snapshot ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7377974Z test range_read_client::tests::refuses_a_refresh_that_does_not_advance_the_map ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7477117Z test publication_adapter::tests::correct_adapter_passes_and_replays_semantically ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7658630Z test range_serving_view::tests::swaps_authority_base_without_losing_exact_old_or_new_reads ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7661490Z test tagged_log_process::tests::compact_binary_record_remains_legacy_json_readable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7667476Z test tagged_log_process::tests::exact_required_tags_validate ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7673243Z test tagged_log_process::tests::missing_required_tag_fails_closed ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7675040Z test tagged_log_process::tests::pop_rejects_a_capability_without_the_pinned_publication_quorum ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7761529Z test range_serving_view::tests::publishes_same_base_tail_advance_without_mixing_concurrent_readers ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7771171Z test tests::immutable_overwrite_negative_control_fails ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7780274Z test tests::list_authority_negative_control_fails ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7844377Z test tests::filesystem_passes_segment_but_not_authority_contract ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.7996603Z test tests::memory_passes_authority_contract ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8148079Z test publication_adapter::tests::root_graph_passes_replays_and_rejects_an_omitted_lease_root ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8424536Z test publication_adapter::tests::every_negative_subject_has_a_bounded_anomaly ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8425369Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8426026Z test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8426688Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8434353Z ^[[1m^[[32m     Running^[[0m unittests src/main.rs (target/debug/deps/okv_object-ce2d2c4cf25636ac)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8444587Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8444968Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8445170Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8445516Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8446084Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8446872Z ^[[1m^[[32m     Running^[[0m tests/kv_runtime.rs (target/debug/deps/kv_runtime-8a789496d82283e9)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8455727Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8455878Z running 4 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8459532Z test kv_runtime_moves_ranges_when_non_evictable_ram_exceeds_limit ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8460084Z test kv_runtime_evicts_disposable_cache_before_refusing_work ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8460528Z test kv_runtime_rate_limits_then_refuses_at_debt_bounds ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8469747Z test kv_runtime_accounts_1_100_1000_ranges_with_one_shared_cache ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8470100Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8470417Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8470757Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8472947Z ^[[1m^[[32m     Running^[[0m tests/range_cache_faults.rs (target/debug/deps/range_cache_faults-5d7f2c00cd180907)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8485254Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8485569Z running 2 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8500550Z test released_or_mismatched_lease_blocks_reopen_before_cache_access ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8884813Z test corrupted_persistent_cache_never_returns_a_wrong_value ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8885195Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8885512Z test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8885870Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8890175Z ^[[1m^[[32m     Running^[[0m tests/range_serving_curve.rs (target/debug/deps/range_serving_curve-8ec96399c272d0ff)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8908084Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8908493Z running 6 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.8931310Z test gcs_backend_refuses_an_unguarded_scratch_scope_before_network_io ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:08.9851269Z test provider_bound_curve_checks_every_backend_get_revision ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.0093663Z test measures_exact_authority_base_plus_certified_tail ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.0415795Z test decoded_ram_cold_reopen_reads_from_persistent_nvme_cache ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.0764324Z test shared_cache_removes_backend_requests_from_repeated_points ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2063074Z test provider_controls_refuse_changed_revision_and_detect_unversioned_fallback ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2063777Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2064213Z test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2064820Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2073161Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_postgres-a9443b846e1622a6)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2087386Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2087578Z running 29 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2114099Z test extent::tests::extent_key_ignores_block_and_sorts_apart_from_pages ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2133319Z test extent::tests::extent_round_trips_and_refuses_corruption ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2171253Z test smgr_durable::tests::legacy_durable_root_v1_decodes_without_object_deltas ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2178701Z test smgr_durable::tests::legacy_reader_contract_rejects_delta_aware_root ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2180187Z test commit::tests::refuses_extent_change_or_page_resurrection_shape ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2181227Z test commit::tests::plans_atomic_page_and_extent_extend ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.2182207Z test commit::tests::verifies_exact_advancing_cell_receipt ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3643263Z test smgr_durable::tests::objectifies_only_the_certified_suffix_and_restarts_without_a_new_sst ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3645831Z test smgr_service::tests::parses_fixed_width_storage_manager_request ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3648188Z test smgr_service::tests::reads_postgres_split_lsn_in_native_order ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3650433Z test smgr_stable::tests::object_snapshot_identity_is_required_without_a_row_digest ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3652805Z test smgr_stable::tests::publication_identities_are_deterministic_and_phase_separated ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3654907Z test smgr_stable::tests::stable_object_paths_refuse_escape_or_ambiguous_keys ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3682467Z test smgr_write_service::tests::appends_only_a_strictly_advancing_history ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3723402Z test smgr_write_service::tests::decodes_native_page_lsn_for_write_admission ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3724866Z test smgr_write_service::tests::objectifier_keeps_one_runner_and_only_the_latest_pending_version ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3753348Z test smgr_write_service::tests::parses_versioned_write_request ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3783347Z test smgr_write_service::tests::resolves_current_or_exact_versions_and_refuses_stale_versions ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3804195Z test tests::page_keys_preserve_block_order_and_relation_boundaries ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3805718Z test tests::page_value_round_trips_and_refuses_payload_corruption ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3806719Z test tests::vectored_decode_requires_every_exact_block_at_the_lsn_frontier ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3807707Z test write::tests::admits_permanent_pages_only_after_wal_is_durable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3808673Z test write::tests::gate_receipt_detects_each_poison_control ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3809579Z test write::tests::gate_receipt_is_exact_and_replayable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3811537Z test write::tests::refuses_empty_oversized_and_overflowing_batches ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.3812797Z test write::tests::refuses_the_complete_batch_when_one_page_is_ahead_of_wal ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.5788071Z test smgr_durable::tests::postgres_worker_readiness_splits_reads_from_closure_audit_and_detects_controls ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:09.8988722Z test smgr_durable::tests::postgres_object_delta_suffix_is_independent_of_untouched_relation_size ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7716540Z test smgr_durable::tests::postgres_object_delta_contract_replays_and_detects_every_fault ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7717077Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7717367Z test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.56s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7717706Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7732583Z ^[[1m^[[32m     Running^[[0m unittests src/bin/okv-postgres-page-service.rs (target/debug/deps/okv_postgres_page_service-36507b6dffbd3852)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7741553Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7741741Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7741978Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7742527Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7742977Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7744198Z ^[[1m^[[32m     Running^[[0m unittests src/bin/okv-postgres-stable-authority.rs (target/debug/deps/okv_postgres_stable_authority-77ff23afa03ca093)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7752791Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7753178Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7753428Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7753797Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7754157Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7755203Z ^[[1m^[[32m     Running^[[0m unittests src/bin/okv-postgres-transaction-authority.rs (target/debug/deps/okv_postgres_transaction_authority-70a827927db0461b)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7763374Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7763681Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7764236Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7764544Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7765038Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7765874Z ^[[1m^[[32m     Running^[[0m unittests src/bin/okv-postgres-write-service.rs (target/debug/deps/okv_postgres_write_service-8a00bc00823f131c)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7773334Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7773535Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7773750Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7774167Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7774566Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7775477Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_publication-d8b4b986c82d849c)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7783481Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7783666Z running 9 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7787234Z test tests::active_snapshot_lease_validation_rejects_drift_release_and_expiry ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7788504Z test tests::expiry_cannot_be_reversed_by_renewal ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7790652Z test tests::format_one_state_without_lease_fields_reads_with_safe_defaults ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7791555Z test tests::lease_floor_and_collection_history_preserve_exact_roots ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7792599Z test tests::publication_requires_intent_and_retires_it_atomically ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7793476Z test tests::lease_and_collection_faults_expose_each_frozen_violation ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7794167Z test tests::negative_faults_expose_each_frozen_violation ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7794801Z test tests::reservation_fences_epoch_and_intersecting_prepare ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7795293Z test tests::root_pin_generation_and_retirement_require_exact_compare_values ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7795608Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7795859Z test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7796205Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7796638Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_sim-42da2c5234fdc9f5)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7804072Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7804318Z running 9 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7811705Z test commit::tests::envelope_round_trips_and_rejects_corruption ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7826893Z test commit::tests::correct_contract_is_exactly_replayable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7843394Z test commit::tests::seed_changes_commit_trace ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7860678Z test commit::tests::every_commit_negative_control_has_a_bounded_failure ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7973260Z test tests::adjacent_seed_changes_the_explored_trace ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.7998939Z test tests::same_seed_replays_exactly ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8035437Z test tests::stale_publication_negative_control_fails ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8163448Z test persisted_wal::tests::correct_persisted_wal_contract_is_exactly_replayable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8646712Z test persisted_wal::tests::every_persisted_wal_negative_control_has_a_bounded_failure ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8647463Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8647916Z test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8648495Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8650154Z ^[[1m^[[32m     Running^[[0m unittests src/main.rs (target/debug/deps/okv_sim-3d4a3a22b9e4dc07)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8660325Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8660742Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8661034Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8661497Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8662450Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8663504Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_slate-e4698f7eed73a4ce)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8677071Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8677580Z running 27 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8688839Z test manifest_bound_store::tests::hides_every_manifest_after_the_authority_root ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8708119Z test mvcc_retention::tests::floor_advances_but_never_retreats ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8709198Z test mvcc_retention::tests::keeps_newer_versions_and_one_floor_anchor_per_key ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8710602Z test mvcc_retention::tests::malformed_or_out_of_order_physical_keys_abort_collection ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8711697Z test mvcc_retention::tests::running_job_does_not_reload_an_advanced_floor ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.8712897Z test mvcc_retention::tests::supplier_freezes_the_lower_internal_snapshot_floor ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:12.9539859Z test phase0::tests::filesystem_contract_passes ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.0918129Z test phase0::tests::missing_external_worker_is_detected ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.1669318Z test phase0::tests::objectkv_serving_profile_meets_reopen_and_point_budgets ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.2939122Z test mvcc_gc_curve::tests::real_compaction_converges_to_the_retained_window ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.2998505Z test mvcc_gc_curve::tests::authorization_is_issued_after_input_discovery_and_before_compaction ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3061221Z test tests::accepts_exact_replay_after_later_commits ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3117228Z test tests::applies_externally_assigned_versions_with_gaps ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3294787Z test tests::authority_bound_reader_keeps_the_selected_manifest_visible ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3366415Z test tests::concurrent_conflicting_version_has_one_winner ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3453439Z test tests::concurrent_identical_version_has_one_apply_and_one_replay ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3529688Z test tests::concurrent_lower_version_cannot_replace_higher_version ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3543451Z test tests::mvcc_key_codec_preserves_binary_user_order_and_descending_versions ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3563273Z test tests::mvcc_key_decoder_rejects_malformed_entries ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3564168Z test tests::pins_the_observed_revision ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3616541Z test phase0::tests::warm_reopen_negative_control_fails_only_cache_state ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3642993Z test tests::rejects_conflicting_replay ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3660465Z test tests::rejects_unimplemented_logical_generation_and_range_clear ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3697517Z test tests::rejects_unknown_non_monotonic_version ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3733870Z test tests::retained_reads_reject_expired_and_future_snapshots ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:13.3780618Z test phase0::tests::separate_compaction_roles_preserve_exact_serving_reads ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6041141Z test mvcc_gc_curve::tests::every_unsafe_collection_subject_is_detected ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6041742Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6042191Z test result: ok. 27 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.74s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6042954Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6051109Z ^[[1m^[[32m     Running^[[0m tests/kv_runtime_density.rs (target/debug/deps/kv_runtime_density-e549f1ba07059cf0)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6065656Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6066038Z running 3 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6327738Z test one_database_hosts_a_real_range_and_rebuilds_from_empty_caches ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6562154Z test many_databases_share_one_decoded_and_nvme_cache ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6564845Z test private_cache_topology_reports_one_decoded_cache_per_database ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6565206Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6565472Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6565807Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6574879Z ^[[1m^[[32m     Running^[[0m tests/mvcc_retention_compaction.rs (target/debug/deps/mvcc_retention_compaction-477598960734800b)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6585211Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.6585394Z running 1 test
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7183211Z test separate_compactor_collects_history_but_preserves_floor_snapshots ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7183819Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7184808Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7185298Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7188229Z ^[[1m^[[32m     Running^[[0m tests/snapshot_read.rs (target/debug/deps/snapshot_read-7ba1231f5ac6705a)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7202203Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7202822Z running 3 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7283679Z test reads_points_at_an_exact_external_version ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7305557Z test scans_binary_keys_in_logical_order_at_one_version ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7346049Z test exact_history_survives_close_and_reopen ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7346527Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7346854Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7347203Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7351106Z ^[[1m^[[32m     Running^[[0m tests/snapshot_read_curve.rs (target/debug/deps/snapshot_read_curve-4371e84d7ddb57ef)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7364694Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.7364846Z running 2 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:14.8295411Z test correct_worker_reads_every_snapshot_and_reopens ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0797084Z test every_negative_mode_breaks_its_own_semantic_gate ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0797433Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0797698Z test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.34s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0798033Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0802806Z ^[[1m^[[32m     Running^[[0m unittests src/lib.rs (target/debug/deps/okv_wal-a3c5090bff24af92)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0812891Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0813282Z running 9 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0829063Z test node_journal::tests::journal_v1_compatibility_fixture_is_dual_readable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0842429Z test node_journal::tests::complete_corruption_fails_closed ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0843978Z test node_journal::tests::torn_tail_is_removed_before_a_new_durable_record ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0855409Z test node_journal::tests::vote_commit_log_truncate_and_purge_survive_reopen ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0863512Z test tests::frame_v1_compatibility_fixture_is_dual_readable ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0892679Z test tests::leader_only_suffix_is_not_recovered ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0893403Z test tests::quorum_frames_survive_reopen_and_single_replica_loss ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0899145Z test tests::torn_suffix_is_ignored_but_complete_corruption_without_quorum_fails ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0919103Z test tests::synchronized_rewrite_replaces_the_prefix_on_every_replica ... ok
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0919500Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0919792Z test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0920175Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:15.0921541Z ^[[1m^[[32m   Doc-tests^[[0m okv_consensus
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.2523722Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.2524360Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.2524677Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.2525223Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.2525919Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.2542205Z ^[[1m^[[32m   Doc-tests^[[0m okv_eval
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.3560374Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.3560921Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.3561222Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.3561718Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.3562551Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.3579584Z ^[[1m^[[32m   Doc-tests^[[0m okv_htap
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4250121Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4250670Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4250906Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4251194Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4251532Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4268118Z ^[[1m^[[32m   Doc-tests^[[0m okv_model
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4673281Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4673688Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4673902Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4674190Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4674563Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:16.4686793Z ^[[1m^[[32m   Doc-tests^[[0m okv_object
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.3777730Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.3778800Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.3779354Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.3779959Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.3780340Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.3801960Z ^[[1m^[[32m   Doc-tests^[[0m okv_postgres
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.6025874Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.6026856Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.6027066Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.6027343Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.6028025Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.6046760Z ^[[1m^[[32m   Doc-tests^[[0m okv_publication
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7174972Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7175709Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7175919Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7176227Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7191174Z ^[[1m^[[32m   Doc-tests^[[0m okv_sim
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7191571Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7620916Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7621667Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7621961Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7622523Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7623032Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.7636581Z ^[[1m^[[32m   Doc-tests^[[0m okv_slate
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.9912793Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.9913277Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.9913480Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.9913798Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.9914230Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:17.9930820Z ^[[1m^[[32m   Doc-tests^[[0m okv_wal
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:18.0202443Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:18.0202934Z running 0 tests
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:18.0203208Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:18.0203655Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo test --workspace --locked	2026-10-17T16:41:18.0204528Z 
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	﻿2026-10-17T16:41:18.0287713Z ##[group]Run cargo run -p okv-eval --locked -- smoke
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0288150Z ^[[36;1mcargo run -p okv-eval --locked -- smoke^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0324197Z shell: /usr/bin/bash -e {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0324510Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0324725Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0324975Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0325246Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0325503Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0325754Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0326054Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0326348Z   CACHE_ON_FAILURE: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.0326590Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:18.3123153Z ^[[1m^[[32m   Compiling^[[0m okv-eval v0.0.0 (/home/runner/work/objectKV/objectKV/crates/okv-eval)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:36.2524832Z ^[[1m^[[32m    Finished^[[0m `dev` profile [unoptimized] target(s) in 18.20s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:36.2796843Z ^[[1m^[[32m     Running^[[0m `target/debug/okv-eval smoke`
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- smoke	2026-10-17T16:41:36.2909544Z {"schema_version":1,"suite":"smoke","status":"pass","correctness_failures":0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	﻿2026-10-17T16:41:36.2948661Z ##[group]Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2949255Z ^[[36;1mcargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2984514Z shell: /usr/bin/bash -e {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2984794Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2985008Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2985262Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2985523Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2985772Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2986023Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2986343Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2986645Z   CACHE_ON_FAILURE: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.2986879Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.5779682Z ^[[1m^[[32m    Finished^[[0m `dev` profile [unoptimized] target(s) in 0.26s
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.5969437Z ^[[1m^[[32m     Running^[[0m `target/debug/okv-eval validate-suite evals/suites/smoke.toml`
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Run cargo run -p okv-eval --locked -- validate-suite evals/suites/smoke.toml	2026-10-17T16:41:36.6312619Z validated suite objectkv-smoke-v1 with 143 metrics, 1 lanes, 1 workloads, and 1 profiles
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	﻿2026-10-17T16:41:36.6356719Z ##[group]Run git diff --exit-code
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6357258Z ^[[36;1mgit diff --exit-code^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6357713Z ^[[36;1mgit rev-parse HEAD^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6358138Z ^[[36;1msha256sum Cargo.lock^[[0m
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6413530Z shell: /usr/bin/bash -e {0}
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6413960Z env:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6414266Z   CARGO_INCREMENTAL: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6414653Z   CARGO_PROFILE_DEV_DEBUG: 0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6415077Z   CARGO_TERM_COLOR: always
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6415471Z   RUST_BACKTRACE: short
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6415883Z   CARGO_UNSTABLE_SPARSE_REGISTRY: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6416417Z   CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6416938Z   CACHE_ON_FAILURE: true
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6417370Z ##[endgroup]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6743210Z bd8eaca6b22f0adaaaef30a412e385122825a97c
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Record unchanged source	2026-10-17T16:41:36.6757165Z f66b9357906170be3cc49feb85383b8219acdab94b27331d117eb31008cc6aa0  Cargo.lock
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions-rust-lang/setup-rust-toolchain@v1	﻿2026-10-17T16:41:36.6957520Z Post job cleanup.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:41:36.6961013Z ##[start-action display=Setup Rust Caching;id=__aa290816-7fc4-4339-aa38-a7045cf3aa0f.__Swatinem_rust-cache]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:41:36.7000634Z Post job cleanup.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:41:36.9713264Z Cache up-to-date.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:41:36.9716137Z (node:5227) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:41:36.9716883Z (Use `node --trace-deprecation ...` to show where the warning was created)
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions-rust-lang/setup-rust-toolchain@v1	2026-10-17T16:41:36.9835997Z ##[end-action id=__aa290816-7fc4-4339-aa38-a7045cf3aa0f.__Swatinem_rust-cache;outcome=success;conclusion=success;duration_ms=287]
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	﻿2026-10-17T16:41:36.9951509Z Post job cleanup.
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.0817533Z [command]/usr/bin/git version
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.0864113Z git version 2.55.0
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.0938931Z Temporarily overriding HOME='/home/runner/work/_temp/87c48c33-b074-47d4-83c8-e3b6b7596422' before making global git config changes
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.0940636Z Adding repository directory to the temporary git global config as a safe directory
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.0941974Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/objectKV/objectKV
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.0979202Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.1024396Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.1251169Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.1275965Z http.https://github.com/.extraheader
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.1285615Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.1318030Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.1531322Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Post Run actions/checkout@v5	2026-10-17T16:41:37.1565090Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+exact-head (18, bd8eaca6b22f0adaaaef30a412e385122825a97c)	Complete job	﻿2026-10-17T16:41:37.1924232Z Cleaning up orphan processes
